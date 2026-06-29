@@ -27,7 +27,44 @@ def check_xml_files(directory):
                 tag = elem.tag.split('}')[-1]
                 
                 if tag == 'querySubject':
-                    # Check if it's a modelQuery and ignore it
+                    name = "Unknown"
+                    for child in elem:
+                        if child.tag.split('}')[-1] == 'name':
+                            name = child.text
+                            break
+
+                    definitions = [child for child in elem.iter() if child.tag.split('}')[-1] == 'definition']
+                    if len(definitions) == 0:
+                        print(f"  [!] querySubject '{name}' has no <definition> element.")
+                        issues.append({
+                            "file": filename,
+                            "querySubject": name,
+                            "type": "missing_definition"
+                        })
+                    else:
+                        for definition in definitions:
+                            db_queries = [child for child in definition.iter() if child.tag.split('}')[-1] == 'dbQuery']
+                            model_queries = [child for child in definition.iter() if child.tag.split('}')[-1] == 'modelQuery']
+                            
+                            if not db_queries and not model_queries:
+                                print(f"  [!] querySubject '{name}' <definition> has no <dbQuery> or <modelQuery> element.")
+                                issues.append({
+                                    "file": filename,
+                                    "querySubject": name,
+                                    "type": "missing_query_element"
+                                })
+                                
+                            for db_query in db_queries:
+                                sqls = [child for child in db_query.iter() if child.tag.split('}')[-1] == 'sql']
+                                if not sqls:
+                                    print(f"  [!] querySubject '{name}' <dbQuery> has no <sql> element.")
+                                    issues.append({
+                                        "file": filename,
+                                        "querySubject": name,
+                                        "type": "missing_sql"
+                                    })
+
+                    # Check if it's a modelQuery and ignore it for the sources validation
                     is_model_query = False
                     for child in elem.iter():
                         if child.tag.split('}')[-1] == 'modelQuery':
@@ -41,12 +78,6 @@ def check_xml_files(directory):
                     # Find all 'sources' elements (handle namespace)
                     sources_elements = [child for child in elem.iter() if child.tag.split('}')[-1] == 'sources']
                     
-                    name = "Unknown"
-                    for child in elem:
-                        if child.tag.split('}')[-1] == 'name':
-                            name = child.text
-                            break
-                            
                     if len(sources_elements) != 1:
                         print(f"  [!] querySubject '{name}' has {len(sources_elements)} <sources> elements (expected exactly 1).")
                         issues.append({

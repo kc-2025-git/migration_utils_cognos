@@ -19,14 +19,20 @@ def temp_xml_dir(tmp_path):
     "xml_content, expected_issues",
     [
         (
-            # Valid case: 1 querySubject, 1 sources, 1 dataSourceRef
+            # Valid case: 1 querySubject, 1 sources, 1 dataSourceRef, has definition
             """<?xml version="1.0" encoding="UTF-8" ?>
         <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
             <querySubject>
                 <name>ValidSubject</name>
-                <sources>
-                    <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
-                </sources>
+                <definition>
+                    <dbQuery>
+                        <sources>
+                            <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                        </sources>
+                        <sql>SELECT 1</sql>
+                    </dbQuery>
+                </definition>
+
             </querySubject>
         </project>""",
             [],
@@ -37,6 +43,11 @@ def temp_xml_dir(tmp_path):
         <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
             <querySubject>
                 <name>NoSourcesSubject</name>
+                <definition>
+                    <dbQuery>
+                        <sql>SELECT 1</sql>
+                    </dbQuery>
+                </definition>
             </querySubject>
         </project>""",
             [
@@ -53,8 +64,13 @@ def temp_xml_dir(tmp_path):
         <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
             <querySubject>
                 <name>NoRefSubject</name>
-                <sources>
-                </sources>
+                <definition>
+                    <dbQuery>
+                        <sources>
+                        </sources>
+                        <sql>SELECT 1</sql>
+                    </dbQuery>
+                </definition>
             </querySubject>
         </project>""",
             [
@@ -71,12 +87,17 @@ def temp_xml_dir(tmp_path):
         <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
             <querySubject>
                 <name>MultipleSourcesSubject</name>
-                <sources>
-                    <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
-                </sources>
-                <sources>
-                    <dataSourceRef>[].[dataSources].[TEST]</dataSourceRef>
-                </sources>
+                <definition>
+                    <dbQuery>
+                        <sources>
+                            <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                        </sources>
+                        <sources>
+                            <dataSourceRef>[].[dataSources].[TEST]</dataSourceRef>
+                        </sources>
+                        <sql>SELECT 1</sql>
+                    </dbQuery>
+                </definition>
             </querySubject>
         </project>""",
             [
@@ -93,10 +114,15 @@ def temp_xml_dir(tmp_path):
         <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
             <querySubject>
                 <name>MultipleRefsSubject</name>
-                <sources>
-                    <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
-                    <dataSourceRef>[].[dataSources].[TEST]</dataSourceRef>
-                </sources>
+                <definition>
+                    <dbQuery>
+                        <sources>
+                            <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                            <dataSourceRef>[].[dataSources].[TEST]</dataSourceRef>
+                        </sources>
+                        <sql>SELECT 1</sql>
+                    </dbQuery>
+                </definition>
             </querySubject>
         </project>""",
             [],
@@ -107,13 +133,18 @@ def temp_xml_dir(tmp_path):
         <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
             <querySubject>
                 <name>DoubleTroubleSubject</name>
-                <sources>
-                    <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
-                    <dataSourceRef>[].[dataSources].[TEST]</dataSourceRef>
-                </sources>
-                <sources>
-                    <dataSourceRef>[].[dataSources].[DEV]</dataSourceRef>
-                </sources>
+                <definition>
+                    <dbQuery>
+                        <sources>
+                            <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                            <dataSourceRef>[].[dataSources].[TEST]</dataSourceRef>
+                        </sources>
+                        <sources>
+                            <dataSourceRef>[].[dataSources].[DEV]</dataSourceRef>
+                        </sources>
+                        <sql>SELECT 1</sql>
+                    </dbQuery>
+                </definition>
             </querySubject>
         </project>""",
             [
@@ -135,6 +166,7 @@ def temp_xml_dir(tmp_path):
                         <sources>
                             <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
                         </sources>
+                        <sql>SELECT 1</sql>
                     </dbQuery>
                 </definition>
             </querySubject>
@@ -142,7 +174,7 @@ def temp_xml_dir(tmp_path):
             [],
         ),
         (
-            # Valid case: modelQuery is ignored
+            # Valid case: modelQuery is ignored for sources validation
             """<?xml version="1.0" encoding="UTF-8" ?>
         <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
             <querySubject>
@@ -155,6 +187,146 @@ def temp_xml_dir(tmp_path):
             </querySubject>
         </project>""",
             [],
+        ),
+        (
+            # Invalid case: missing definition
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <querySubject>
+                <name>MissingDefinitionSubject</name>
+                <sources>
+                    <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                </sources>
+            </querySubject>
+        </project>""",
+            [
+                {
+                    "querySubject": "MissingDefinitionSubject",
+                    "type": "missing_definition",
+                }
+            ],
+        ),
+        (
+            # Invalid case: missing dbQuery or modelQuery
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <querySubject>
+                <name>MissingQueryElementSubject</name>
+                <definition>
+                </definition>
+                <sources>
+                    <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                </sources>
+            </querySubject>
+        </project>""",
+            [
+                {
+                    "querySubject": "MissingQueryElementSubject",
+                    "type": "missing_query_element",
+                }
+            ],
+        ),
+        (
+            # Invalid case: missing sql inside dbQuery
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <querySubject>
+                <name>MissingSqlSubject</name>
+                <definition>
+                    <dbQuery>
+                    </dbQuery>
+                </definition>
+                <sources>
+                    <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                </sources>
+            </querySubject>
+        </project>""",
+            [
+                {
+                    "querySubject": "MissingSqlSubject",
+                    "type": "missing_sql",
+                }
+            ],
+        ),
+        (
+            # Invalid case: definition includes something other than dbQuery or modelQuery
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <querySubject>
+                <name>OtherQuerySubject</name>
+                <definition>
+                    <someOtherQuery>
+                        <sql>SELECT 1</sql>
+                    </someOtherQuery>
+                </definition>
+                <sources>
+                    <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                </sources>
+            </querySubject>
+        </project>""",
+            [
+                {
+                    "querySubject": "OtherQuerySubject",
+                    "type": "missing_query_element",
+                }
+            ],
+        ),
+        (
+            # Invalid case: querySubject without a name element (defaults to Unknown)
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <querySubject>
+                <definition>
+                    <dbQuery>
+                    </dbQuery>
+                </definition>
+                <sources>
+                </sources>
+            </querySubject>
+        </project>""",
+            [
+                {
+                    "querySubject": "Unknown",
+                    "type": "missing_sql",
+                },
+                {
+                    "querySubject": "Unknown",
+                    "type": "invalid_dataSourceRefs_count",
+                    "count": 0,
+                }
+            ],
+        ),
+        (
+            # Valid and Invalid cases: Multiple querySubjects in the same file
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <querySubject>
+                <name>ValidSubjectOne</name>
+                <definition>
+                    <dbQuery>
+                        <sources>
+                            <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                        </sources>
+                        <sql>SELECT 1</sql>
+                    </dbQuery>
+                </definition>
+            </querySubject>
+            <querySubject>
+                <name>InvalidSubjectTwo</name>
+                <definition>
+                    <dbQuery>
+                        <sql>SELECT 2</sql>
+                    </dbQuery>
+                </definition>
+            </querySubject>
+        </project>""",
+            [
+                {
+                    "querySubject": "InvalidSubjectTwo",
+                    "type": "invalid_sources_count",
+                    "count": 0,
+                }
+            ],
         ),
     ],
 )
@@ -177,5 +349,5 @@ def test_check_xml_files(temp_xml_dir, xml_content, expected_issues):
     for actual, expected in zip(issues, expected_issues):
         assert actual["querySubject"] == expected["querySubject"]
         assert actual["type"] == expected["type"]
-        assert actual["count"] == expected["count"]
+        assert actual.get("count") == expected.get("count")
         assert actual["file"] == "test_model.xml"
