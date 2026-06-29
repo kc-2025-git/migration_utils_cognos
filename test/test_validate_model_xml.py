@@ -7,7 +7,7 @@ sys.path.insert(
     0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src"))
 )
 
-from utils.validate_model_xml import check_xml_files
+from utils.validate_model_xml import check_xml_files, validate_data_sources
 
 
 @pytest.fixture
@@ -293,7 +293,7 @@ def temp_xml_dir(tmp_path):
                     "querySubject": "Unknown",
                     "type": "invalid_dataSourceRefs_count",
                     "count": 0,
-                }
+                },
             ],
         ),
         (
@@ -348,6 +348,140 @@ def test_check_xml_files(temp_xml_dir, xml_content, expected_issues):
     # Assert exact issue properties
     for actual, expected in zip(issues, expected_issues):
         assert actual["querySubject"] == expected["querySubject"]
+        assert actual["type"] == expected["type"]
+        assert actual.get("count") == expected.get("count")
+        assert actual["file"] == "test_model.xml"
+
+
+@pytest.mark.parametrize(
+    "xml_content, expected_issues",
+    [
+        (
+            # Valid case: 1 cmDataSource, 1 schema
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <name>PROD.ALUMNI</name>
+                    <cmDataSource>PROD</cmDataSource>
+                    <schema>ALUMNI</schema>
+                </dataSource>
+            </dataSources>
+        </project>""",
+            [],
+        ),
+        (
+            # Invalid case: 0 cmDataSource
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <name>PROD.ALUMNI</name>
+                    <schema>ALUMNI</schema>
+                </dataSource>
+            </dataSources>
+        </project>""",
+            [
+                {
+                    "dataSource": "PROD.ALUMNI",
+                    "type": "invalid_cmDataSource_count",
+                    "count": 0,
+                }
+            ],
+        ),
+        (
+            # Invalid case: 2 cmDataSource
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <name>PROD.ALUMNI</name>
+                    <cmDataSource>PROD</cmDataSource>
+                    <cmDataSource>TEST</cmDataSource>
+                    <schema>ALUMNI</schema>
+                </dataSource>
+            </dataSources>
+        </project>""",
+            [
+                {
+                    "dataSource": "PROD.ALUMNI",
+                    "type": "invalid_cmDataSource_count",
+                    "count": 2,
+                }
+            ],
+        ),
+        (
+            # Valid case: 0 schema
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <name>PROD.ALUMNI</name>
+                    <cmDataSource>PROD</cmDataSource>
+                </dataSource>
+            </dataSources>
+        </project>""",
+            [],
+        ),
+        (
+            # Invalid case: 2 schema
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <name>PROD.ALUMNI</name>
+                    <cmDataSource>PROD</cmDataSource>
+                    <schema>ALUMNI</schema>
+                    <schema>OTHER</schema>
+                </dataSource>
+            </dataSources>
+        </project>""",
+            [
+                {
+                    "dataSource": "PROD.ALUMNI",
+                    "type": "invalid_schema_count",
+                    "count": 2,
+                }
+            ],
+        ),
+        (
+            # Invalid case: missing name (Unknown)
+            """<?xml version="1.0" encoding="UTF-8" ?>
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <cmDataSource>PROD</cmDataSource>
+                </dataSource>
+            </dataSources>
+        </project>""",
+            [
+                {
+                    "dataSource": "Unknown",
+                    "type": "invalid_missing_name",
+                    "count": 0,
+                }
+            ],
+        ),
+    ],
+)
+def test_validate_data_sources(temp_xml_dir, xml_content, expected_issues):
+    # Create the xml file in the temporary directory
+    test_file = temp_xml_dir / "test_model.xml"
+    test_file.write_text(xml_content, encoding="utf-8")
+
+    # Run the function
+    issues = validate_data_sources(str(temp_xml_dir))
+
+    # Assert number of issues matches
+    assert len(issues) == len(expected_issues)
+
+    # Sort issues to compare reliably
+    issues.sort(key=lambda x: x["type"])
+    expected_issues.sort(key=lambda x: x["type"])
+
+    # Assert exact issue properties
+    for actual, expected in zip(issues, expected_issues):
+        assert actual["dataSource"] == expected["dataSource"]
         assert actual["type"] == expected["type"]
         assert actual.get("count") == expected.get("count")
         assert actual["file"] == "test_model.xml"

@@ -111,10 +111,92 @@ def check_xml_files(directory):
         
     return issues
 
+def validate_data_sources(directory):
+    files_to_check = [f for f in os.listdir(directory) if f.endswith('.xml')]
+    
+    if not files_to_check:
+        print(f"No XML files found in directory: {directory}")
+        return
+
+    issues = []
+
+    for filename in files_to_check:
+        filepath = os.path.join(directory, filename)
+        if not os.path.exists(filepath):
+            continue
+            
+        print(f"Validating data sources in {filename}...")
+        
+        try:
+            context = ET.iterparse(filepath, events=('end',))
+            
+            for event, elem in context:
+                tag = elem.tag.split('}')[-1]
+                
+                if tag == 'dataSource':
+                    name = "Unknown"
+                    for child in elem:
+                        if child.tag.split('}')[-1] == 'name':
+                            name = child.text
+                            break
+
+                    if name == "Unknown":
+                        print(f"  [!] dataSource has no <name> element.")
+                        issues.append({
+                            "file": filename,
+                            "dataSource": name,
+                            "type": "invalid_missing_name",
+                            "count": 0
+                        })
+                        elem.clear()
+                        continue
+
+                    cm_data_sources = [child for child in elem.iter() if child.tag.split('}')[-1] == 'cmDataSource']
+                    schemas = [child for child in elem.iter() if child.tag.split('}')[-1] == 'schema']
+                    
+                    if len(cm_data_sources) != 1:
+                        print(f"  [!] dataSource '{name}' has {len(cm_data_sources)} <cmDataSource> elements (expected 1).")
+                        issues.append({
+                            "file": filename,
+                            "dataSource": name,
+                            "type": "invalid_cmDataSource_count",
+                            "count": len(cm_data_sources)
+                        })
+                        
+                    if len(schemas) == 0:
+                        print(f"  [i] dataSource '{name}' has 0 <schema> elements. This is considered valid.")
+                    elif len(schemas) > 1:
+                        print(f"  [!] dataSource '{name}' has {len(schemas)} <schema> elements (expected 0 or 1).")
+                        issues.append({
+                            "file": filename,
+                            "dataSource": name,
+                            "type": "invalid_schema_count",
+                            "count": len(schemas)
+                        })
+                        
+                    elem.clear()
+                
+        except Exception as e:
+            print(f"Error parsing {filename}: {e}")
+            
+    if not issues:
+        print("\nNo issues found! All dataSources have exactly 1 <cmDataSource> and 1 <schema>.")
+        
+    return issues
+
+
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description="Validate Model XML files for multiple sources/dataSourceRefs.")
+    parser = argparse.ArgumentParser(description="Validate Model XML files.")
     parser.add_argument("--input-dir", default=r"C:\Users\kcleary\Dev\migration_utils_cognos\input", help="Path to the input directory containing XML files.")
+    parser.add_argument("--check-datasources", action="store_true", help="Validate dataSources elements.")
+    parser.add_argument("--check-querysubjects", action="store_true", help="Validate querySubject elements.")
     
     args = parser.parse_args()
-    check_xml_files(args.input_dir)
+    if args.check_datasources:
+        validate_data_sources(args.input_dir)
+    if args.check_querysubjects:
+        check_xml_files(args.input_dir)
+    if not args.check_datasources and not args.check_querysubjects:
+        validate_data_sources(args.input_dir)
+        check_xml_files(args.input_dir)
