@@ -7,7 +7,7 @@ sys.path.insert(
     0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src"))
 )
 
-from extract_tables_from_project import extract_from_xml_string
+from extract_tables_from_project import extract_from_xml_string, extract_tables_from_sql
 
 TEST_CASES = [
     (
@@ -455,3 +455,45 @@ def test_extract_tables(test_name, xml_string, expected_ds_map, expected_table_r
     # Assert
     assert ds_map == expected_ds_map
     assert table_refs == expected_table_refs
+
+
+@pytest.mark.parametrize(
+    "sql_content, expected_deps",
+    [
+        ("SELECT * FROM MY_TABLE", {"MY_TABLE"}),
+        (
+            "SELECT * FROM FIRST_TABLE T1 JOIN SECOND_TABLE T2 ON T1.ID = T2.ID",
+            {"FIRST_TABLE", "SECOND_TABLE"},
+        ),
+        ("WITH cte AS (SELECT * FROM source_tbl) SELECT * FROM cte", {"source_tbl"}),
+        ("SELECT max(val), substr(text, 1, 5) FROM DUAL", {"DUAL"}),
+        ("SELECT custom_func(id) FROM base_tbl", {"base_tbl"}),
+        ("SELECT myschema.mytable.col FROM myschema.mytable", {"myschema.mytable"}),
+        (
+            "SELECT 'FROM NOT_A_TABLE' AS string_col FROM the_real_table",
+            {"the_real_table"},
+        ),
+        (
+            "-- FROM hidden_table\nSELECT * FROM visible_table /* FROM other_hidden */",
+            {"visible_table"},
+        ),
+        (
+            "SELECT a.col, b.col FROM table_a a, table_b b WHERE a.id = b.id",
+            {"table_a", "table_b"},
+        ),
+        ("select * from my_funct()", set()),
+        ("select * from table(my_pkg.my_funct())", set()),
+        (
+            "SELECT NVL(T2.COLUMN_A, 'DELETED') FROM TABLE_A T1, TABLE_B T2 WHERE T1.ID = T2.ID",
+            {"TABLE_A", "TABLE_B"},
+        ),
+    ],
+)
+def test_extract_tables_from_sql_edge_cases(sql_content: str, expected_deps: set) -> None:
+    """Test that SQL parsing correctly identifies various dependency types."""
+    # Act
+    extracted = extract_tables_from_sql(sql_content)
+
+    # Assert
+    assert extracted == expected_deps
+
