@@ -1,0 +1,1 @@
+you cannot run commands on the command line.  if you need to run a command, ask the user to run it for you and provide the output in the chat.
