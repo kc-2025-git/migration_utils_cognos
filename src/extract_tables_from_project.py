@@ -58,20 +58,29 @@ def extract_from_xml_root(root, namespaces):
     ds_map = {}
     for ds in root.findall(".//ns:dataSource", namespaces):
         name_node = ds.find("ns:name", namespaces)
+        cm_ds_node = ds.find("ns:cmDataSource", namespaces)
         schema_node = ds.find("ns:schema", namespaces)
-        if (
-            name_node is not None
-            and schema_node is not None
-            and name_node.text
-            and schema_node.text
-        ):
-            ds_map[name_node.text.strip().upper()] = schema_node.text.strip().upper()
+        if name_node is not None and name_node.text:
+            name_val = name_node.text.strip().upper()
+            cm_ds_val = cm_ds_node.text.strip() if (cm_ds_node is not None and cm_ds_node.text) else ""
+            schema_val = schema_node.text.strip() if (schema_node is not None and schema_node.text) else ""
+            ds_map[name_val] = {
+                "cmDataSource": cm_ds_val,
+                "schema": schema_val
+            }
 
     definition_types = Counter()
     unique_tables = set()
 
-    def process_table(table_str, sql_type):
+    def process_table(table_str, sql_type, qs_data_sources=None):
+        if qs_data_sources is None:
+            qs_data_sources = []
+            
         t_upper = table_str.upper()
+        
+        raw_prefix = None
+        raw_table = t_upper
+        
         if '.' in t_upper:
             parts = t_upper.rsplit('.', 1)
             raw_prefix = parts[0]
@@ -82,22 +91,54 @@ def extract_from_xml_root(root, namespaces):
                     pass
                 else:
                     raw_prefix = raw_prefix.rsplit('.', 1)[-1]
-            
-            prefix_no_brackets = raw_prefix.replace('[', '').replace(']', '')
 
-            if sql_type == "cognos" and prefix_no_brackets in ds_map:
-                return f"{ds_map[prefix_no_brackets]}.{raw_table}"
+        prefix_no_brackets = raw_prefix.replace('[', '').replace(']', '') if raw_prefix else None
+        
+        cm_ds = ""
+        schema = ""
+        
+        if prefix_no_brackets and prefix_no_brackets in ds_map:
+            ds_info = ds_map[prefix_no_brackets]
+            cm_ds = ds_info.get("cmDataSource", "")
+            schema = ds_info.get("schema", "")
+        elif len(qs_data_sources) == 1:
+            ref = qs_data_sources[0]
+            if ref.startswith("[].[dataSources].[") and ref.endswith("]"):
+                ref_name = ref[len("[].[dataSources].["):-1].upper()
             else:
-                return f"{raw_prefix}.{raw_table}"
+                ref_name = ref.upper()
+                
+            if ref_name in ds_map:
+                ds_info = ds_map[ref_name]
+                cm_ds = ds_info.get("cmDataSource", "")
+                schema = ds_info.get("schema", "")
+            else:
+                schema = prefix_no_brackets if prefix_no_brackets else ref_name
+        elif len(qs_data_sources) > 1:
+            cm_ds = "MultipleOptions"
+            schema = prefix_no_brackets if prefix_no_brackets else "MultipleOptions"
         else:
-            return t_upper
+            schema = prefix_no_brackets if prefix_no_brackets else ""
+            
+        raw_table_no_brackets = raw_table.replace('[', '').replace(']', '')
+        return (raw_table_no_brackets, cm_ds, schema)
 
     for qs in root.findall(".//ns:querySubject", namespaces):
         definition = qs.find("ns:definition", namespaces)
         if definition is not None:
+            if definition.find("ns:dbQuery", namespaces) is None:
+                continue
+
             for child in definition:
                 definition_types[child.tag] += 1
                 if child.tag.endswith("dbQuery"):
+                    qs_data_sources = []
+                    sources_elem = child.find("ns:sources", namespaces)
+                    if sources_elem is not None:
+                        for ref in sources_elem.findall("ns:dataSourceRef", namespaces):
+                            if ref.text:
+                                qs_data_sources.append(ref.text.strip())
+
                     sql = child.find("ns:sql", namespaces)
                     if sql is not None:
                         sql_type = sql.get("type", "unknown")
@@ -108,22 +149,22 @@ def extract_from_xml_root(root, namespaces):
                             if sql_text:
                                 parsed_tables = extract_tables_from_sql(sql_text)
                                 for pt in parsed_tables:
-                                    resolved_t = process_table(pt, sql_type)
+                                    resolved_t = process_table(pt, sql_type, qs_data_sources)
                                     unique_tables.add(resolved_t)
                         else:
                             for t in tables:
                                 if t.text:
-                                    resolved_t = process_table(t.text.strip(), sql_type)
+                                    resolved_t = process_table(t.text.strip(), sql_type, qs_data_sources)
                                     unique_tables.add(resolved_t)
 
                     dbObj = child.find("ns:dbObjectName", namespaces)
                     if dbObj is not None and dbObj.text:
-                        resolved_t = process_table(dbObj.text.strip(), "unknown")
+                        resolved_t = process_table(dbObj.text.strip(), "unknown", qs_data_sources)
                         unique_tables.add(resolved_t)
 
-    unqualified_tables = {t for t in unique_tables if '.' not in t}
-    qualified_table_names = {t.rsplit('.', 1)[-1] for t in unique_tables if '.' in t}
-    tables_to_remove = unqualified_tables.intersection(qualified_table_names)
+    unqualified_tables = {t for t in unique_tables if not t[1] and not t[2]}
+    qualified_table_names = {t[0] for t in unique_tables if t[1] or t[2]}
+    tables_to_remove = {t for t in unqualified_tables if t[0] in qualified_table_names}
     unique_tables = unique_tables - tables_to_remove
 
     return ds_map, definition_types, unique_tables
@@ -174,9 +215,17 @@ def main():
         output_dir = os.path.join(project_root, "output", input_filename)
         os.makedirs(output_dir, exist_ok=True)
 
+        table_objects = []
+        for t in sorted_tables:
+            table_objects.append({
+                "table": t[0],
+                "cmDataSource": t[1],
+                "schema": t[2]
+            })
+
         # Save to a file
         output_file = os.path.join(output_dir, "extracted_tables.json")
-        output_data = {"tables": sorted_tables}
+        output_data = {"tables": table_objects}
 
         with open(output_file, "w") as f:
             json.dump(output_data, f, indent=4)

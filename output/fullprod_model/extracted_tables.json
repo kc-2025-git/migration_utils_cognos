@@ -1,1000 +1,6239 @@
 {
     "tables": [
-        "ACCESSLVL",
-        "ALUMNI.ADBDESG",
-        "ALUMNI.AGBGIFT",
-        "ALUMNI.AGBPLDG",
-        "ALUMNI.AGRGDES",
-        "ALUMNI.AGRGSOL",
-        "ALUMNI.AGRPDES",
-        "ALUMNI.AGRPSOL",
-        "ALUMNI.APBCONS",
-        "ALUMNI.APRCHLD",
-        "ALUMNI.APRSALU",
-        "ALUMNI.ATVSOLC",
-        "AXIOMELT.MASTERRECORDFIELDS",
-        "AXIOMELT.MASTERRECORDFIELDVALUES_LATEST",
-        "AXIOMELT.MASTERRECORDNOTES",
-        "AXIOMELT.MASTERRECORDPROGRESS_LATEST",
-        "AXIOMELT.MASTERRECORDS",
-        "AXIOMELT.PHASES",
-        "AXIOMELT.SOURCEFIELDS",
-        "AXIOMELT.SOURCES",
-        "AXIOMELT.WEBSERVICEAUDITLOG",
-        "BADGE",
-        "BADGELINK",
-        "BANINST1.AA_PLEDGE_DETAIL",
-        "BANINST1.AF_ACCTG_DISTRIBUTION_ANALYSIS",
-        "BANINST1.AF_DISBURSEMENT_ANALYSIS",
-        "BANINST1.AF_GRANT_BUDGET_DETAIL_TRANS",
-        "BANINST1.AF_GRANT_BUDGET_STATUS",
-        "BANINST1.AF_GRANT_BUDGET_TRANSACTION",
-        "BANINST1.AF_GRANT_COSTS",
-        "BANINST1.AF_PERIODIC_BALANCE_SHEET",
-        "BANINST1.AF_PERIOD_OPERATING_STATEMENT",
-        "BANINST1.AF_RECONCILIATION",
-        "BANINST1.AF_TRANSACTION_DETAIL",
-        "BANINST1.AF_YEARLY_BALANCE_SHEET",
-        "BANINST1.AF_YEARLY_OPERATING_STATEMENT",
-        "BANINST1.AR_AWARD_DETAIL_BY_TERM",
-        "BANINST1.AR_AWARD_DETAIL_BY_YEAR",
-        "BANINST1.AR_BUDGET_COMPONENTS",
-        "BANINST1.AR_FINAID_APPLICANT",
-        "BANINST1.AR_FINAID_STUDENT_SUMMARY",
-        "BANINST1.AR_TRACKING_REQUIREMENTS",
-        "BANINST1.AS_ACADEMIC_HISTORY_DETAIL",
-        "BANINST1.AS_ACADEMIC_HISTORY_SUMMARY",
-        "BANINST1.AS_ADIRONDACK_NOHOUSING",
-        "BANINST1.AS_ADMISSIONS_APPLICANT",
-        "BANINST1.AS_AGING_ANALYSIS",
-        "BANINST1.AS_CATALOG_SCHEDULE",
-        "BANINST1.AS_CLEARED_TO_ATTEND",
-        "BANINST1.AS_FACULTY_DATA",
-        "BANINST1.AS_FSAATLAS_DATA",
-        "BANINST1.AS_RECRUITING_DATA",
-        "BANINST1.AS_RECRUITING_SOURCE_ANALYSIS",
-        "BANINST1.AS_RESIDENTIAL_LIFE",
-        "BANINST1.AS_RESIDENTIAL_LIFE_CHANGES",
-        "BANINST1.AS_SEVISLINK_DATA",
-        "BANINST1.AS_STUDENT_DATA",
-        "BANINST1.AS_STUDENT_ENROLLMENT_SUMMARY",
-        "BANINST1.AS_STUDENT_REGISTRATION_DETAIL",
-        "BANINST1.AS_THIRD_PARTY_CONTRACTS",
-        "BANINST1.AT_APPLICATION_OF_PAYMENTS_CHG",
-        "BANINST1.AT_APPLICATION_OF_PAYMENTS_PAY",
-        "BANINST1.AT_AR_BALANCE_BY_ENTITY",
-        "BANINST1.AT_AR_HISTORY_BY_BALANCE",
-        "BANINST1.AT_AR_HISTORY_BY_TERM",
-        "BANINST1.AT_DEPOSITS",
-        "BANINST1.AT_INSTALLMENTS",
-        "BANINST1.GFVREQU",
-        "BANINST1.GFVROUT",
-        "BANINST1.SAVCCUR",
-        "BANINST1.SCADARB",
-        "BANINST1.SFVFAUD",
-        "BANINST1.SFVSTC2",
-        "BANINST1.SRVCCUR",
-        "BANINST1.SVQ_SFRWLNT",
-        "BANINST1.WFVATTR",
-        "BANINST1.WFVCRHR",
-        "BANINST1.WGVCNCR",
-        "BANINST1.WGVCRHR",
-        "BANINST1.WGVDUPS",
-        "BANINST1.WGVFGRD",
-        "BANINST1.WGVFSA1",
-        "BANINST1.WGVFSA1NEW",
-        "BANINST1.WGVFSA2",
-        "BANINST1.WGVFSA2NEW",
-        "BANINST1.WGVFSA3",
-        "BANINST1.WGVFSA3NEW",
-        "BANINST1.WGVFSA4",
-        "BANINST1.WGVFSA4NEW",
-        "BANINST1.WGVFSA5NEW",
-        "BANINST1.WGVIINS",
-        "BANINST1.WGVNOFSA",
-        "BANINST1.WGVSEV1",
-        "BANINST1.WGVSEV2",
-        "BANINST1.WGVSEV3",
-        "BANINST1.WGVSEV4",
-        "BANINST1.WGVSTDA",
-        "BANINST1.WGVSTDH",
-        "BANINST1.WGVSTDN",
-        "BANINST1.WOVSRVR",
-        "BANINST1.WPVCMNT",
-        "BANINST1.WPVSCMT",
-        "BANINST1.WSVARAP",
-        "BANINST1.WSVARSC",
-        "BANINST1.WSVARTS",
-        "BANINST1.WSVDESC",
-        "BANINST1.WSVINCV",
-        "BANINST1.WSVINEV",
-        "BANINST1.WTVCMNT",
-        "CTRACKING.CT_PROPSTAT",
-        "CTRACKING.CT_SCBCRKY",
-        "CTRACKING.CT_SCBCRSE",
-        "DUAL",
-        "EMP",
-        "EVENTS",
-        "FAISMGR.RCRAPP1",
-        "FAISMGR.RCRAPP2",
-        "FAISMGR.RFRBASE",
-        "FAISMGR.RORSTAT",
-        "FAISMGR.RPRATRM",
-        "FAISMGR.RPRAWRD",
-        "FALL2021_SURVEY@PROD.EDU",
-        "FIMSMGR.FABBKTP",
-        "FIMSMGR.FABCHKA",
-        "FIMSMGR.FABCHKS",
-        "FIMSMGR.FABINCK",
-        "FIMSMGR.FABINVH",
-        "FIMSMGR.FARINTX",
-        "FIMSMGR.FARINVA",
-        "FIMSMGR.FARINVC",
-        "FIMSMGR.FGBOPAL",
-        "FIMSMGR.FGBTRNH",
-        "FIMSMGR.FOBTEXT",
-        "FIMSMGR.FPBEOCD",
-        "FIMSMGR.FPBPOHD",
-        "FIMSMGR.FPREOCD",
-        "FIMSMGR.FPRPODA",
-        "FIMSMGR.FPRPODT",
-        "FIMSMGR.FPRRCDT",
-        "FIMSMGR.FTVACCI",
-        "FIMSMGR.FTVACCT",
-        "FIMSMGR.FTVACIV",
-        "FIMSMGR.FTVACTL",
-        "FIMSMGR.FTVACTV",
-        "FIMSMGR.FTVADJT",
-        "FIMSMGR.FTVAGCY",
-        "FIMSMGR.FTVALCH",
-        "FIMSMGR.FTVALRG",
-        "FIMSMGR.FTVAPPQ",
-        "FIMSMGR.FTVARAT",
-        "FIMSMGR.FTVASTY",
-        "FIMSMGR.FTVATYP",
-        "FIMSMGR.FTVAUSE",
-        "FIMSMGR.FTVBCLS",
-        "FIMSMGR.FTVBDPO",
-        "FIMSMGR.FTVBUYC",
-        "FIMSMGR.FTVBUYO",
-        "FIMSMGR.FTVBUYR",
-        "FIMSMGR.FTVCHRG",
-        "FIMSMGR.FTVCLAS",
-        "FIMSMGR.FTVCOAS",
-        "FIMSMGR.FTVCOMM",
-        "FIMSMGR.FTVCRAT",
-        "FIMSMGR.FTVCSTO",
-        "FIMSMGR.FTVCTYP",
-        "FIMSMGR.FTVCUST",
-        "FIMSMGR.FTVDEPR",
-        "FIMSMGR.FTVDISC",
-        "FIMSMGR.FTVDTYP",
-        "FIMSMGR.FTVECLS",
-        "FIMSMGR.FTVEDIT",
-        "FIMSMGR.FTVEELC",
-        "FIMSMGR.FTVEELI",
-        "FIMSMGR.FTVEELT",
-        "FIMSMGR.FTVEENT",
-        "FIMSMGR.FTVEQPT",
-        "FIMSMGR.FTVEQUL",
-        "FIMSMGR.FTVEXRT",
-        "FIMSMGR.FTVFBAL",
-        "FIMSMGR.FTVFMGR",
-        "FIMSMGR.FTVFOBS",
-        "FIMSMGR.FTVFSPD",
-        "FIMSMGR.FTVFSYR",
-        "FIMSMGR.FTVFTYP",
-        "FIMSMGR.FTVFUND",
-        "FIMSMGR.FTVHBUD",
-        "FIMSMGR.FTVIMGR",
-        "FIMSMGR.FTVINRT",
-        "FIMSMGR.FTVINTS",
-        "FIMSMGR.FTVINVM",
-        "FIMSMGR.FTVINVT",
-        "FIMSMGR.FTVIRTO",
-        "FIMSMGR.FTVITYP",
-        "FIMSMGR.FTVIVTP",
-        "FIMSMGR.FTVLOCN",
-        "FIMSMGR.FTVOBPH",
-        "FIMSMGR.FTVOBUD",
-        "FIMSMGR.FTVORGN",
-        "FIMSMGR.FTVPAYM",
-        "FIMSMGR.FTVPCLS",
-        "FIMSMGR.FTVPOOL",
-        "FIMSMGR.FTVPRCE",
-        "FIMSMGR.FTVPROG",
-        "FIMSMGR.FTVPROJ",
-        "FIMSMGR.FTVPRST",
-        "FIMSMGR.FTVRCMT",
-        "FIMSMGR.FTVRECP",
-        "FIMSMGR.FTVRGRC",
-        "FIMSMGR.FTVRGUS",
-        "FIMSMGR.FTVRQBD",
-        "FIMSMGR.FTVRQPO",
-        "FIMSMGR.FTVRRGH",
-        "FIMSMGR.FTVRRSN",
-        "FIMSMGR.FTVRSNC",
-        "FIMSMGR.FTVRTCL",
-        "FIMSMGR.FTVRTCT",
-        "FIMSMGR.FTVRTYP",
-        "FIMSMGR.FTVRUCL",
-        "FIMSMGR.FTVRUGR",
-        "FIMSMGR.FTVRULP",
-        "FIMSMGR.FTVSDAT",
-        "FIMSMGR.FTVSHIP",
-        "FIMSMGR.FTVSTKL",
-        "FIMSMGR.FTVTGRP",
-        "FIMSMGR.FTVTRAT",
-        "FIMSMGR.FTVTRSK",
-        "FIMSMGR.FTVUOMS",
-        "FIMSMGR.FTVUVMS",
-        "FIMSMGR.FTVVEND",
-        "FIMSMGR.FTVVENT",
-        "FIMSMGR.FTVVTYP",
-        "FTAEMGR.FTCRACTG",
-        "FTAEMGR.FTPBPORT",
-        "FTAEMGR.FTPREXPS",
-        "FTAEMGR.FTPRITIN",
-        "FTAEMGR.FTRBREMB",
-        "FTAEMGR.FTTVCURR",
-        "FTAEMGR.FTTVDRAT",
-        "FTAEMGR.FTTVEXPT",
-        "FTAEMGR.FTTVPAYM",
-        "FTVORGN@PROD.EDU",
-        "GENERAL.GLBEXTR",
-        "GENERAL.GOBEACC",
-        "GENERAL.GOBINTL",
-        "GENERAL.GOBSRVR",
-        "GENERAL.GOBTPAC",
-        "GENERAL.GORDOCM",
-        "GENERAL.GOREMAL",
-        "GENERAL.GORPGEO",
-        "GENERAL.GORPRAC",
-        "GENERAL.GORRACE",
-        "GENERAL.GORSGEO",
-        "GENERAL.GORSRVR",
-        "GENERAL.GORVISA",
-        "GENERAL.GTVDICD",
-        "GENERAL.GTVINSM",
-        "GENERAL.GTVMAIL",
-        "GENERAL.GTVPPRN",
-        "GENERAL.GTVRRAC",
-        "GENERAL.GTVSDAX",
-        "GENERAL.GUBSRVY",
-        "GENERAL.GURAPAY",
-        "GENERAL.GURFEED",
-        "GENERAL.GURMAIL",
-        "GENERAL.GURSRVQ",
-        "GENERAL.GXRDIRD",
-        "GRAILSAT.\"STATE\"",
-        "GRAILSAT.ADDRESS",
-        "GRAILSAT.ADM_INTERACTION",
-        "GRAILSAT.APPOINTMENT",
-        "GRAILSAT.APPOINTMENT_PERSON",
-        "GRAILSAT.APPT_RATING",
-        "GRAILSAT.APPT_STATUS",
-        "GRAILSAT.APPT_STATUS_GROUP",
-        "GRAILSAT.APPT_TYPE",
-        "GRAILSAT.APPT_TYPE_GROUP",
-        "GRAILSAT.EMAIL",
-        "GRAILSAT.FACREGISTRATION",
-        "GRAILSAT.FACWORKSHOP",
-        "GRAILSAT.GEO_MARKET",
-        "GRAILSAT.ORG",
-        "GRAILSAT.ORG_CUSTOM",
-        "GRAILSAT.ORG_CUSTOM_FIELD",
-        "GRAILSAT.ORG_CUSTOM_VALUE",
-        "GRAILSAT.ORG_PERSON",
-        "GRAILSAT.ORG_PERSON_TYPE",
-        "GRAILSAT.ORG_TYPE",
-        "GRAILSAT.ORG_TYPE_GROUP",
-        "GRAILSAT.PERSON",
-        "GRAILSAT.PHONE",
-        "GRAILSAT.STAFF",
-        "GRAILSAT.STUDENT_SUCCESS_INTERACTION",
-        "GRAILSCT.ATTENDANCE",
-        "GRAILSCT.ATTENDANCE_ARCH",
-        "GRAILSCT.ATTENDANCE_DETAIL",
-        "GRAILSCT.ATTENDANCE_DETAIL_ARCH",
-        "GRAILSCT.ATTENDANCE_DETAIL_HISTORY",
-        "GRAILSCT.ATTENDANCE_DETAIL_ONLINE",
-        "GRAILSCT.ATTENDANCE_NOTATION",
-        "GRAILSCT.ATTENDANCE_ONLINE",
-        "GRAILSCT.LAST_ATTENDANCE",
-        "GRAILSCT.LAST_ATTENDANCE_ONLINE",
-        "GRAILSCT.NOTATION_RECORD",
-        "GRAILSCT.ONLINE_ABSENCE",
-        "GRAILSCT.ONLINE_NOTATION_RECORD",
-        "GRAILSCT.OPP",
-        "GRAILSCT.OPP_DETAIL",
-        "GRAILSRF.FISCAL_YEAR",
-        "GRAILSRF.GOAL",
-        "GRAILSRF.GOAL_TYPE",
-        "GRAILSRF.ITEM",
-        "GRAILSRF.OBJECTIVE",
-        "GRAILSRF.OBJECTIVE_RANKING",
-        "GRAILSRF.REQUEST",
-        "GRAILSRF.REQUEST_GOAL",
-        "GRAILSRF.REQUEST_LOCATIONS",
-        "GRAILSRF.REQUEST_OBJECTIVE_RANK",
-        "GRAILSRF.REQUEST_RANKING",
-        "GRAILSRF.ROUTING_MESSAGE",
-        "GRAILSRF.ROUTING_NOTIFICATION",
-        "GRAILSRF.ROUTING_ROLE",
-        "GRAILSRF.ROUTING_RULES",
-        "GRAILSRF.ROUTING_STATE",
-        "GRAILSRF.TYPE",
-        "GRAILSRF.USER_ROLE",
-        "GRAILSSF.SWAFFORM",
-        "HOUSINGUSER.AS_IMPORT_2006",
-        "HOUSINGUSER.STARREZ_BOOKINGS",
-        "HOUSINGUSER.TBLBEDS",
-        "HOUSINGUSER.TBLBILLING",
-        "HOUSINGUSER.TBLCANCELREASONS",
-        "HOUSINGUSER.TBLGHOSTASSIGNMENTS",
-        "HOUSINGUSER.TBLHALLS",
-        "HOUSINGUSER.TBLROOMASSIGNMENTS",
-        "HOUSINGUSER.TBLROOMS",
-        "HOUSINGUSER.TBLSTUDENTATTRIBUTELISTOPTIONS",
-        "HOUSINGUSER.TBLSTUDENTATTRIBUTES",
-        "HOUSINGUSER.TBLSTUDENTBILLING",
-        "HOUSINGUSER.TBLSTUDENTS",
-        "HOUSINGUSER.TBLSTUDENTTIMEFRAMES",
-        "HOUSINGUSER.TBLTIMEFRAME",
-        "LOCAL.WGBADMJ",
-        "LOCAL.WGRADVR",
-        "LOCAL.WGRCPMT",
-        "LOCAL.WOBSRVR",
-        "LOCAL.WORSRVR",
-        "LOCAL.WPRCMNT",
-        "LOCAL.WUBSRVY",
-        "LOCAL.WURSRVQ",
-        "LOCAL.WWBINRP",
-        "MYSCAD_USER.ATRIUM_ICLASS_DATA",
-        "MYSCAD_USER.BB_TRAINING_DATA",
-        "MYSCAD_USER.COVID_COURSE_NOTIFICATION",
-        "MYSCAD_USER.FESTIVAL_REGISTRATION",
-        "MYSCAD_USER.REGISTRATION_SURVEY_RESPONSES",
-        "MYSCAD_USER.SCHEDULE_ACKNOWLEDGMENT_RESPONSES",
-        "MYSCAD_USER.TMP_LOGIN_DATES",
-        "MYSCAD_USER.TMP_NETID_LOGIN_DATES",
-        "MYSCAD_USER.VACCINE_EXEMPT",
-        "MYSCAD_USER.VACCINE_TESTING",
-        "NBRBJOB@PROD.EDU",
-        "NBRJOBS@PROD.EDU",
-        "ODSMGR.ACADEMIC_STUDY",
-        "ODSMGR.AS_NONINSTRUCTIONAL_ASSIGNMENT",
-        "ODSMGR.EMPLOYEE",
-        "ODSMGR.EMPLOYEE_POSITION",
-        "ODSMGR.MEETING_TIME",
-        "ODSMGR.PERSON_DETAIL",
-        "ODSMGR.SCAD_HR_EMPLOYEE",
-        "ODSMGR.SCAD_HR_EMP_POSITION",
-        "ODSMGR.SCAD_MST_SFRSTCA",
-        "ODSMGR.SCAD_MST_SORRTRM",
-        "ODSMGR.SCAD_MST_SPRADDR",
-        "ODSMGR.SCAD_MST_STVNATN",
-        "ODSMGR.SCAD_SCADLOC_CONTRACT_FACULTY",
-        "ODSMGR.SCAD_SCADLOC_CONTRACT_TYPE",
-        "ODSMGR.SCAD_SCADLOC_CONTRACT_YEAR",
-        "ODSMGR.SCAD_SF_CONTACT",
-        "ODSMGR.SCHEDULE_OFFERING",
-        "PAYROLL.PEBEMPL",
-        "PAYROLL.PTRECLS",
-        "PAYROLL.PTRERST",
-        "PAYROLL.PTRJCRE",
-        "PEBEMPL@PROD.EDU",
-        "POSNCTL.NBBPOSN",
-        "POSNCTL.NBRBJOB",
-        "POSNCTL.NBRJOBS",
-        "PPRCCMT",
-        "PTRECLS@PROD.EDU",
-        "PTRTREA@PROD.EDU",
-        "PTVCMTY",
-        "READER",
-        "RELATEMGR.ECOPSPLOGIN",
-        "RELATEMGR.ECV_FUNNEL_STATUS",
-        "RELATEMGR.REL_COMMUNICATION_OPT_OUT",
-        "RELATEMGR.REL_INTERACTIONCATEGORY",
-        "RELATEMGR.REL_INTERACTIONLOG",
-        "RELATEMGR.REL_INTERACTIONTYPE",
-        "ROBPRDS",
-        "ROOM_ASSIGNMENT",
-        "RORPRDS",
-        "RORWEBA",
-        "RRRAREQ",
-        "SATURN.SARAATT",
-        "SATURN.SARACMT",
-        "SATURN.SARADAP",
-        "SATURN.SARAPPD",
-        "SATURN.SARCHKL",
-        "SATURN.SARCHRT",
-        "SATURN.SCBCRKY",
-        "SATURN.SCBCRSE",
-        "SATURN.SCBDESC",
-        "SATURN.SCRATTR",
-        "SATURN.SCREQIV",
-        "SATURN.SCRFEES",
-        "SATURN.SCRGMOD",
-        "SATURN.SCRLEVL",
-        "SATURN.SCRRARE",
-        "SATURN.SCRRATT",
-        "SATURN.SCRRCAM",
-        "SATURN.SCRRCHR",
-        "SATURN.SCRRCLS",
-        "SATURN.SCRRCOL",
-        "SATURN.SCRRDEG",
-        "SATURN.SCRRDEP",
-        "SATURN.SCRRLVL",
-        "SATURN.SCRRMAJ",
-        "SATURN.SCRRPRG",
-        "SATURN.SCRRTST",
-        "SATURN.SCRSCHD",
-        "SATURN.SCRSYLN",
-        "SATURN.SCRSYLO",
-        "SATURN.SCRTEXT",
-        "SATURN.SFBETRM",
-        "SATURN.SFBFFSC",
-        "SATURN.SFBRGRP",
-        "SATURN.SFRENRL",
-        "SATURN.SFRSRPO",
-        "SATURN.SFRSTCA",
-        "SATURN.SFRSTCR",
-        "SATURN.SFRTHST",
-        "SATURN.SFRWLNT",
-        "SATURN.SGBSTDN",
-        "SATURN.SGRADVR",
-        "SATURN.SGRATHA",
-        "SATURN.SGRAVAS",
-        "SATURN.SGRAVRL",
-        "SATURN.SGRCHRT",
-        "SATURN.SGRSACT",
-        "SATURN.SGRSATT",
-        "SATURN.SGRSCMT",
-        "SATURN.SGRSPRT",
-        "SATURN.SGRVETN",
-        "SATURN.SHBCATT",
-        "SATURN.SHBDIPL",
-        "SATURN.SHBGAPP",
-        "SATURN.SHBTATC",
-        "SATURN.SHRCATT",
-        "SATURN.SHRDGMR",
-        "SATURN.SHREVNT",
-        "SATURN.SHRGRDE",
-        "SATURN.SHRICMT",
-        "SATURN.SHRLGPA",
-        "SATURN.SHRNCRS",
-        "SATURN.SHRTATC",
-        "SATURN.SHRTCKG",
-        "SATURN.SHRTCKL",
-        "SATURN.SHRTCKN",
-        "SATURN.SHRTCMT",
-        "SATURN.SHRTGPA",
-        "SATURN.SHRTGRD",
-        "SATURN.SHRTMCM",
-        "SATURN.SHRTRAM",
-        "SATURN.SHRTRAT",
-        "SATURN.SHRTRCE",
-        "SATURN.SHRTRCR",
-        "SATURN.SHRTRIT",
-        "SATURN.SHRTTRM",
-        "SATURN.SHTTRAN",
-        "SATURN.SIBINST",
-        "SATURN.SIRASGN",
-        "SATURN.SIRATTR",
-        "SATURN.SIRDPCL",
-        "SATURN.SIRICNT",
-        "SATURN.SIRNIST",
-        "SATURN.SLBBLDG",
-        "SATURN.SLBRDEF",
-        "SATURN.SLRMASG",
-        "SATURN.SLRRASG",
-        "SATURN.SLRRDEF",
-        "SATURN.SMBAGEN",
-        "SATURN.SMBAOGN",
-        "SATURN.SMBPGEN",
-        "SATURN.SMBPOGN",
-        "SATURN.SMBSAGN",
-        "SATURN.SMRACAA",
-        "SATURN.SMRDORQ",
-        "SATURN.SMRPONC",
-        "SATURN.SMRPRLE",
-        "SATURN.SMRSACA",
-        "SATURN.SMRSSPV",
-        "SATURN.SMRSSUB",
-        "SATURN.SMRSTRG",
-        "SATURN.SMRSWAV",
-        "SATURN.SMRSWPV",
-        "SATURN.SOBPTRM",
-        "SATURN.SOBSBGI",
-        "SATURN.SOBTERM",
-        "SATURN.SORADAS",
-        "SATURN.SORADDA",
-        "SATURN.SORAINF",
-        "SATURN.SORBTAC",
-        "SATURN.SORBTAG",
-        "SATURN.SORBTAI",
-        "SATURN.SORBTAL",
-        "SATURN.SORBTAP",
-        "SATURN.SORDEGR",
-        "SATURN.SORFOLK",
-        "SATURN.SORHSCH",
-        "SATURN.SORINTS",
-        "SATURN.SORLCUR",
-        "SATURN.SORLFOS",
-        "SATURN.SORPCOL",
-        "SATURN.SORRTRM",
-        "SATURN.SORTEST",
-        "SATURN.SPBPERS",
-        "SATURN.SPRADDR",
-        "SATURN.SPRAPIN",
-        "SATURN.SPRCMNT",
-        "SATURN.SPREMRG",
-        "SATURN.SPRHOLD",
-        "SATURN.SPRIDEN",
-        "SATURN.SPRTELE",
-        "SATURN.SRBRECR",
-        "SATURN.SSBSECT",
-        "SATURN.SSBXLST",
-        "SATURN.SSRATTR",
-        "SATURN.SSRMEET",
-        "SATURN.SSRRARE",
-        "SATURN.SSRRCHR",
-        "SATURN.SSRRCLS",
-        "SATURN.SSRRCMP",
-        "SATURN.SSRRCOL",
-        "SATURN.SSRRDEG",
-        "SATURN.SSRRDEP",
-        "SATURN.SSRRESV",
-        "SATURN.SSRRLVL",
-        "SATURN.SSRRMAJ",
-        "SATURN.SSRRPRG",
-        "SATURN.SSRRTST",
-        "SATURN.SSRSYLN",
-        "SATURN.SSRXLST",
-        "SATURN.STVACAT",
-        "SATURN.STVACCG",
-        "SATURN.STVACCL",
-        "SATURN.STVACCT",
-        "SATURN.STVACPR",
-        "SATURN.STVACST",
-        "SATURN.STVACTC",
-        "SATURN.STVACTN",
-        "SATURN.STVACTP",
-        "SATURN.STVACYR",
-        "SATURN.STVADDA",
-        "SATURN.STVADMR",
-        "SATURN.STVADMT",
-        "SATURN.STVADVR",
-        "SATURN.STVAFCT",
-        "SATURN.STVAFDC",
-        "SATURN.STVAPDC",
-        "SATURN.STVAPLS",
-        "SATURN.STVAPRN",
-        "SATURN.STVAPRV",
-        "SATURN.STVAPST",
-        "SATURN.STVAREA",
-        "SATURN.STVARTP",
-        "SATURN.STVASCD",
-        "SATURN.STVASRC",
-        "SATURN.STVASTA",
-        "SATURN.STVASTD",
-        "SATURN.STVASTY",
-        "SATURN.STVATRA",
-        "SATURN.STVATRB",
-        "SATURN.STVATRC",
-        "SATURN.STVATRD",
-        "SATURN.STVATRE",
-        "SATURN.STVATTR",
-        "SATURN.STVATTS",
-        "SATURN.STVATYP",
-        "SATURN.STVBCHR",
-        "SATURN.STVBLCK",
-        "SATURN.STVBLDG",
-        "SATURN.STVBSKL",
-        "SATURN.STVCACT",
-        "SATURN.STVCALD",
-        "SATURN.STVCAMP",
-        "SATURN.STVCAPL",
-        "SATURN.STVCAST",
-        "SATURN.STVCCSL",
-        "SATURN.STVCERT",
-        "SATURN.STVCGRP",
-        "SATURN.STVCHRT",
-        "SATURN.STVCIPC",
-        "SATURN.STVCITZ",
-        "SATURN.STVCKSR",
-        "SATURN.STVCKST",
-        "SATURN.STVCLAS",
-        "SATURN.STVCMTT",
-        "SATURN.STVCNTR",
-        "SATURN.STVCNTY",
-        "SATURN.STVCOLL",
-        "SATURN.STVCOMF",
-        "SATURN.STVCOMS",
-        "SATURN.STVCOMT",
-        "SATURN.STVCOPC",
-        "SATURN.STVCPLN",
-        "SATURN.STVCPRT",
-        "SATURN.STVCREA",
-        "SATURN.STVCRSS",
-        "SATURN.STVCSTA",
-        "SATURN.STVCSTS",
-        "SATURN.STVCTYP",
-        "SATURN.STVCUDA",
-        "SATURN.STVCUDB",
-        "SATURN.STVCUDC",
-        "SATURN.STVCUDD",
-        "SATURN.STVCUDE",
-        "SATURN.STVCUDF",
-        "SATURN.STVDAYS",
-        "SATURN.STVDAYT",
-        "SATURN.STVDCPR",
-        "SATURN.STVDEGC",
-        "SATURN.STVDEGS",
-        "SATURN.STVDEPS",
-        "SATURN.STVDEPT",
-        "SATURN.STVDFLT",
-        "SATURN.STVDISA",
-        "SATURN.STVDIVS",
-        "SATURN.STVDLEV",
-        "SATURN.STVDPLM",
-        "SATURN.STVDPMR",
-        "SATURN.STVDRES",
-        "SATURN.STVDSTS",
-        "SATURN.STVEAPL",
-        "SATURN.STVEDIS",
-        "SATURN.STVEDLV",
-        "SATURN.STVEGOL",
-        "SATURN.STVEGRP",
-        "SATURN.STVELIG",
-        "SATURN.STVELMT",
-        "SATURN.STVEMEX",
-        "SATURN.STVEMPL",
-        "SATURN.STVEMPT",
-        "SATURN.STVEOPS",
-        "SATURN.STVEPRT",
-        "SATURN.STVEPSC",
-        "SATURN.STVESEL",
-        "SATURN.STVESTS",
-        "SATURN.STVETCT",
-        "SATURN.STVETHN",
-        "SATURN.STVETYP",
-        "SATURN.STVEVAL",
-        "SATURN.STVEVEN",
-        "SATURN.STVEXAM",
-        "SATURN.STVFATT",
-        "SATURN.STVFCNT",
-        "SATURN.STVFCST",
-        "SATURN.STVFCTG",
-        "SATURN.STVFFVA",
-        "SATURN.STVFSTP",
-        "SATURN.STVFTYP",
-        "SATURN.STVGADR",
-        "SATURN.STVGAIN",
-        "SATURN.STVGAST",
-        "SATURN.STVGATT",
-        "SATURN.STVGCHG",
-        "SATURN.STVGCMT",
-        "SATURN.STVGEOD",
-        "SATURN.STVGEOR",
-        "SATURN.STVGMOD",
-        "SATURN.STVGOAL",
-        "SATURN.STVGPAT",
-        "SATURN.STVGRST",
-        "SATURN.STVGSTA",
-        "SATURN.STVGTYP",
-        "SATURN.STVHAPS",
-        "SATURN.STVHLDD",
-        "SATURN.STVHLWK",
-        "SATURN.STVHOND",
-        "SATURN.STVHONR",
-        "SATURN.STVINCM",
-        "SATURN.STVINFC",
-        "SATURN.STVINIT",
-        "SATURN.STVINNM",
-        "SATURN.STVINTS",
-        "SATURN.STVINTV",
-        "SATURN.STVLANG",
-        "SATURN.STVLEAD",
-        "SATURN.STVLEAV",
-        "SATURN.STVLEND",
-        "SATURN.STVLEVL",
-        "SATURN.STVLGCY",
-        "SATURN.STVLMOD",
-        "SATURN.STVMAJR",
-        "SATURN.STVMARS",
-        "SATURN.STVMATL",
-        "SATURN.STVMDEQ",
-        "SATURN.STVMEAS",
-        "SATURN.STVMECL",
-        "SATURN.STVMEDI",
-        "SATURN.STVMEET",
-        "SATURN.STVMRCD",
-        "SATURN.STVMRTL",
-        "SATURN.STVMSCD",
-        "SATURN.STVNATN",
-        "SATURN.STVNATT",
-        "SATURN.STVNCRQ",
-        "SATURN.STVNCST",
-        "SATURN.STVNDRF",
-        "SATURN.STVNEED",
-        "SATURN.STVNIST",
-        "SATURN.STVOCCS",
-        "SATURN.STVORIG",
-        "SATURN.STVORSN",
-        "SATURN.STVPENT",
-        "SATURN.STVPRAC",
-        "SATURN.STVPRCD",
-        "SATURN.STVPREL",
-        "SATURN.STVPREV",
-        "SATURN.STVPRGA",
-        "SATURN.STVPRNT",
-        "SATURN.STVPROC",
-        "SATURN.STVPSCD",
-        "SATURN.STVPTRM",
-        "SATURN.STVPTYP",
-        "SATURN.STVPWAV",
-        "SATURN.STVQPTP",
-        "SATURN.STVRADM",
-        "SATURN.STVRATE",
-        "SATURN.STVRATP",
-        "SATURN.STVRDEF",
-        "SATURN.STVREAS",
-        "SATURN.STVRECR",
-        "SATURN.STVRELG",
-        "SATURN.STVRELT",
-        "SATURN.STVREPS",
-        "SATURN.STVRESD",
-        "SATURN.STVRGRE",
-        "SATURN.STVRMST",
-        "SATURN.STVROLE",
-        "SATURN.STVROVR",
-        "SATURN.STVRRCD",
-        "SATURN.STVRSLT",
-        "SATURN.STVRSTA",
-        "SATURN.STVRSTS",
-        "SATURN.STVRTRM",
-        "SATURN.STVRTYP",
-        "SATURN.STVSAAT",
-        "SATURN.STVSAEL",
-        "SATURN.STVSAPR",
-        "SATURN.STVSAQS",
-        "SATURN.STVSARE",
-        "SATURN.STVSARX",
-        "SATURN.STVSATR",
-        "SATURN.STVSATT",
-        "SATURN.STVSBGI",
-        "SATURN.STVSBJC",
-        "SATURN.STVSCCD",
-        "SATURN.STVSCHD",
-        "SATURN.STVSEPR",
-        "SATURN.STVSESS",
-        "SATURN.STVSFAE",
-        "SATURN.STVSITE",
-        "SATURN.STVSIZE",
-        "SATURN.STVSOFF",
-        "SATURN.STVSPON",
-        "SATURN.STVSPRV",
-        "SATURN.STVSPSR",
-        "SATURN.STVSPST",
-        "SATURN.STVSSEP",
-        "SATURN.STVSSER",
-        "SATURN.STVSSGP",
-        "SATURN.STVSSRS",
-        "SATURN.STVSSST",
-        "SATURN.STVSSTS",
-        "SATURN.STVSTAT",
-        "SATURN.STVSTST",
-        "SATURN.STVSTYP",
-        "SATURN.STVSUBJ",
-        "SATURN.STVSUDA",
-        "SATURN.STVSUDB",
-        "SATURN.STVSUDC",
-        "SATURN.STVSUDD",
-        "SATURN.STVSUDE",
-        "SATURN.STVSUDF",
-        "SATURN.STVSUDG",
-        "SATURN.STVSUDH",
-        "SATURN.STVSUDI",
-        "SATURN.STVSUDJ",
-        "SATURN.STVTAAU",
-        "SATURN.STVTADM",
-        "SATURN.STVTAPE",
-        "SATURN.STVTASK",
-        "SATURN.STVTAST",
-        "SATURN.STVTEAC",
-        "SATURN.STVTEFR",
-        "SATURN.STVTEIN",
-        "SATURN.STVTELE",
-        "SATURN.STVTEPR",
-        "SATURN.STVTERM",
-        "SATURN.STVTESC",
-        "SATURN.STVTLVL",
-        "SATURN.STVTMST",
-        "SATURN.STVTOPS",
-        "SATURN.STVTOST",
-        "SATURN.STVTPFD",
-        "SATURN.STVTPRT",
-        "SATURN.STVTRAC",
-        "SATURN.STVTRCN",
-        "SATURN.STVTREQ",
-        "SATURN.STVTRMT",
-        "SATURN.STVTRNS",
-        "SATURN.STVTSPT",
-        "SATURN.STVTSRC",
-        "SATURN.STVTYPE",
-        "SATURN.STVVETC",
-        "SATURN.STVVOED",
-        "SATURN.STVVTAB",
-        "SATURN.STVVTYP",
-        "SATURN.STVWACK",
-        "SATURN.STVWAIV",
-        "SATURN.STVWAPP",
-        "SATURN.STVWDRL",
-        "SATURN.STVWKLD",
-        "SATURN.STVWLTT",
-        "SATURN.STVWPIC",
-        "SATURN.STVWPYO",
-        "SATURN.STVWRSN",
-        "SATURN.STVWSCF",
-        "SATURN.STVWSCT",
-        "SATURN.STVWSSO",
-        "SATURN.STVWTHD",
-        "SATURN.STVXLBL",
-        "SCADEFORMS.HOUSING_EXEMPTION",
-        "SCADEFORMS.LIABILITY_WAIVER",
-        "SCADEFORMS.REGISTRATION_INTEREST_CONFIRMATION",
-        "SCADEFORMS.REGISTRATION_OFFERING_PERIOD",
-        "SCADEFORMS.REGISTRATION_PHASE",
-        "SCADEFORMS.REGISTRATION_REGISTRANT",
-        "SCADEFORMS.SAND_ARTS_CATEGORY_ASSIGNMENT",
-        "SCADEFORMS.SCAD_PRO_PROJECT",
-        "SCADEFORMS.SCAD_PRO_SUBMISSION",
-        "SCADEFORMS.STUDENT_CELEBRATION_SUBMISSION",
-        "SCADEFORMS.STUDENT_CELEBRATION_SUBMISSION_TYPES",
-        "SCADEFORMS.STUDENT_CELEBRATION_TYPE",
-        "SCADEM.NICHE_COND_ADMIT",
-        "SCADEM.PERSON",
-        "SCADEM.REGISTRATION",
-        "SCADEM.SCAD_BOUND",
-        "SCADEM.SYNC_RECORD",
-        "SCADEM.V_EVENT",
-        "SCADEM.V_EVENT_CATEGORY",
-        "SCADFAC.CANDIDATES",
-        "SCADFAC.COGNATES",
-        "SCADFAC.EDUCATIONS",
-        "SCADFAC.POSITIONS",
-        "SCADLOCAL.CONTRACT_ADOBESIGN",
-        "SCADLOCAL.CONTRACT_FACULTY",
-        "SCADLOCAL.CONTRACT_REVIEW",
-        "SCADLOCAL.CONTRACT_REVIEW_EMERITUS",
-        "SCADLOCAL.CONTRACT_REVIEW_EXCLUSIONS",
-        "SCADLOCAL.CONTRACT_REVIEW_FINAL",
-        "SCADLOCAL.CONTRACT_REVIEW_XTRA",
-        "SCADLOCAL.CONTRACT_STATUS",
-        "SCADLOCAL.CONTRACT_TYPE",
-        "SCADLOCAL.CONTRACT_YEAR",
-        "SCADLOCAL.FACULTY_SPECIAL_CONTRACTS",
-        "SCADLOCAL.FACULTY_SPECIAL_REDUCED_NEW",
-        "SCADLOCAL.FALL2021_SURVEY",
-        "SCADLOCAL.FSC_CAPTAIN_STEP3",
-        "SCADLOCAL.FSC_NOTIFICATION",
-        "SCADLOCAL.HR_FAC_MANUAL_UPDATES_CY",
-        "SCADLOCAL.HR_FAC_YRS_RED_FORMAT",
-        "SCADLOCAL.HR_GRADE_FAC_CY",
-        "SCADLOCAL.HR_GRADE_FAC_DEPT_CY",
-        "SCADLOCAL.HR_GRADE_STAFF",
-        "SCADLOCAL.LOCATION",
-        "SCADLOCAL.MPLN_ASSIGNMENT",
-        "SCADLOCAL.MPLN_EXEMPTION",
-        "SCADLOCAL.ORG_VP_SCH",
-        "SCADLOCAL.PERSONAL_MAILBOX",
-        "SCADLOCAL.QMEALSERVICELIST",
-        "SCADLOCAL.QMEALSERVICEREQUEST",
-        "SCADLOCAL.REVIEWER",
-        "SCADLOCAL.REVIEWER_ROLE",
-        "SCADLOCAL.ROLE",
-        "SCADLOCAL.SCHOOL",
-        "SCADLOCAL.SCHOOL_MERIT_RATING",
-        "SCADLOCAL.SCRSYST",
-        "SCADLOCAL.SCRSYWS",
-        "SCADLOCAL.TMPGIFT",
-        "SCADLOCAL.VACCINE_RESPONSE",
-        "SCADLOCAL.VACCINE_SURVEY",
-        "SCADLOCAL.VS_APPOINTMENT",
-        "SCADLOCAL.VS_APPOINTMENT_USER",
-        "SCADLOCAL.VS_USER",
-        "SCADLOCAL.WFRCSAE",
-        "SCADLOCAL.WGBHKPL",
-        "SCADLOCAL.WGBSWOR",
-        "SCADLOCAL.WGBSWOR06",
-        "SCADLOCAL.WGBSWOR_ARCHIVE",
-        "SCADLOCAL.WGBYRKG",
-        "SCADLOCAL.WGBYRKP",
-        "SCADLOCAL.WGBYRKV",
-        "SCADLOCAL.WGCCOA",
-        "SCADLOCAL.WGCNCR",
-        "SCADLOCAL.WGRAGIL",
-        "SCADLOCAL.WGRAGRE",
-        "SCADLOCAL.WGRFACL",
-        "SCADLOCAL.WGRPLOG",
-        "SCADLOCAL.WGRYRKS",
-        "SCADLOCAL.WGVYRKA",
-        "SCADLOCAL.WSBPRLE",
-        "SCADLOCAL.WSRAADT",
-        "SCADLOCAL.WSRATTD",
-        "SCADLOCAL.WSRFFBK",
-        "SCADLOCAL.WSRFFST",
-        "SCADLOCAL.WSVEACT",
-        "SCADLOCAL.WTRISSO",
-        "SCADLOCAL.WWBADBE",
-        "SCADSF.CONTACT_TRACING_TIX",
-        "SCADSF.DAILY_HEALTH_CHECK",
-        "SCADSF.HITL_COVID_TEST",
-        "SCADSF.HITL_VACCINE",
-        "SCADSF.SF_ACCOUNT",
-        "SCADSF.SF_ACCT_CONTACTROLE",
-        "SCADSF.SF_ATTRIBUTE",
-        "SCADSF.SF_CONTACT",
-        "SCADSF.SF_OPPORTUNITY",
-        "SCADSF.SF_PROJECT",
-        "SCADSF.SF_PROJECT_PARTICIPANT",
-        "SCADSF.SF_RECRUITMENT_EVENT",
-        "SCADSF.SF_RELATIONSHIP",
-        "SCADSF.SF_SCAD_CAMPAIGN",
-        "SCADSF.SF_SCAD_CAMPAIGN_MEMBER",
-        "SCADSF.SF_SCHOLASTIC_ATTR",
-        "SCADSF.SF_TERM",
-        "SCADSF.SF_USER",
-        "SCADSF.WXWALK",
-        "SCADSF.WXWALKNATION",
-        "SCAD_LENEL_CUSTOM",
-        "SOBCACT",
-        "SPRIDEN@PROD.EDU",
-        "SSD_AXIOM.AXIOMFILELOADS",
-        "SSD_AXIOM.AXIOMPAIDAPPS",
-        "SSD_AXIOM.AXIOMPROSPECTS",
-        "SSD_AXIOM.AXIOMTESTSCORES",
-        "SSRRATT",
-        "SSRSYLO",
-        "SSRSYRM",
-        "SSRSYTR",
-        "STUDENT_COURSE",
-        "TAISMGR.TBBACCT",
-        "TAISMGR.TBBDETC",
-        "TAISMGR.TBBEACT",
-        "TAISMGR.TBRACCD",
-        "TAISMGR.TBRACCT",
-        "TAISMGR.TBRAPPL",
-        "TAISMGR.TBRCMNT",
-        "TAISMGR.TBRDEPO",
-        "TAISMGR.TBRISTL",
-        "TAISMGR.TBRMEMO",
-        "TAISMGR.TTVBILL",
-        "TAISMGR.TTVCCRD",
-        "TAISMGR.TTVDCAT",
-        "TAISMGR.TTVDELI",
-        "TAISMGR.TTVDTYP",
-        "TAISMGR.TTVECAT",
-        "TAISMGR.TTVPAYT",
-        "TAISMGR.TTVREPT",
-        "TAISMGR.TTVRHLD",
-        "TAISMGR.TTVSBRC",
-        "TAISMGR.TTVSRCE",
-        "TAISMGR.TTVTAXT",
-        "TAISMGR.TTVTBDS",
-        "TAISMGR.TTVTPRC",
-        "TAISMGR.TVRAUTH",
-        "WGBARDM",
-        "WGBMSCAD",
-        "WGRARDV",
-        "WSVOSBL",
-        "[DEGREE CONCENTRATION].CONCENTRATION",
-        "[FAISMGR].[RCRAPP1]",
-        "[FAISMGR].[RCRAPP3]",
-        "[FAISMGR].[RORSTAT]",
-        "[SATURN].[SPBPERS]",
-        "[SATURN].[SPRIDEN]"
+        {
+            "table": "\"STATE\"",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "AA_PLEDGE_DETAIL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ACADEMIC_STUDY",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "ACADEMIC_STUDY",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ACCESSLVL",
+            "cmDataSource": "Lenel-AccessControl",
+            "schema": ""
+        },
+        {
+            "table": "ADBDESG",
+            "cmDataSource": "CLON",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "ADBDESG",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "ADBDESG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ADDRESS",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ADM_INTERACTION",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "AF_ACCTG_DISTRIBUTION_ANALYSIS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_DISBURSEMENT_ANALYSIS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_GRANT_BUDGET_DETAIL_TRANS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_GRANT_BUDGET_STATUS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_GRANT_BUDGET_TRANSACTION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_GRANT_COSTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_PERIODIC_BALANCE_SHEET",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_PERIOD_OPERATING_STATEMENT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_RECONCILIATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_TRANSACTION_DETAIL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_YEARLY_BALANCE_SHEET",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AF_YEARLY_OPERATING_STATEMENT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AGBGIFT",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AGBGIFT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AGBPLDG",
+            "cmDataSource": "CLON",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AGBPLDG",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AGBPLDG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AGRGDES",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AGRGDES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AGRGSOL",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AGRGSOL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AGRPDES",
+            "cmDataSource": "CLON",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AGRPDES",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AGRPDES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AGRPSOL",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AGRPSOL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "APBCONS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "APPOINTMENT",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "APPOINTMENT_PERSON",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "APPT_RATING",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "APPT_STATUS",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "APPT_STATUS_GROUP",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "APPT_TYPE",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "APPT_TYPE_GROUP",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "APRCHLD",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "APRSALU",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_AWARD_DETAIL_BY_TERM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_AWARD_DETAIL_BY_YEAR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_BUDGET_COMPONENTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_FINAID_APPLICANT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_FINAID_STUDENT_SUMMARY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_TRACKING_REQUIREMENTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_ACADEMIC_HISTORY_DETAIL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_ACADEMIC_HISTORY_SUMMARY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_ADIRONDACK_NOHOUSING",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_ADMISSIONS_APPLICANT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_AGING_ANALYSIS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_CATALOG_SCHEDULE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_CLEARED_TO_ATTEND",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_FACULTY_DATA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_FSAATLAS_DATA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_IMPORT_2006",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "AS_NONINSTRUCTIONAL_ASSIGNMENT",
+            "cmDataSource": "PROD",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "AS_RECRUITING_DATA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_RECRUITING_SOURCE_ANALYSIS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_RESIDENTIAL_LIFE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_RESIDENTIAL_LIFE_CHANGES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_SEVISLINK_DATA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_STUDENT_DATA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_STUDENT_ENROLLMENT_SUMMARY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_STUDENT_REGISTRATION_DETAIL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_THIRD_PARTY_CONTRACTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ATRIUM_ICLASS_DATA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ATTENDANCE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ATTENDANCE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_ARCH",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL_ARCH",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL_HISTORY",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL_ONLINE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL_ONLINE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_NOTATION",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_ONLINE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ATTENDANCE_ONLINE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATVSOLC",
+            "cmDataSource": "PROD",
+            "schema": "ALUMNI"
+        },
+        {
+            "table": "AT_APPLICATION_OF_PAYMENTS_CHG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AT_APPLICATION_OF_PAYMENTS_PAY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AT_AR_BALANCE_BY_ENTITY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AT_AR_HISTORY_BY_BALANCE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AT_AR_HISTORY_BY_TERM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AT_DEPOSITS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AT_INSTALLMENTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AXIOMFILELOADS",
+            "cmDataSource": "PROD",
+            "schema": "SSD_AXIOM"
+        },
+        {
+            "table": "AXIOMPAIDAPPS",
+            "cmDataSource": "PROD",
+            "schema": "SSD_AXIOM"
+        },
+        {
+            "table": "AXIOMPROSPECTS",
+            "cmDataSource": "PROD",
+            "schema": "SSD_AXIOM"
+        },
+        {
+            "table": "AXIOMTESTSCORES",
+            "cmDataSource": "PROD",
+            "schema": "SSD_AXIOM"
+        },
+        {
+            "table": "BADGE",
+            "cmDataSource": "Lenel-AccessControl",
+            "schema": ""
+        },
+        {
+            "table": "BADGELINK",
+            "cmDataSource": "Lenel-AccessControl",
+            "schema": ""
+        },
+        {
+            "table": "BB_TRAINING_DATA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "CANDIDATES",
+            "cmDataSource": "PROD",
+            "schema": "SCADFAC"
+        },
+        {
+            "table": "COGNATES",
+            "cmDataSource": "PROD",
+            "schema": "SCADFAC"
+        },
+        {
+            "table": "CONCENTRATION",
+            "cmDataSource": "Degree Concentration",
+            "schema": ""
+        },
+        {
+            "table": "CONTACT_TRACING_TIX",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "CONTACT_TRACING_TIX",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_ADOBESIGN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_FACULTY",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_FACULTY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_REVIEW",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_REVIEW",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_REVIEW",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "CONTRACT_REVIEW",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_REVIEW_EMERITUS",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_REVIEW_EMERITUS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_REVIEW_EXCLUSIONS",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_REVIEW_EXCLUSIONS",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_REVIEW_EXCLUSIONS",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "CONTRACT_REVIEW_EXCLUSIONS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_REVIEW_FINAL",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_REVIEW_FINAL",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_REVIEW_FINAL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_REVIEW_XTRA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_STATUS",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_STATUS",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_STATUS",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "CONTRACT_STATUS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_TYPE",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_TYPE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_YEAR",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_YEAR",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "CONTRACT_YEAR",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "CONTRACT_YEAR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CONTRACT_YEAR",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "COVID_COURSE_NOTIFICATION",
+            "cmDataSource": "MultipleOptions",
+            "schema": "MYSCAD_USER"
+        },
+        {
+            "table": "COVID_COURSE_NOTIFICATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "CT_PROPSTAT",
+            "cmDataSource": "PROD",
+            "schema": "CTRACKING"
+        },
+        {
+            "table": "CT_SCBCRKY",
+            "cmDataSource": "PROD",
+            "schema": "CTRACKING"
+        },
+        {
+            "table": "CT_SCBCRSE",
+            "cmDataSource": "PROD",
+            "schema": "CTRACKING"
+        },
+        {
+            "table": "DAILY_HEALTH_CHECK",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "DUAL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ECOPSPLOGIN",
+            "cmDataSource": "MultipleOptions",
+            "schema": "RELATEMGR"
+        },
+        {
+            "table": "ECV_FUNNEL_STATUS",
+            "cmDataSource": "PROD",
+            "schema": "RELATEMGR"
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "EDUCATIONS",
+            "cmDataSource": "PROD",
+            "schema": "SCADFAC"
+        },
+        {
+            "table": "EMAIL",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "EMP",
+            "cmDataSource": "Lenel-AccessControl",
+            "schema": ""
+        },
+        {
+            "table": "EMPLOYEE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "EMPLOYEE_POSITION",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "EMPLOYEE_POSITION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "EVENTS",
+            "cmDataSource": "Lenel-AccessControl",
+            "schema": ""
+        },
+        {
+            "table": "FABBKTP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FABCHKA",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FABCHKS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FABINCK",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FABINVH",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FACREGISTRATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FACULTY_SPECIAL_CONTRACTS",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "FACULTY_SPECIAL_REDUCED_NEW",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "FACWORKSHOP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FALL2021_SURVEY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FARINTX",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FARINVA",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FARINVC",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FESTIVAL_REGISTRATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FGBOPAL",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FGBTRNH",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FISCAL_YEAR",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "FOBTEXT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FPBEOCD",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FPBPOHD",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FPREOCD",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FPRPODA",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FPRPODT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FPRRCDT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FSC_CAPTAIN_STEP3",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "FSC_NOTIFICATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FTCRACTG",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTPBPORT",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTPREXPS",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTPRITIN",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTRBREMB",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTTVCURR",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTTVDRAT",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTTVEXPT",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTTVPAYM",
+            "cmDataSource": "PROD",
+            "schema": "FTAEMGR"
+        },
+        {
+            "table": "FTVACCI",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVACCT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVACIV",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVACTL",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVACTV",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVADJT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVAGCY",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVALCH",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVALRG",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVAPPQ",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVARAT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVASTY",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVATYP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVAUSE",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVBCLS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVBDPO",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVBUYC",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVBUYO",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVBUYR",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVCHRG",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVCLAS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVCOAS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVCOMM",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVCRAT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVCSTO",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVCTYP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVCUST",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVDEPR",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVDISC",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVDTYP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVECLS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVEDIT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVEELC",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVEELI",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVEELT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVEENT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVEQPT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVEQUL",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVEXRT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVFBAL",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVFMGR",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVFOBS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVFSPD",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVFSYR",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVFTYP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVFUND",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVHBUD",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVIMGR",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVINRT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVINTS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVINVM",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVINVT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVIRTO",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVITYP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVIVTP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVLOCN",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVOBPH",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVOBUD",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVORGN",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "FTVORGN",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "FTVORGN",
+            "cmDataSource": "MultipleOptions",
+            "schema": "MultipleOptions"
+        },
+        {
+            "table": "FTVORGN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FTVORGN",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVPAYM",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVPCLS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVPOOL",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVPRCE",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVPROG",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVPROJ",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVPRST",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRCMT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRECP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRGRC",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRGUS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRQBD",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRQPO",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRRGH",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRRSN",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRSNC",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRTCL",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRTCT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRTYP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRUCL",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRUGR",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVRULP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVSDAT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVSHIP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVSTKL",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVTGRP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVTRAT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVTRSK",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVUOMS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVUVMS",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVVEND",
+            "cmDataSource": "CLON",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVVEND",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVVENT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVVTYP",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "GEO_MARKET",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "GFVREQU",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GFVROUT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GLBEXTR",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOAL",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "GOAL_TYPE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "GOBEACC",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOBINTL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GOBINTL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOBSRVR",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOBTPAC",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GOBTPAC",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORDOCM",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "MultipleOptions",
+            "schema": "MultipleOptions"
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORPGEO",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORPRAC",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORRACE",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORSGEO",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORSGEO",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORSRVR",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORVISA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GORVISA",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GTVDICD",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "GTVDICD",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "GTVDICD",
+            "cmDataSource": "MultipleOptions",
+            "schema": "MultipleOptions"
+        },
+        {
+            "table": "GTVDICD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GTVDICD",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GTVINSM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GTVMAIL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GTVPPRN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GTVRRAC",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GTVSDAX",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "GTVSDAX",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GUBSRVY",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GURAPAY",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GURFEED",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GURMAIL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GURSRVQ",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GXRDIRD",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "HITL_COVID_TEST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "HITL_VACCINE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "HOUSING_EXEMPTION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "HR_FAC_MANUAL_UPDATES_CY",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "HR_FAC_YRS_RED_FORMAT",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "HR_GRADE_FAC_CY",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "HR_GRADE_FAC_CY",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "HR_GRADE_FAC_DEPT_CY",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "HR_GRADE_FAC_DEPT_CY",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "HR_GRADE_STAFF",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "ITEM",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "LAST_ATTENDANCE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "LAST_ATTENDANCE_ONLINE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "LIABILITY_WAIVER",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "LIABILITY_WAIVER",
+            "cmDataSource": "PROD",
+            "schema": "SCADEFORMS"
+        },
+        {
+            "table": "LOCATION",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "LOCATION",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "LOCATION",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "LOCATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "MASTERRECORDFIELDS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "MASTERRECORDFIELDVALUES_LATEST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "MASTERRECORDNOTES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "MASTERRECORDPROGRESS_LATEST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "MASTERRECORDS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "MEETING_TIME",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "MPLN_ASSIGNMENT",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "MPLN_EXEMPTION",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "NBBPOSN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "NBBPOSN",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRBJOB",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "NBRBJOB",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "NBRBJOB",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRJOBS",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "NBRJOBS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "NBRJOBS",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NICHE_COND_ADMIT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "NOTATION_RECORD",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "OBJECTIVE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "OBJECTIVE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "OBJECTIVE_RANKING",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "OBJECTIVE_RANKING",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "ONLINE_ABSENCE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ONLINE_ABSENCE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ONLINE_NOTATION_RECORD",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "OPP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "OPP_DETAIL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ORG",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_CUSTOM",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_CUSTOM",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_CUSTOM_FIELD",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_CUSTOM_FIELD",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_CUSTOM_VALUE",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_CUSTOM_VALUE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_PERSON",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_PERSON_TYPE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_TYPE",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_TYPE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_TYPE_GROUP",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_TYPE_GROUP",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "ORG_VP_SCH",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "PEBEMPL",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "PEBEMPL",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "PEBEMPL",
+            "cmDataSource": "MultipleOptions",
+            "schema": "MultipleOptions"
+        },
+        {
+            "table": "PEBEMPL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "PEBEMPL",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERSON",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "PERSON",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "PERSON",
+            "cmDataSource": "PROD",
+            "schema": "SCADEM"
+        },
+        {
+            "table": "PERSONAL_MAILBOX",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "PERSON_DETAIL",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "PERSON_DETAIL",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "PHASES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "PHONE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "POSITIONS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "PPRCCMT",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "PPRCCMT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "PTRECLS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "PTRERST",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRJCRE",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTVCMTY",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "PTVCMTY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "QMEALSERVICELIST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "QMEALSERVICEREQUEST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RCRAPP1",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RCRAPP1",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRAPP2",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRAPP3",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "READER",
+            "cmDataSource": "Lenel-AccessControl",
+            "schema": ""
+        },
+        {
+            "table": "REGISTRATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REGISTRATION",
+            "cmDataSource": "PROD",
+            "schema": "SCADEM"
+        },
+        {
+            "table": "REGISTRATION",
+            "cmDataSource": "PROD",
+            "schema": "SSD_AXIOM"
+        },
+        {
+            "table": "REGISTRATION_INTEREST_CONFIRMATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REGISTRATION_OFFERING_PERIOD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REGISTRATION_PHASE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REGISTRATION_REGISTRANT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REGISTRATION_SURVEY_RESPONSES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REL_COMMUNICATION_OPT_OUT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REL_COMMUNICATION_OPT_OUT",
+            "cmDataSource": "PROD",
+            "schema": "RELATEMGR"
+        },
+        {
+            "table": "REL_INTERACTIONCATEGORY",
+            "cmDataSource": "PROD",
+            "schema": "RELATEMGR"
+        },
+        {
+            "table": "REL_INTERACTIONLOG",
+            "cmDataSource": "PROD",
+            "schema": "RELATEMGR"
+        },
+        {
+            "table": "REL_INTERACTIONTYPE",
+            "cmDataSource": "PROD",
+            "schema": "RELATEMGR"
+        },
+        {
+            "table": "REQUEST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REQUEST_GOAL",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "REQUEST_LOCATIONS",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "REQUEST_OBJECTIVE_RANK",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REQUEST_OBJECTIVE_RANK",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "REQUEST_RANKING",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "REVIEWER",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "REVIEWER",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "REVIEWER",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "REVIEWER",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REVIEWER_ROLE",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "REVIEWER_ROLE",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "REVIEWER_ROLE",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "REVIEWER_ROLE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RFRBASE",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROBPRDS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROLE",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "ROLE",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "ROLE",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "ROLE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ROOM_ASSIGNMENT",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "RORPRDS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORSTAT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RORSTAT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORWEBA",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROUTING_MESSAGE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "ROUTING_NOTIFICATION",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "ROUTING_ROLE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "ROUTING_RULES",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "ROUTING_STATE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "RPRATRM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RPRATRM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRAWRD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RPRAWRD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RRRAREQ",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SAND_ARTS_CATEGORY_ASSIGNMENT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SARAATT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SARAATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARACMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARADAP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SARADAP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARAPPD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SARAPPD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARCHKL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARCHRT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SARCHRT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SAVCCUR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCADARB",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCAD_BOUND",
+            "cmDataSource": "PROD",
+            "schema": "SCADEM"
+        },
+        {
+            "table": "SCAD_HR_EMPLOYEE",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_HR_EMP_POSITION",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_LENEL_CUSTOM",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_MST_SFRSTCA",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_MST_SORRTRM",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MST_SPRADDR",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_MST_STVNATN",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_PRO_PROJECT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCAD_PRO_SUBMISSION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCAD_SCADLOC_CONTRACT_FACULTY",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_SCADLOC_CONTRACT_TYPE",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_SCADLOC_CONTRACT_YEAR",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCAD_SF_CONTACT",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "SCBCRKY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCBCRKY",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCBCRSE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCBCRSE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCBDESC",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCBDESC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCHEDULE_ACKNOWLEDGMENT_RESPONSES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCHEDULE_OFFERING",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCHOOL",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "SCHOOL",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "SCHOOL",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SCHOOL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCHOOL_MERIT_RATING",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "SCRATTR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRATTR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCREQIV",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCREQIV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRFEES",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRGMOD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRLEVL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRLEVL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRRARE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRARE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRRATT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRCAM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRCHR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRCLS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRCOL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRDEG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRDEP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRLVL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRMAJ",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRMAJ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRRPRG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRTST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRSCHD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRSCHD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRSYLN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRSYLO",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRSYST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRSYWS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SCRTEXT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFBETRM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SFBETRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFBFFSC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFBRGRP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRENRL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRSRPO",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRSTCA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRSTCR",
+            "cmDataSource": "MultipleOptions",
+            "schema": "MultipleOptions"
+        },
+        {
+            "table": "SFRSTCR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SFRSTCR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SFRSTCR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRTHST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRWLNT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFVFAUD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SFVSTC2",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_ACCOUNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_ACCT_CONTACTROLE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_ATTRIBUTE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_CONTACT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_CONTACT",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "SF_CONTACT",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_OPPORTUNITY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_OPPORTUNITY",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_PROJECT",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "SF_PROJECT",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_PROJECT_PARTICIPANT",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_RECRUITMENT_EVENT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_RELATIONSHIP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_SCAD_CAMPAIGN",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_SCAD_CAMPAIGN_MEMBER",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_SCHOLASTIC_ATTR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_SCHOLASTIC_ATTR",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_TERM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SF_TERM",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "SF_TERM",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_USER",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SGBSTDN",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGBSTDN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SGBSTDN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRADVR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SGRADVR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRATHA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRAVAS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRAVRL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRCHRT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SGRCHRT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRSACT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SGRSACT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SGRSACT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRSATT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SGRSATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRSCMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRSPRT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SGRSPRT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRVETN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHBCATT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHBCATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHBDIPL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHBGAPP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHBTATC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRCATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRDGMR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRDGMR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHREVNT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRGRDE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRGRDE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRICMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRLGPA",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRLGPA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRLGPA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRNCRS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTATC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTCKG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRTCKG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTCKL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRTCKL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTCKN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRTCKN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTCMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTGPA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRTGPA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTGRD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTMCM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTRAM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTRAT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTRCE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRTRCE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTRCR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRTRCR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTRIT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRTRIT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTTRM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SHRTTRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHTTRAN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIBINST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SIBINST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIRASGN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SIRASGN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIRATTR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIRDPCL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SIRDPCL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIRICNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SIRICNT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIRNIST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SLBBLDG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SLBBLDG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SLBRDEF",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SLBRDEF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SLRMASG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SLRRASG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SLRRASG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SLRRDEF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMBAGEN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SMBAGEN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMBAOGN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMBPGEN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMBPOGN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMBSAGN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRACAA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SMRDORQ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRPONC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRPRLE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SMRPRLE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRSACA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRSSPV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRSSUB",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRSTRG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRSWAV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SMRSWPV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SOBCACT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SOBPTRM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SOBPTRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SOBSBGI",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SOBTERM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORADAS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORADDA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORAINF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORBTAC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORBTAG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORBTAI",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORBTAL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORBTAP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORDEGR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORFOLK",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORHSCH",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SORHSCH",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORINTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SORINTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORLCUR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SORLCUR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORLFOS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SORLFOS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORPCOL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORRTRM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SORRTRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORTEST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SORTEST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SOURCEFIELDS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SOURCES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SPBPERS",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "SPBPERS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SPBPERS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "CLON",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRAPIN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SPRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPREMRG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SPRHOLD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SPRHOLD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SPRHOLD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "CLON",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "MultipleOptions",
+            "schema": "MultipleOptions"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "SSD_AXIOM"
+        },
+        {
+            "table": "SPRTELE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SPRTELE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SRBRECR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SRVCCUR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSBSECT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSBSECT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSBXLST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRATTR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRMEET",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRMEET",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRRARE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRRATT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRCHR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRCLS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRCLS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRRCMP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRCMP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRRCOL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRDEG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRDEG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRRDEP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRESV",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRESV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRRLVL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRLVL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRRMAJ",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRMAJ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRRPRG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRTST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRSYLN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRSYLN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRSYLO",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRSYRM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRSYTR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRXLST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SSRXLST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STAFF",
+            "cmDataSource": "MultipleOptions",
+            "schema": "GRAILSAT"
+        },
+        {
+            "table": "STARREZ_BOOKINGS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STUDENT_CELEBRATION_SUBMISSION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STUDENT_CELEBRATION_SUBMISSION_TYPES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STUDENT_CELEBRATION_TYPE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STUDENT_COURSE",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "STUDENT_SUCCESS_INTERACTION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STUDENT_SUCCESS_INTERACTION",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "STUDENT_SUCCESS_INTERACTION",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACAT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACCG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACCL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACCT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACPR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACTC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACTN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACTP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACYR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVADDA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVADMR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVADMT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVADMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVADVR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVADVR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAFCT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAFDC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAPDC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAPLS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAPRN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAPRV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAPST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVAPST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAREA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVARTP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVASCD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVASRC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVASTA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVASTD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVASTY",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATRA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATRB",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATRC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATRD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATRE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATTR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVATTR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVATTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVBCHR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVBLCK",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVBLDG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVBLDG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVBSKL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCACT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCALD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCAMP",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCAMP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVCAMP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCAPL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCAST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCCSL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCERT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCGRP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCHRT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVCHRT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCIPC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCITZ",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVCITZ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCKSR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCKST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCLAS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCMTT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCNTR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVCNTR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCNTY",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCOLL",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "STVCOLL",
+            "cmDataSource": "MONTH",
+            "schema": ""
+        },
+        {
+            "table": "STVCOLL",
+            "cmDataSource": "MultipleOptions",
+            "schema": "MultipleOptions"
+        },
+        {
+            "table": "STVCOLL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVCOLL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCOMF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCOMS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCOMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCOPC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCPLN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCPRT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCREA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCRSS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCSTA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVCSTA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCSTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCTYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCUDA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCUDB",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCUDC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCUDD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCUDE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCUDF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDAYS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDAYT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDCPR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDEGC",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVDEGC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDEGS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDEPS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDEPT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVDEPT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDFLT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDISA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDIVS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDLEV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDPLM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDPMR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDRES",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDSTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEAPL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEDIS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEDLV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEGOL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEGRP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVELIG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVELMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEMEX",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEMPL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEMPT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEOPS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEPRT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEPSC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVESEL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVESTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVETCT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVETHN",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "STVETHN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVETHN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVETYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEVAL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEVEN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVEXAM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVFATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVFCNT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVFCST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVFCTG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVFCTG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVFFVA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVFSTP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVFTYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGADR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGAIN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGAST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGCHG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGCMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGEOD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGEOR",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGEOR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGMOD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGOAL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGPAT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGRST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGSTA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGTYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVHAPS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVHLDD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVHLDD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVHLWK",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVHOND",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVHONR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVINCM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVINFC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVINIT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVINNM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVINTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVINTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVINTV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVLANG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVLEAD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVLEAV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVLEND",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVLEVL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVLEVL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVLGCY",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVLMOD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMAJR",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMAJR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVMAJR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMARS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMATL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMDEQ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMEAS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMECL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMEDI",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMEET",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMRCD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMRTL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMSCD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNATN",
+            "cmDataSource": "HORIZON",
+            "schema": ""
+        },
+        {
+            "table": "STVNATN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVNATN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNCRQ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNCST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNDRF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNEED",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNIST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVOCCS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVORIG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVORSN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVORSN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPENT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPRAC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPRCD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPREL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPREV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPRGA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPRNT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPROC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPSCD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPTRM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVPTRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPTYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVPWAV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVQPTP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRADM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRATE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRATP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRDEF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVREAS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRECR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRELG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRELT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVREPS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVREPS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRESD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRGRE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRMST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVROLE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVROVR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRRCD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRSLT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRSTA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRSTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVRSTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRTRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRTYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSAAT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSAEL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSAPR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVSAPR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSAQS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSARE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSARX",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSATR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSBGI",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSBGI",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVSBGI",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSBJC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSCCD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSCHD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVSCHD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSEPR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSESS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVSESS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSFAE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSITE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSIZE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSOFF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSPON",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSPRV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSPSR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSPST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSSEP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSSER",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSSGP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSSRS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSSST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSSTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSTAT",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "STVSTAT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVSTAT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSTST",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVSTST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSTYP",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSTYP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVSTYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUBJ",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVSUBJ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDB",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDH",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDI",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSUDJ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTAAU",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTADM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTAPE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTASK",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTAST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTEAC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTEFR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTEIN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTELE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTEPR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "ODS",
+            "schema": ""
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTESC",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVTESC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTLVL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTMST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTOPS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTOST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTPFD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTPRT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTRAC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTRCN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTREQ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTRMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTRNS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTSPT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTSRC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTYPE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVVETC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVVOED",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVVTAB",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVVTYP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "STVVTYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWACK",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWAIV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWAPP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWDRL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWKLD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWLTT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWPIC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWPYO",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWRSN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWSCF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWSCT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWSSO",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVWTHD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVXLBL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SVQ_SFRWLNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "SWAFFORM",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSSF"
+        },
+        {
+            "table": "SYNC_RECORD",
+            "cmDataSource": "PROD",
+            "schema": "SSD_AXIOM"
+        },
+        {
+            "table": "TBBACCT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBBDETC",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBBDETC",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBBEACT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBLBEDS",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "TBLBILLING",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLCANCELREASONS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLGHOSTASSIGNMENTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLHALLS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLHALLS",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "TBLROOMASSIGNMENTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLROOMASSIGNMENTS",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "TBLROOMS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLROOMS",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "TBLSTUDENTATTRIBUTELISTOPTIONS",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "TBLSTUDENTATTRIBUTES",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "TBLSTUDENTBILLING",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLSTUDENTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLSTUDENTS",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "TBLSTUDENTTIMEFRAMES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLTIMEFRAME",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBLTIMEFRAME",
+            "cmDataSource": "PROD",
+            "schema": "HOUSINGUSER"
+        },
+        {
+            "table": "TBRACCD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBRACCD",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRACCT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRAPPL",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "TBRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRDEPO",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TBRDEPO",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRISTL",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRMEMO",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TMPGIFT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TMPGIFT",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "TMP_LOGIN_DATES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TMP_NETID_LOGIN_DATES",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "TTVBILL",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVCCRD",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVDCAT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVDELI",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVDTYP",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVECAT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVPAYT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVREPT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVRHLD",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVSBRC",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVSRCE",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVTAXT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVTBDS",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVTPRC",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TVRAUTH",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TYPE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "USER_ROLE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSRF"
+        },
+        {
+            "table": "VACCINE_EXEMPT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "VACCINE_RESPONSE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "VACCINE_SURVEY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "VACCINE_TESTING",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "VS_APPOINTMENT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "VS_APPOINTMENT_USER",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "VS_USER",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "V_EVENT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "V_EVENT_CATEGORY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WEBSERVICEAUDITLOG",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WFRCSAE",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WFVATTR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WFVCRHR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGBADMJ",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WGBARDM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGBHKPL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGBHKPL",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGBMSCAD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGBMSCAD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "WGBSWOR",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGBSWOR06",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGBSWOR_ARCHIVE",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGBYRKG",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGBYRKP",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGBYRKV",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGCCOA",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGCNCR",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGRADVR",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WGRAGIL",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGRAGRE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGRARDV",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGRCPMT",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WGRFACL",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGRPLOG",
+            "cmDataSource": "MultipleOptions",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGRYRKS",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGVCNCR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVCRHR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVDUPS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFGRD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA1",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA1NEW",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA2",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA2NEW",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA3",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA3NEW",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA4",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA4NEW",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVFSA5NEW",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVIINS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVNOFSA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSEV1",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSEV2",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSEV3",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSEV4",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSTDA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSTDH",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSTDN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVYRKA",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WOBSRVR",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WORSRVR",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WOVSRVR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WPRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WPRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WPVCMNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WPVSCMT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSBPRLE",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WSRAADT",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WSRATTD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSRATTD",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WSRFFBK",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WSRFFST",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WSVARAP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVARSC",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVARTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVDESC",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVEACT",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WSVINCV",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVINEV",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVOSBL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WTRISSO",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WTVCMNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WUBSRVY",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WURSRVQ",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WWBADBE",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WWBINRP",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "WXWALK",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WXWALKNATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        }
     ]
 }
