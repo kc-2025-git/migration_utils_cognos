@@ -27,8 +27,19 @@ def check_xml_files(directory):
                 tag = elem.tag.split('}')[-1]
                 
                 if tag == 'querySubject':
+                    # Check if it's a modelQuery and ignore it
+                    is_model_query = False
+                    for child in elem.iter():
+                        if child.tag.split('}')[-1] == 'modelQuery':
+                            is_model_query = True
+                            break
+                            
+                    if is_model_query:
+                        elem.clear()
+                        continue
+
                     # Find all 'sources' elements (handle namespace)
-                    sources_elements = [child for child in elem if child.tag.split('}')[-1] == 'sources']
+                    sources_elements = [child for child in elem.iter() if child.tag.split('}')[-1] == 'sources']
                     
                     name = "Unknown"
                     for child in elem:
@@ -36,25 +47,27 @@ def check_xml_files(directory):
                             name = child.text
                             break
                             
-                    if len(sources_elements) > 1:
-                        print(f"  [!] querySubject '{name}' has {len(sources_elements)} <sources> elements.")
+                    if len(sources_elements) != 1:
+                        print(f"  [!] querySubject '{name}' has {len(sources_elements)} <sources> elements (expected exactly 1).")
                         issues.append({
                             "file": filename,
                             "querySubject": name,
-                            "type": "multiple_sources",
+                            "type": "invalid_sources_count",
                             "count": len(sources_elements)
                         })
                         
                     for sources_elem in sources_elements:
-                        datasource_refs = [child for child in sources_elem if child.tag.split('}')[-1] == 'dataSourceRef']
-                        if len(datasource_refs) > 1:
-                            print(f"  [!] querySubject '{name}' has a <sources> element with {len(datasource_refs)} <dataSourceRef> elements.")
+                        datasource_refs = [child for child in sources_elem.iter() if child.tag.split('}')[-1] == 'dataSourceRef']
+                        if len(datasource_refs) == 0:
+                            print(f"  [!] querySubject '{name}' has a <sources> element with 0 <dataSourceRef> elements (expected at least 1).")
                             issues.append({
                                 "file": filename,
                                 "querySubject": name,
-                                "type": "multiple_dataSourceRefs",
-                                "count": len(datasource_refs)
+                                "type": "invalid_dataSourceRefs_count",
+                                "count": 0
                             })
+                        elif len(datasource_refs) > 1:
+                            print(f"  [i] querySubject '{name}' has a <sources> element with {len(datasource_refs)} <dataSourceRef> elements. This is considered valid.")
                             
                     # Clear the querySubject element from memory after processing its contents
                     elem.clear()
@@ -63,7 +76,7 @@ def check_xml_files(directory):
             print(f"Error parsing {filename}: {e}")
             
     if not issues:
-        print("\nNo issues found! All querySubjects have at most 1 <sources> element, which has at most 1 <dataSourceRef>.")
+        print("\nNo issues found! All querySubjects have exactly 1 <sources> element, which has at least 1 <dataSourceRef>.")
         
     return issues
 
