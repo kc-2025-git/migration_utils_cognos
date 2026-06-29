@@ -11,11 +11,14 @@ import argparse
 def extract_tables_from_sql(sql_text):
     try:
         # Pre-process Cognos macros to avoid parsing errors
-        # Replace anything between '#' with a dummy string literal
-        cleaned_sql = re.sub(r"#.*?#", "'dummy'", sql_text, flags=re.DOTALL)
+        # Replace anything between '#' with a placeholder identifier instead of a string literal
+        cleaned_sql = re.sub(r"#.*?#", "cognos_macro", sql_text)
 
-        # Using tsql dialect because it natively supports the [Schema] bracket notation used by Cognos
-        parsed = sqlglot.parse_one(cleaned_sql, read="tsql")
+        # Convert [Name] to "Name" so we can use standard/Oracle parsing
+        cleaned_sql = re.sub(r"\[([^\]]+)\]", r'"\1"', cleaned_sql)
+
+        # Parse using Oracle dialect since the SQL contains Oracle-specific syntax
+        parsed = sqlglot.parse_one(cleaned_sql, read="oracle")
 
         # Identify all CTE aliases so we can ignore them
         ctes = {cte.alias for cte in parsed.find_all(exp.CTE)}
