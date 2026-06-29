@@ -1,0 +1,18 @@
+# Oracle Database Configuration
+# Set the user and password via environment variables (ORACLE_USER, ORACLE_PASSWORD)
+oracle:
+  dsn: "oci-db-prod-phcte-scan.db.vcn193.oraclevcn.com:1521/odsedwp.db.vcn193.oraclevcn.com"
+
+# Databricks Configuration
+databricks:
+  default_catalog: "scad_reporting_dev"
+  default_schema: "default"
+
+# Project Configuration
+project:
+  mappings_file: "mappings.csv"
+  directory_paths:
+    output:
+      path: "output"
+      is_dir: True
+      create: True
