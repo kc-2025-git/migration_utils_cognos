@@ -1,644 +1,3364 @@
 {
     "tables": [
-        "BANINST1.AR_AWARD_DETAIL_BY_TERM",
-        "BANINST1.AR_AWARD_DETAIL_BY_YEAR",
-        "BANINST1.AR_BUDGET_COMPONENTS",
-        "BANINST1.AR_FINAID_APPLICANT",
-        "BANINST1.AR_FINAID_STUDENT_SUMMARY",
-        "BANINST1.AR_TRACKING_REQUIREMENTS",
-        "BANINST1.FA_SAP",
-        "BANINST1.FA_SAP_QUARTERLY",
-        "BANINST1.RCVAPPL",
-        "BANINST1.RCVEDEA",
-        "BANINST1.RCVNARS",
-        "BANINST1.RLVALIN",
-        "BANINST1.RLVEDEA",
-        "BANINST1.RNVAND0",
-        "BANINST1.RNVAND1",
-        "BANINST1.ROVSTCR",
-        "BANINST1.ROVSTEV",
-        "BANINST1.ROVSTOD",
-        "BANINST1.ROVTENR",
-        "BANINST1.WFVCRHR",
-        "BANINST1.WGVFGRD",
-        "BANINST1.WGVSTDA",
-        "BANINST1.WGVSTDN",
-        "BANINST1.WRVGACH",
-        "BANINST1.WRVLSDA",
-        "BANINST1.WRVVABA",
-        "BANINST1.WRVWWPD",
-        "BANINST1.WSVAEEL",
-        "BANINST1.WSVHSMP",
-        "BANINST1.WSVOSBL",
-        "BANINST1.WSVRSCQ",
-        "BANINST1.WSVSAPR",
-        "BANINST1.WTVCMNT",
-        "DUAL",
-        "FAISMGR.RARAAWD",
-        "FAISMGR.RARSPTM",
-        "FAISMGR.RBRABRC",
-        "FAISMGR.RBRACMP",
-        "FAISMGR.RBRAPBC",
-        "FAISMGR.RBRAPBG",
-        "FAISMGR.RBRAPBT",
-        "FAISMGR.RBRBCAT",
-        "FAISMGR.RBRPBCP",
-        "FAISMGR.RBRPBDR",
-        "FAISMGR.RBRPBGP",
-        "FAISMGR.RBRPBTP",
-        "FAISMGR.RBRPELL",
-        "FAISMGR.RBRPGPT",
-        "FAISMGR.RBRPMSG",
-        "FAISMGR.RCRAPP1",
-        "FAISMGR.RCRAPP2",
-        "FAISMGR.RCRAPP3",
-        "FAISMGR.RCRAPP4",
-        "FAISMGR.RCRESAR",
-        "FAISMGR.RCRIRSF",
-        "FAISMGR.RCRLDS4",
-        "FAISMGR.RCRLDS6",
-        "FAISMGR.RCRLDS7",
-        "FAISMGR.RCRLOAD",
-        "FAISMGR.RCTLOAD",
-        "FAISMGR.REBORIG",
-        "FAISMGR.REBPAYV",
-        "FAISMGR.REBYTDD",
-        "FAISMGR.REBYTDO",
-        "FAISMGR.RERCBWS",
-        "FAISMGR.RERCDED",
-        "FAISMGR.RERCODA",
-        "FAISMGR.RERCODS",
-        "FAISMGR.RERCSID",
-        "FAISMGR.RERSPGM",
-        "FAISMGR.RFRASCH",
-        "FAISMGR.RFRASPC",
-        "FAISMGR.RFRBASE",
-        "FAISMGR.RFRBCMP",
-        "FAISMGR.RFRCOMM",
-        "FAISMGR.RFRDEFA",
-        "FAISMGR.RFRDETC",
-        "FAISMGR.RFRDLCK",
-        "FAISMGR.RFRFCAT",
-        "FAISMGR.RFRMESG",
-        "FAISMGR.RFRPCMP",
-        "FAISMGR.RFRPROM",
-        "FAISMGR.RFRTREQ",
-        "FAISMGR.RHRCOMM",
-        "FAISMGR.RLRCBID",
-        "FAISMGR.RLRDBOR",
-        "FAISMGR.RLRDDAS",
-        "FAISMGR.RLRDFEE",
-        "FAISMGR.RLRDLBN",
-        "FAISMGR.RLRDLDB",
-        "FAISMGR.RLRDLDD",
-        "FAISMGR.RLRDLOG",
-        "FAISMGR.RLRDLOR",
-        "FAISMGR.RLRDLPS",
-        "FAISMGR.RLRDMPN",
-        "FAISMGR.RLRDMPO",
-        "FAISMGR.RLRDMPR",
-        "FAISMGR.RLRDMPS",
-        "FAISMGR.RLRLOAD",
-        "FAISMGR.RLRPAPP",
-        "FAISMGR.RLRPLUS",
-        "FAISMGR.RLTDLOG",
-        "FAISMGR.RLTUMPN",
-        "FAISMGR.RNRTMNT",
-        "FAISMGR.RNRVRFY",
-        "FAISMGR.ROBALOG",
-        "FAISMGR.ROBAPRD",
-        "FAISMGR.ROBBBAY",
-        "FAISMGR.ROBINST",
-        "FAISMGR.ROBNYUD",
-        "FAISMGR.ROBPRDS",
-        "FAISMGR.ROBUSDF",
-        "FAISMGR.RORALGS",
-        "FAISMGR.RORATND",
-        "FAISMGR.RORBAYD",
-        "FAISMGR.RORBBAY",
-        "FAISMGR.RORCMPL",
-        "FAISMGR.RORENRL",
-        "FAISMGR.RORHOLD",
-        "FAISMGR.RORHSDT",
-        "FAISMGR.RORPOST",
-        "FAISMGR.RORPRDS",
-        "FAISMGR.RORPRST",
-        "FAISMGR.RORRPCX",
-        "FAISMGR.RORSAPR",
-        "FAISMGR.RORSAYD",
-        "FAISMGR.RORSAYR",
-        "FAISMGR.RORSTAT",
-        "FAISMGR.RORTPRD",
-        "FAISMGR.RORWSQL",
-        "FAISMGR.RORWTXT",
-        "FAISMGR.ROTFSAP",
-        "FAISMGR.ROTIDEN",
-        "FAISMGR.ROTPERS",
-        "FAISMGR.RPBLPRD",
-        "FAISMGR.RPRADSB",
-        "FAISMGR.RPRALGR",
-        "FAISMGR.RPRARSC",
-        "FAISMGR.RPRATRM",
-        "FAISMGR.RPRAWRD",
-        "FAISMGR.RPRBBAY",
-        "FAISMGR.RPRCNCL",
-        "FAISMGR.RPRDLSU",
-        "FAISMGR.RPRFUND",
-        "FAISMGR.RPRGFND",
-        "FAISMGR.RPRLADB",
-        "FAISMGR.RPRLAPP",
-        "FAISMGR.RPRLARF",
-        "FAISMGR.RPRLATR",
-        "FAISMGR.RPRLCRT",
-        "FAISMGR.RPRLECS",
-        "FAISMGR.RPRRSLT",
-        "FAISMGR.RPRSULA",
-        "FAISMGR.RPTUAPP",
-        "FAISMGR.RPTUECS",
-        "FAISMGR.RRRAREQ",
-        "FAISMGR.RRRGREQ",
-        "FAISMGR.RTVABRC",
-        "FAISMGR.RTVALGR",
-        "FAISMGR.RTVAPRD",
-        "FAISMGR.RTVAWST",
-        "FAISMGR.RTVBBTP",
-        "FAISMGR.RTVBCAT",
-        "FAISMGR.RTVFCAT",
-        "FAISMGR.RTVFSRC",
-        "FAISMGR.RTVFTYP",
-        "FAISMGR.RTVHOLD",
-        "FAISMGR.RTVINFC",
-        "FAISMGR.RTVINTL",
-        "FAISMGR.RTVLNST",
-        "FAISMGR.RTVMESG",
-        "FAISMGR.RTVPBCP",
-        "FAISMGR.RTVPBGP",
-        "FAISMGR.RTVPBTP",
-        "FAISMGR.RTVPGRP",
-        "FAISMGR.RTVRJCT",
-        "FAISMGR.RTVSAYR",
-        "FAISMGR.RTVTGRP",
-        "FAISMGR.RTVTREQ",
-        "FAISMGR.RTVTRST",
-        "FAISMGR.RTVWTXT",
-        "FTVACTV",
-        "GENERAL.GLBEXTR",
-        "GENERAL.GOBINTL",
-        "GENERAL.GOREMAL",
-        "GENERAL.GORVISA",
-        "GENERAL.GURMAIL",
-        "GENERAL.GXRDIRD",
-        "GRAILSCT.ATTENDANCE",
-        "GRAILSCT.ATTENDANCE_ARCH",
-        "GRAILSCT.ATTENDANCE_DETAIL",
-        "GRAILSCT.ATTENDANCE_DETAIL_ARCH",
-        "GRAILSCT.ATTENDANCE_DETAIL_HISTORY",
-        "GRAILSCT.ATTENDANCE_DETAIL_ONLINE",
-        "GRAILSCT.ATTENDANCE_NOTATION",
-        "GRAILSCT.ATTENDANCE_ONLINE",
-        "GRAILSCT.ONLINE_ABSENCE",
-        "GRAILSCT.ONLINE_NOTATION_RECORD",
-        "LOCAL.AS_LEVEL_GPA",
-        "LOCAL.AS_TERM_GPA",
-        "LOCAL.HOPE_TRACKING",
-        "ODSLOV.LOV_ACADEMIC_PERIOD",
-        "ODSLOV.LOV_ACADEMIC_STANDING",
-        "ODSLOV.LOV_ACADEMIC_TITLE",
-        "ODSLOV.LOV_ACADEMIC_YEAR",
-        "ODSLOV.LOV_ACCOUNT_ATTRIBUTE_SET",
-        "ODSLOV.LOV_ACCOUNT_ATTRIBUTE_TYPE",
-        "ODSLOV.LOV_ACCOUNT_ATTRIBUTE_VALUE",
-        "ODSLOV.LOV_ACCOUNT_CLASS",
-        "ODSLOV.LOV_ACCOUNT_LEVEL_1",
-        "ODSLOV.LOV_ACCOUNT_LEVEL_2",
-        "ODSLOV.LOV_ACCOUNT_LEVEL_3",
-        "ODSLOV.LOV_ACCOUNT_LEVEL_4",
-        "ODSLOV.LOV_ACCOUNT_POOL",
-        "ODSLOV.LOV_ACCOUNT_TYPE_ATTR_SET",
-        "ODSLOV.LOV_ACCOUNT_TYPE_ATTR_TYPE",
-        "ODSLOV.LOV_ACCOUNT_TYPE_ATTR_VALUE",
-        "ODSLOV.LOV_ACCOUNT_TYPE_LEVEL_1",
-        "ODSLOV.LOV_ACCOUNT_TYPE_LEVEL_2",
-        "ODSLOV.LOV_ACTIVITY",
-        "ODSLOV.LOV_ACTIVITY_CATEGORY",
-        "ODSLOV.LOV_ACTIVITY_TYPE",
-        "ODSLOV.LOV_ADDRESS_TYPE",
-        "ODSLOV.LOV_ADMISSIONS_ATTRIBUTE",
-        "ODSLOV.LOV_ADMISSIONS_POPULATION",
-        "ODSLOV.LOV_ADMISSIONS_RATING_TYPE",
-        "ODSLOV.LOV_ADVANCEMENT_FUND",
-        "ODSLOV.LOV_ADVISOR_NAME_LFMI",
-        "ODSLOV.LOV_ADVISOR_TYPE",
-        "ODSLOV.LOV_AID_FUND",
-        "ODSLOV.LOV_AID_YEAR",
-        "ODSLOV.LOV_APPLICATION_DECISION",
-        "ODSLOV.LOV_APPLICATION_STATUS",
-        "ODSLOV.LOV_ASSIGNMENT_GRADE",
-        "ODSLOV.LOV_ASSIGNMENT_PAY_ID",
-        "ODSLOV.LOV_ASSIGNMENT_SALARY_GROUP",
-        "ODSLOV.LOV_AWARD_CATEGORY",
-        "ODSLOV.LOV_AWARD_STATUS",
-        "ODSLOV.LOV_BENEFIT_CATEGORY",
-        "ODSLOV.LOV_BENEFIT_DEDUCTION",
-        "ODSLOV.LOV_BLOCK_SCHEDULE",
-        "ODSLOV.LOV_BUDGET",
-        "ODSLOV.LOV_BUDGET_GROUP",
-        "ODSLOV.LOV_BUDGET_PHASE",
-        "ODSLOV.LOV_BUILDING",
-        "ODSLOV.LOV_CALENDAR_MONTH",
-        "ODSLOV.LOV_CAMPAIGN",
-        "ODSLOV.LOV_CAMPAIGN_TYPE",
-        "ODSLOV.LOV_CAMPUS",
-        "ODSLOV.LOV_CERTIFICATION",
-        "ODSLOV.LOV_CHART_OF_ACCOUNTS",
-        "ODSLOV.LOV_COHORT",
-        "ODSLOV.LOV_COLLECTION_AGENCY_NAME",
-        "ODSLOV.LOV_COLLEGE",
-        "ODSLOV.LOV_COMMODITY",
-        "ODSLOV.LOV_CONTRACT_NUMBER",
-        "ODSLOV.LOV_CONTRACT_TYPE",
-        "ODSLOV.LOV_COUNTY",
-        "ODSLOV.LOV_COURSE_ATTRIBUTE",
-        "ODSLOV.LOV_COURSE_IDENTIFICATION",
-        "ODSLOV.LOV_COURSE_REFERENCE_NUMBER",
-        "ODSLOV.LOV_CURRENT_TIME_STATUS",
-        "ODSLOV.LOV_DEPARTMENT",
-        "ODSLOV.LOV_DESIGNATION",
-        "ODSLOV.LOV_DISTRICT_DIVISION",
-        "ODSLOV.LOV_DIVISION",
-        "ODSLOV.LOV_DONOR",
-        "ODSLOV.LOV_EARNINGS",
-        "ODSLOV.LOV_EDUCATIONAL_GOAL",
-        "ODSLOV.LOV_EDUCATIONAL_LEVEL",
-        "ODSLOV.LOV_EEO_SKILL",
-        "ODSLOV.LOV_EMPLOYEE_CLASS",
-        "ODSLOV.LOV_EMPLOYEE_GROUP",
-        "ODSLOV.LOV_EMPLOYEE_STATUS",
-        "ODSLOV.LOV_EMPLOYER",
-        "ODSLOV.LOV_EMPLOYER_CATEGORY",
-        "ODSLOV.LOV_EMPLOYER_INDUSTRIAL_TYPE",
-        "ODSLOV.LOV_EMPLOYMENT_STATUS",
-        "ODSLOV.LOV_ENROLLMENT_STATUS",
-        "ODSLOV.LOV_ETHNICITY",
-        "ODSLOV.LOV_FINANCE_ACCOUNT",
-        "ODSLOV.LOV_FINANCE_ACCOUNT_TYPE",
-        "ODSLOV.LOV_FINANCE_ACTIVITY",
-        "ODSLOV.LOV_FINANCE_FUND",
-        "ODSLOV.LOV_FINANCE_FUND_TYPE",
-        "ODSLOV.LOV_FINANCE_LOCATION",
-        "ODSLOV.LOV_FINANCE_ORGANIZATION",
-        "ODSLOV.LOV_FINANCE_PROGRAM",
-        "ODSLOV.LOV_FINANCIAL_MANAGER",
-        "ODSLOV.LOV_FISCAL_PERIOD",
-        "ODSLOV.LOV_FISCAL_YEAR",
-        "ODSLOV.LOV_FOREIGN_CURRENCY",
-        "ODSLOV.LOV_FUND_ATTRIBUTE_SET",
-        "ODSLOV.LOV_FUND_ATTRIBUTE_TYPE",
-        "ODSLOV.LOV_FUND_ATTRIBUTE_VALUE",
-        "ODSLOV.LOV_FUND_LEVEL_1",
-        "ODSLOV.LOV_FUND_LEVEL_2",
-        "ODSLOV.LOV_FUND_LEVEL_3",
-        "ODSLOV.LOV_FUND_LEVEL_4",
-        "ODSLOV.LOV_FUND_LEVEL_5",
-        "ODSLOV.LOV_FUND_POOL",
-        "ODSLOV.LOV_FUND_SOURCE",
-        "ODSLOV.LOV_FUND_TYPE",
-        "ODSLOV.LOV_FUND_TYPE_ATTR_SET",
-        "ODSLOV.LOV_FUND_TYPE_ATTR_TYPE",
-        "ODSLOV.LOV_FUND_TYPE_ATTR_VALUE",
-        "ODSLOV.LOV_FUND_TYPE_LEVEL_1",
-        "ODSLOV.LOV_FUND_TYPE_LEVEL_2",
-        "ODSLOV.LOV_GENDER",
-        "ODSLOV.LOV_GEOGRAPHIC_AREA",
-        "ODSLOV.LOV_GRADE_TYPE",
-        "ODSLOV.LOV_GRANT",
-        "ODSLOV.LOV_HOLD",
-        "ODSLOV.LOV_HR_APPLICATION_STATUS",
-        "ODSLOV.LOV_INCOME_LEVEL",
-        "ODSLOV.LOV_INSTALLMENT_PLAN",
-        "ODSLOV.LOV_INSTRUCTIONAL_METHOD",
-        "ODSLOV.LOV_INSTRUCTOR_NAME",
-        "ODSLOV.LOV_INTERNAL_ACCOUNT_TYPE",
-        "ODSLOV.LOV_INTERNAL_FUND_TYPE",
-        "ODSLOV.LOV_INTERVIEW_STATUS",
-        "ODSLOV.LOV_JOB_LEAVE_CATEGORY",
-        "ODSLOV.LOV_JOB_SUFFIX",
-        "ODSLOV.LOV_LEADERSHIP_ROLE",
-        "ODSLOV.LOV_LEAVE_OF_ABSENCE_REASON",
-        "ODSLOV.LOV_LEGACY",
-        "ODSLOV.LOV_LEVEL",
-        "ODSLOV.LOV_LOCATION_LEVEL_1",
-        "ODSLOV.LOV_LOCATION_LEVEL_2",
-        "ODSLOV.LOV_LOCATION_LEVEL_3",
-        "ODSLOV.LOV_LOCATION_LEVEL_4",
-        "ODSLOV.LOV_MAIL",
-        "ODSLOV.LOV_MAJOR",
-        "ODSLOV.LOV_MARITAL_STATUS",
-        "ODSLOV.LOV_MEAL_PLAN",
-        "ODSLOV.LOV_MEETING_TYPE",
-        "ODSLOV.LOV_NATION",
-        "ODSLOV.LOV_NATIVE_LANGUAGE",
-        "ODSLOV.LOV_ORGANIZATION_ATTR_SET",
-        "ODSLOV.LOV_ORGANIZATION_ATTR_TYPE",
-        "ODSLOV.LOV_ORGANIZATION_ATTR_VALUE",
-        "ODSLOV.LOV_ORGANIZATION_LEVEL_1",
-        "ODSLOV.LOV_ORGANIZATION_LEVEL_2",
-        "ODSLOV.LOV_ORGANIZATION_LEVEL_3",
-        "ODSLOV.LOV_ORGANIZATION_LEVEL_4",
-        "ODSLOV.LOV_ORGANIZATION_LEVEL_5",
-        "ODSLOV.LOV_ORGANIZATION_LEVEL_6",
-        "ODSLOV.LOV_ORGANIZATION_LEVEL_7",
-        "ODSLOV.LOV_ORGANIZATION_POOL",
-        "ODSLOV.LOV_ORG_FINANCIAL_MANAGER",
-        "ODSLOV.LOV_OUTCOME",
-        "ODSLOV.LOV_OUTCOME_STATUS",
-        "ODSLOV.LOV_PACKAGING_GROUP",
-        "ODSLOV.LOV_POSITION",
-        "ODSLOV.LOV_POSITION_CHANGE_REASON",
-        "ODSLOV.LOV_POSITION_CLASS",
-        "ODSLOV.LOV_POSITION_DEFERRED_PAY",
-        "ODSLOV.LOV_POSITION_LOCATION",
-        "ODSLOV.LOV_POSITION_STATUS",
-        "ODSLOV.LOV_POST_CODE",
-        "ODSLOV.LOV_POST_SECONDARY_SCHOOL",
-        "ODSLOV.LOV_PREF_CLASS",
-        "ODSLOV.LOV_PRIM_DISABILITY",
-        "ODSLOV.LOV_PRINCIPAL_INVESTIGATOR",
-        "ODSLOV.LOV_PROGRAM",
-        "ODSLOV.LOV_PROGRAM_ATTR_SET",
-        "ODSLOV.LOV_PROGRAM_ATTR_TYPE",
-        "ODSLOV.LOV_PROGRAM_ATTR_VALUE",
-        "ODSLOV.LOV_PROGRAM_CLASSIFICATION",
-        "ODSLOV.LOV_PROGRAM_LEVEL_1",
-        "ODSLOV.LOV_PROGRAM_LEVEL_2",
-        "ODSLOV.LOV_PROGRAM_LEVEL_3",
-        "ODSLOV.LOV_PROGRAM_LEVEL_4",
-        "ODSLOV.LOV_PROGRESS_EVALUATION",
-        "ODSLOV.LOV_PROJECT",
-        "ODSLOV.LOV_PROSPECT_STATUS",
-        "ODSLOV.LOV_RATING",
-        "ODSLOV.LOV_RATING_TYPE",
-        "ODSLOV.LOV_RECEIVABLE_CATEGORY",
-        "ODSLOV.LOV_RECEIVABLE_CONTRACT",
-        "ODSLOV.LOV_RECEIVABLE_DELINQUENCY",
-        "ODSLOV.LOV_RECEIVABLE_DETAIL_CODE",
-        "ODSLOV.LOV_RECEIVABLE_EXEMPTION",
-        "ODSLOV.LOV_RECEIVABLE_SOURCE",
-        "ODSLOV.LOV_RECRUITER",
-        "ODSLOV.LOV_REGISTRATION_REASON",
-        "ODSLOV.LOV_REGISTRATION_STATUS",
-        "ODSLOV.LOV_RESIDENCY",
-        "ODSLOV.LOV_REVIEW_TYPE",
-        "ODSLOV.LOV_SCHEDULE_TYPE",
-        "ODSLOV.LOV_SECONDARY_SCHOOL",
-        "ODSLOV.LOV_SITE",
-        "ODSLOV.LOV_SOLICITATION_TYPE",
-        "ODSLOV.LOV_SOLICITOR_TYPE",
-        "ODSLOV.LOV_SOURCE_BACKGROUND",
-        "ODSLOV.LOV_STATE_PROVINCE",
-        "ODSLOV.LOV_STUDENT_CLASS",
-        "ODSLOV.LOV_STUDENT_POPULATION",
-        "ODSLOV.LOV_STUDENT_STATUS",
-        "ODSLOV.LOV_SUBJECT",
-        "ODSLOV.LOV_SUB_ACADEMIC_PERIOD",
-        "ODSLOV.LOV_TERMINATION_REASON",
-        "ODSLOV.LOV_TEST",
-        "ODSLOV.LOV_TEST_RULE",
-        "ODSLOV.LOV_TRACKING_GROUP",
-        "ODSLOV.LOV_VENDOR_TYPE",
-        "ODSLOV.LOV_VETERAN_CATEGORY",
-        "ODSLOV.LOV_VISA",
-        "ODSLOV.LOV_WITHDRAW_REASON",
-        "ODSLOV.LOV_WORKER_COMPENSATION_CLASS",
-        "ODSMGR.ACADEMIC_OUTCOME",
-        "ODSMGR.ACADEMIC_STUDY",
-        "ODSMGR.ACADEMIC_STUDY_EXTENDED",
-        "ODSMGR.ADMISSIONS_APPLICATION",
-        "ODSMGR.ADMISSIONS_ATTRIBUTE",
-        "ODSMGR.ADMISSIONS_DECISION",
-        "ODSMGR.ADVISOR",
-        "ODSMGR.APPLICANT_NEED",
-        "ODSMGR.APPLICANT_RESOURCE",
-        "ODSMGR.APPLICATION_OF_PAYMENT",
-        "ODSMGR.APPL_OF_PAY_DETAIL_ACCOUNTING",
-        "ODSMGR.AT_DEPOSITS",
-        "ODSMGR.AWARD_BY_AID_YEAR",
-        "ODSMGR.AWARD_BY_FUND",
-        "ODSMGR.AWARD_BY_PERSON",
-        "ODSMGR.AWARD_DISBURSEMENT",
-        "ODSMGR.DEPOSIT",
-        "ODSMGR.DESIGNATION",
-        "ODSMGR.DESIGNATION_ATTRIBUTE",
-        "ODSMGR.DESIGNATION_CLASS_YEAR",
-        "ODSMGR.DESIGNATION_FINAID_FUND",
-        "ODSMGR.DESIGNATION_ID",
-        "ODSMGR.EMPLOYEE",
-        "ODSMGR.ENROLLMENT",
-        "ODSMGR.FINAID_APPLICANT_STATUS",
-        "ODSMGR.FINAID_BUDGET_COMPONENT",
-        "ODSMGR.FINAID_BUDGET_COMP_SLOT",
-        "ODSMGR.FINAID_COMMENTS",
-        "ODSMGR.FINAID_ENROLLMENT",
-        "ODSMGR.FINAID_FUND",
-        "ODSMGR.FINAID_HOLD",
-        "ODSMGR.FINAID_MESSAGE",
-        "ODSMGR.FINAID_TRACKING_REQUIREMENT",
-        "ODSMGR.GEOGRAPHIC_REGION",
-        "ODSMGR.GEOGRAPHIC_REGION_INSTITUTION",
-        "ODSMGR.GOVERNMENT_FA_FUND",
-        "ODSMGR.GOVERNMENT_FINANCIAL_AID",
-        "ODSMGR.GPA_BY_LEVEL",
-        "ODSMGR.GPA_BY_TERM",
-        "ODSMGR.HOLD",
-        "ODSMGR.LOAN_AGGREGATES",
-        "ODSMGR.LOAN_APPLICATION",
-        "ODSMGR.LOAN_DISBURSEMENT",
-        "ODSMGR.MGT_VALIDATION",
-        "ODSMGR.MRT_FINAID_APPLICANT_STATUS",
-        "ODSMGR.MRT_FINAID_APPLICATION1",
-        "ODSMGR.MRT_FINAID_APPLICATION2",
-        "ODSMGR.MRT_FINAID_APPLICATION3",
-        "ODSMGR.MRT_FINAID_APPLICATION4",
-        "ODSMGR.MST_ADMINISTRATOR",
-        "ODSMGR.NEED_ANALYSIS",
-        "ODSMGR.NEED_ANALYSIS_DEMOGRAPHIC",
-        "ODSMGR.NEED_ANALYSIS_FEDERAL_METHOD",
-        "ODSMGR.NEED_ANALYSIS_INST_METHOD",
-        "ODSMGR.NEED_ANALYSIS_ISIR_SPECIFIC",
-        "ODSMGR.NEED_ANALYSIS_OVERRIDE",
-        "ODSMGR.NEED_ANALYSIS_PROFILE_SPECIFIC",
-        "ODSMGR.PAYROLL_EARNING",
-        "ODSMGR.PAYROLL_EMPLOYEE_POSITION",
-        "ODSMGR.PERSON_ADDRESS",
-        "ODSMGR.PERSON_DETAIL",
-        "ODSMGR.PREVIOUS_EDUCATION",
-        "ODSMGR.PRE_STUDENT",
-        "ODSMGR.RECEIVABLE_ACCOUNT",
-        "ODSMGR.RECEIVABLE_ACCOUNTING",
-        "ODSMGR.RECEIVABLE_ACCOUNT_DETAIL",
-        "ODSMGR.ROOM_ASSIGNMENT",
-        "ODSMGR.SATISFACTORY_ACAD_PROGRESS",
-        "ODSMGR.SCAD_BANINST1_RCVEDEA",
-        "ODSMGR.SCAD_FA_ROVLOGM",
-        "ODSMGR.SCAD_LOCAL_AS_TERM_GPA",
-        "ODSMGR.SCAD_LOCAL_HOPE_TRACKING",
-        "ODSMGR.SCAD_MAT_FA_SAP",
-        "ODSMGR.SCAD_MGT_GOREMAL",
-        "ODSMGR.SCAD_MRT_FA_SAP_QUARTERLY",
-        "ODSMGR.SCAD_MRT_RCRLDS4",
-        "ODSMGR.SCAD_MRT_RFRBASE",
-        "ODSMGR.SCAD_MRT_RHRCOMM",
-        "ODSMGR.SCAD_MRT_ROBNYUD",
-        "ODSMGR.SCAD_MRT_ROBPRDS",
-        "ODSMGR.SCAD_MRT_RORSTAT",
-        "ODSMGR.SCAD_MRT_ROTFSAP",
-        "ODSMGR.SCAD_MRT_RPRARSC",
-        "ODSMGR.SCAD_MRT_RPRATRM",
-        "ODSMGR.SCAD_MRT_RPRLADB",
-        "ODSMGR.SCAD_MRT_RPRLAPP",
-        "ODSMGR.SCAD_MRT_RTVTREQ",
-        "ODSMGR.SCAD_MST_SGRSACT",
-        "ODSMGR.SCAD_MST_SHRNCRS",
-        "ODSMGR.SCAD_MST_SLRRASG",
-        "ODSMGR.SCAD_MST_SPRADDR",
-        "ODSMGR.SCAD_MST_STVTERM",
-        "ODSMGR.SCAD_MTT_TBBDETC",
-        "ODSMGR.SCAD_MTT_TBRACCD",
-        "ODSMGR.SCAD_MTT_TTVPAYT",
-        "ODSMGR.SCAD_SCADLOCAL_WSRATTD",
-        "ODSMGR.SCAD_SCADLOCAL_WSRPTSC",
-        "ODSMGR.SCAD_SCADLOCAL_WWBIAOS",
-        "ODSMGR.SCAD_SCADLOC_HIST_ABSN_BY_TERM",
-        "ODSMGR.SCAD_SF_CONTACT",
-        "ODSMGR.SPORT",
-        "ODSMGR.STUDENT",
-        "ODSMGR.STUDENT_ATTRIBUTE",
-        "ODSMGR.STUDENT_COURSE",
-        "ODSMGR.STUDENT_COURSE_REG_AUDIT",
-        "ODSMGR.TELEPHONE",
-        "ODSMGR.TEST",
-        "ODSMGR.USER_DEFINED_FIELDS",
-        "ODSMGR.VALIDATION",
-        "ODSMGR.VISA",
-        "ODSMGR.YEAR_TYPE_DEFINITION",
-        "PAYROLL.PEBEMPL",
-        "PAYROLL.PERDTOT",
-        "PAYROLL.PERETOT",
-        "PAYROLL.PERJTOT",
-        "PAYROLL.PHRDOCM",
-        "PAYROLL.PHREARN",
-        "PAYROLL.PHRELBD",
-        "PAYROLL.PHRHIST",
-        "PAYROLL.PHRJOBS",
-        "PAYROLL.PPRCCMT",
-        "PAYROLL.PTRCALN",
-        "PERJOBS",
-        "PERTITO",
-        "POSNCTL.NBBPOSN",
-        "POSNCTL.NBRBJOB",
-        "POSNCTL.NBRJLBD",
-        "POSNCTL.NBRJOBS",
-        "POSNCTL.NBRPLBD",
-        "SATURN.SARAATT",
-        "SATURN.SARACMT",
-        "SATURN.SARADAP",
-        "SATURN.SARAPPD",
-        "SATURN.SARCHKL",
-        "SATURN.SCBCRSE",
-        "SATURN.SCRATTR",
-        "SATURN.SCRCORQ",
-        "SATURN.SCREQIV",
-        "SATURN.SCRFEES",
-        "SATURN.SFBETRM",
-        "SATURN.SFRSTCA",
-        "SATURN.SFRSTCR",
-        "SATURN.SFRTHST",
-        "SATURN.SGBSTDN",
-        "SATURN.SGRADVR",
-        "SATURN.SGRSACT",
-        "SATURN.SGRSATT",
-        "SATURN.SGRSPRT",
-        "SATURN.SHRDGMR",
-        "SATURN.SHRGRDE",
-        "SATURN.SHRLGPA",
-        "SATURN.SHRTCKG",
-        "SATURN.SHRTCKN",
-        "SATURN.SHRTGPA",
-        "SATURN.SHRTRAM",
-        "SATURN.SHRTRCE",
-        "SATURN.SHRTRIT",
-        "SATURN.SHRTTRM",
-        "SATURN.SIRASGN",
-        "SATURN.SIRDPCL",
-        "SATURN.SLRRASG",
-        "SATURN.SOBPTRM",
-        "SATURN.SOBSBGI",
-        "SATURN.SORAINF",
-        "SATURN.SORDEGR",
-        "SATURN.SORFOLK",
-        "SATURN.SORHSCH",
-        "SATURN.SORLCUR",
-        "SATURN.SORLFOS",
-        "SATURN.SORPCOL",
-        "SATURN.SORTEST",
-        "SATURN.SPBPERS",
-        "SATURN.SPRADDR",
-        "SATURN.SPRHOLD",
-        "SATURN.SPRIDEN",
-        "SATURN.SPRTELE",
-        "SATURN.SRBRECR",
-        "SATURN.SSBSECT",
-        "SATURN.SSRMEET",
-        "SATURN.STVADMT",
-        "SATURN.STVAPDC",
-        "SATURN.STVAPST",
-        "SATURN.STVASTD",
-        "SATURN.STVATTS",
-        "SATURN.STVATYP",
-        "SATURN.STVCAMP",
-        "SATURN.STVCOLL",
-        "SATURN.STVCSTA",
-        "SATURN.STVDEGC",
-        "SATURN.STVDEGS",
-        "SATURN.STVGRST",
-        "SATURN.STVLEVL",
-        "SATURN.STVMAJR",
-        "SATURN.STVNATN",
-        "SATURN.STVRSTS",
-        "SATURN.STVSTST",
-        "SATURN.STVSTYP",
-        "SATURN.STVTERM",
-        "SCAD.EDU",
-        "SCADLOCAL.EFORMRETAKEREQUEST",
-        "SCADLOCAL.EFORMRETAKESTATUSTYPE",
-        "SCADLOCAL.GAAID_TRACKING",
-        "SCADLOCAL.JOBXHRE",
-        "SCADLOCAL.SCADFVT",
-        "SCADLOCAL.SCADFVT_2324_SUBMITTED",
-        "SCADLOCAL.SCAD_ADDRESS_BY_RULE",
-        "SCADLOCAL.WGBARDM",
-        "SCADLOCAL.WGRARDV",
-        "SCADLOCAL.WSRATTD",
-        "SCADLOCAL.WWBIAOS",
-        "SCADSF.SF_ACCOUNT",
-        "SCADSF.SF_CONTACT",
-        "SCADSF.SF_EDUCATIONRECORD",
-        "SCADSF.SF_OPPORTUNITY",
-        "SCADSF.SF_TERM",
-        "SCADSF.SF_USER",
-        "SCAD_MST_SFRSTCR",
-        "STVSTAT",
-        "TAISMGR.TBBACCT",
-        "TAISMGR.TBBDETC",
-        "TAISMGR.TBRACCD",
-        "TAISMGR.TBRACCT",
-        "TAISMGR.TBRAPPL",
-        "TAISMGR.TBRCMNT",
-        "TAISMGR.TBRDEPO",
-        "TAISMGR.TBRMEMO",
-        "TAISMGR.TTVDTYP",
-        "TAISMGR.TTVPAYT",
-        "TAISMGR.TVRAUTH",
-        "YEAR_PARAMS"
+        {
+            "table": "ACADEMIC_OUTCOME",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ACADEMIC_STUDY",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ACADEMIC_STUDY_EXTENDED",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ADMISSIONS_APPLICATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ADMISSIONS_ATTRIBUTE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ADMISSIONS_DECISION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ADVISOR",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "APPLICANT_NEED",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "APPLICANT_RESOURCE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "APPLICATION_OF_PAYMENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "APPL_OF_PAY_DETAIL_ACCOUNTING",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "AR_AWARD_DETAIL_BY_TERM",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_AWARD_DETAIL_BY_YEAR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_BUDGET_COMPONENTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_FINAID_APPLICANT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_FINAID_STUDENT_SUMMARY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AR_TRACKING_REQUIREMENTS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AS_LEVEL_GPA",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "AS_TERM_GPA",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "ATTENDANCE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_ARCH",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL_ARCH",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL_HISTORY",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_DETAIL_ONLINE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_NOTATION",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ATTENDANCE_ONLINE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "AT_DEPOSITS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "AWARD_BY_AID_YEAR",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "AWARD_BY_FUND",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "AWARD_BY_PERSON",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "AWARD_DISBURSEMENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "DEPOSIT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "DESIGNATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "DESIGNATION_ATTRIBUTE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "DESIGNATION_CLASS_YEAR",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "DESIGNATION_FINAID_FUND",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "DESIGNATION_ID",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "DUAL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "DUAL",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": "SCAD"
+        },
+        {
+            "table": "EFORMRETAKEREQUEST",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "EFORMRETAKESTATUSTYPE",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "EMPLOYEE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ENROLLMENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FA_SAP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FA_SAP_QUARTERLY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FINAID_APPLICANT_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FINAID_BUDGET_COMPONENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FINAID_BUDGET_COMP_SLOT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FINAID_COMMENTS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FINAID_ENROLLMENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FINAID_FUND",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FINAID_HOLD",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FINAID_MESSAGE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FINAID_TRACKING_REQUIREMENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "FTVACTV",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "GAAID_TRACKING",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "GEOGRAPHIC_REGION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "GEOGRAPHIC_REGION_INSTITUTION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "GLBEXTR",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOBINTL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORVISA",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOVERNMENT_FA_FUND",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "GOVERNMENT_FINANCIAL_AID",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "GPA_BY_LEVEL",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "GPA_BY_TERM",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "GURMAIL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GXRDIRD",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "HOLD",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "HOPE_TRACKING",
+            "cmDataSource": "PROD",
+            "schema": "LOCAL"
+        },
+        {
+            "table": "JOBXHRE",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "LOAN_AGGREGATES",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "LOAN_APPLICATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "LOAN_DISBURSEMENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "LOV_ACADEMIC_PERIOD",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACADEMIC_STANDING",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACADEMIC_TITLE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACADEMIC_YEAR",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_ATTRIBUTE_SET",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_ATTRIBUTE_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_ATTRIBUTE_VALUE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_CLASS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_LEVEL_1",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_LEVEL_2",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_LEVEL_3",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_LEVEL_4",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_POOL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_TYPE_ATTR_SET",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_TYPE_ATTR_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_TYPE_ATTR_VALUE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_TYPE_LEVEL_1",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACCOUNT_TYPE_LEVEL_2",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACTIVITY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACTIVITY_CATEGORY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ACTIVITY_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ADDRESS_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ADMISSIONS_ATTRIBUTE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ADMISSIONS_POPULATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ADMISSIONS_RATING_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ADVANCEMENT_FUND",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ADVISOR_NAME_LFMI",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ADVISOR_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_AID_FUND",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_AID_YEAR",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_APPLICATION_DECISION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_APPLICATION_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ASSIGNMENT_GRADE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ASSIGNMENT_PAY_ID",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ASSIGNMENT_SALARY_GROUP",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_AWARD_CATEGORY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_AWARD_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_BENEFIT_CATEGORY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_BENEFIT_DEDUCTION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_BLOCK_SCHEDULE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_BUDGET",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_BUDGET_GROUP",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_BUDGET_PHASE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_BUILDING",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CALENDAR_MONTH",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CAMPAIGN",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CAMPAIGN_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CAMPUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CERTIFICATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CHART_OF_ACCOUNTS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_COHORT",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_COLLECTION_AGENCY_NAME",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_COLLEGE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_COMMODITY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CONTRACT_NUMBER",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CONTRACT_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_COUNTY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_COURSE_ATTRIBUTE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_COURSE_IDENTIFICATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_COURSE_REFERENCE_NUMBER",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_CURRENT_TIME_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_DEPARTMENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_DESIGNATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_DISTRICT_DIVISION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_DIVISION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_DONOR",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EARNINGS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EDUCATIONAL_GOAL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EDUCATIONAL_LEVEL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EEO_SKILL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EMPLOYEE_CLASS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EMPLOYEE_GROUP",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EMPLOYEE_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EMPLOYER",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EMPLOYER_CATEGORY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EMPLOYER_INDUSTRIAL_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_EMPLOYMENT_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ENROLLMENT_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ETHNICITY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCE_ACCOUNT",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCE_ACCOUNT_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCE_ACTIVITY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCE_FUND",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCE_FUND_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCE_LOCATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCE_ORGANIZATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCE_PROGRAM",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FINANCIAL_MANAGER",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FISCAL_PERIOD",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FISCAL_YEAR",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FOREIGN_CURRENCY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_ATTRIBUTE_SET",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_ATTRIBUTE_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_ATTRIBUTE_VALUE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_LEVEL_1",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_LEVEL_2",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_LEVEL_3",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_LEVEL_4",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_LEVEL_5",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_POOL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_SOURCE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_TYPE_ATTR_SET",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_TYPE_ATTR_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_TYPE_ATTR_VALUE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_TYPE_LEVEL_1",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_FUND_TYPE_LEVEL_2",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_GENDER",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_GEOGRAPHIC_AREA",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_GRADE_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_GRANT",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_HOLD",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_HR_APPLICATION_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_INCOME_LEVEL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_INSTALLMENT_PLAN",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_INSTRUCTIONAL_METHOD",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_INSTRUCTOR_NAME",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_INTERNAL_ACCOUNT_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_INTERNAL_FUND_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_INTERVIEW_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_JOB_LEAVE_CATEGORY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_JOB_SUFFIX",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_LEADERSHIP_ROLE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_LEAVE_OF_ABSENCE_REASON",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_LEGACY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_LEVEL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_LOCATION_LEVEL_1",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_LOCATION_LEVEL_2",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_LOCATION_LEVEL_3",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_LOCATION_LEVEL_4",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_MAIL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_MAJOR",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_MARITAL_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_MEAL_PLAN",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_MEETING_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_NATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_NATIVE_LANGUAGE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_ATTR_SET",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_ATTR_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_ATTR_VALUE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_LEVEL_1",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_LEVEL_2",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_LEVEL_3",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_LEVEL_4",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_LEVEL_5",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_LEVEL_6",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_LEVEL_7",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORGANIZATION_POOL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_ORG_FINANCIAL_MANAGER",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_OUTCOME",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_OUTCOME_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PACKAGING_GROUP",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_POSITION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_POSITION_CHANGE_REASON",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_POSITION_CLASS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_POSITION_DEFERRED_PAY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_POSITION_LOCATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_POSITION_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_POST_CODE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_POST_SECONDARY_SCHOOL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PREF_CLASS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PRIM_DISABILITY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PRINCIPAL_INVESTIGATOR",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM_ATTR_SET",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM_ATTR_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM_ATTR_VALUE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM_CLASSIFICATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM_LEVEL_1",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM_LEVEL_2",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM_LEVEL_3",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRAM_LEVEL_4",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROGRESS_EVALUATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROJECT",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_PROSPECT_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RATING",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RATING_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RECEIVABLE_CATEGORY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RECEIVABLE_CONTRACT",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RECEIVABLE_DELINQUENCY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RECEIVABLE_DETAIL_CODE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RECEIVABLE_EXEMPTION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RECEIVABLE_SOURCE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RECRUITER",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_REGISTRATION_REASON",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_REGISTRATION_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_RESIDENCY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_REVIEW_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_SCHEDULE_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_SECONDARY_SCHOOL",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_SITE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_SOLICITATION_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_SOLICITOR_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_SOURCE_BACKGROUND",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_STATE_PROVINCE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_STUDENT_CLASS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_STUDENT_POPULATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_STUDENT_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_SUBJECT",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_SUB_ACADEMIC_PERIOD",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_TERMINATION_REASON",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_TEST",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_TEST_RULE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_TRACKING_GROUP",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_VENDOR_TYPE",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_VETERAN_CATEGORY",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_VISA",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_WITHDRAW_REASON",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "LOV_WORKER_COMPENSATION_CLASS",
+            "cmDataSource": "ODS",
+            "schema": "ODSLOV"
+        },
+        {
+            "table": "MGT_VALIDATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "MRT_FINAID_APPLICANT_STATUS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "MRT_FINAID_APPLICATION1",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "MRT_FINAID_APPLICATION2",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "MRT_FINAID_APPLICATION3",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "MRT_FINAID_APPLICATION4",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "MST_ADMINISTRATOR",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "NBBPOSN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "NBBPOSN",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRBJOB",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "NBRBJOB",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRJLBD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "NBRJLBD",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRJOBS",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRPLBD",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NEED_ANALYSIS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "NEED_ANALYSIS_DEMOGRAPHIC",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "NEED_ANALYSIS_FEDERAL_METHOD",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "NEED_ANALYSIS_INST_METHOD",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "NEED_ANALYSIS_ISIR_SPECIFIC",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "NEED_ANALYSIS_OVERRIDE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "NEED_ANALYSIS_PROFILE_SPECIFIC",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "ONLINE_ABSENCE",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "ONLINE_NOTATION_RECORD",
+            "cmDataSource": "PROD",
+            "schema": "GRAILSCT"
+        },
+        {
+            "table": "PAYROLL_EARNING",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "PAYROLL_EMPLOYEE_POSITION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "PEBEMPL",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "PEBEMPL",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERDTOT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERETOT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERJOBS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "PERJTOT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERSON_ADDRESS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "PERSON_DETAIL",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "PERTITO",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "PHRDOCM",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHREARN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRELBD",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRHIST",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRJOBS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PPRCCMT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PREVIOUS_EDUCATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "PRE_STUDENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "PTRCALN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "PTRCALN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "RARAAWD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RARSPTM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRABRC",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRACMP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRAPBC",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRAPBG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRAPBT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRBCAT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRPBCP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRPBDR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRPBGP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRPBTP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRPELL",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRPGPT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RBRPMSG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRAPP1",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRAPP2",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRAPP3",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRAPP4",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRESAR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRIRSF",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRLDS4",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRLDS6",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRLDS7",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCRLOAD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCTLOAD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RCVAPPL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RCVEDEA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RCVNARS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "REBORIG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "REBPAYV",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "REBYTDD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "REBYTDO",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RECEIVABLE_ACCOUNT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "RECEIVABLE_ACCOUNTING",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "RECEIVABLE_ACCOUNT_DETAIL",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "RERCBWS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RERCDED",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RERCODA",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RERCODS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RERCSID",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RERSPGM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRASCH",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRASPC",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRBASE",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRBCMP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRCOMM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRDEFA",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRDETC",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRDLCK",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRFCAT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRMESG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRPCMP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRPROM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RFRTREQ",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RHRCOMM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRCBID",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDBOR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDDAS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDFEE",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDLBN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDLDB",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDLDD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDLOG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDLOR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDLPS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDMPN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDMPO",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDMPR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRDMPS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRLOAD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRPAPP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLRPLUS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLTDLOG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLTUMPN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RLVALIN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RLVEDEA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RNRTMNT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RNRVRFY",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RNVAND0",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RNVAND0",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RNVAND1",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ROBALOG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROBAPRD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROBBBAY",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROBINST",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROBNYUD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROBPRDS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROBUSDF",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROOM_ASSIGNMENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "RORALGS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORATND",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORBAYD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORBBAY",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORCMPL",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORENRL",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORHOLD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORHSDT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORPOST",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORPRDS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORPRST",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORRPCX",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORSAPR",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "RORSAPR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORSAYD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORSAYR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORSTAT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORTPRD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORWSQL",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RORWTXT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROTFSAP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROTIDEN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROTPERS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "ROVSTCR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ROVSTEV",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ROVSTOD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "ROVTENR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "RPBLPRD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRADSB",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRALGR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRARSC",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRATRM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRAWRD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRBBAY",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRCNCL",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRDLSU",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRFUND",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRGFND",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRLADB",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRLAPP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRLARF",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRLATR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRLCRT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRLECS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRRSLT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPRSULA",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPTUAPP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RPTUECS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RRRAREQ",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RRRGREQ",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVABRC",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVALGR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVAPRD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVAWST",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVBBTP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVBCAT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVFCAT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVFSRC",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVFTYP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVHOLD",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVINFC",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVINTL",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVLNST",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVMESG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVPBCP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVPBGP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVPBTP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVPGRP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVRJCT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVSAYR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVTGRP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVTREQ",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVTRST",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "RTVWTXT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SARAATT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SARAATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARACMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARADAP",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SARADAP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARAPPD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SARCHKL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SATISFACTORY_ACAD_PROGRESS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCADFVT",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SCADFVT_2324_SUBMITTED",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SCAD_ADDRESS_BY_RULE",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SCAD_BANINST1_RCVEDEA",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_FA_ROVLOGM",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_LOCAL_AS_TERM_GPA",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_LOCAL_HOPE_TRACKING",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MAT_FA_SAP",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MGT_GOREMAL",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_FA_SAP_QUARTERLY",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RCRLDS4",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RFRBASE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RHRCOMM",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_ROBNYUD",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_ROBPRDS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RORSTAT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_ROTFSAP",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RPRARSC",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RPRATRM",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RPRLADB",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RPRLAPP",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MRT_RTVTREQ",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MST_SFRSTCR",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SCAD_MST_SGRSACT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MST_SHRNCRS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MST_SLRRASG",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MST_SPRADDR",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MST_STVTERM",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MTT_TBBDETC",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MTT_TBRACCD",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_MTT_TTVPAYT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_SCADLOCAL_WSRATTD",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_SCADLOCAL_WSRPTSC",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_SCADLOCAL_WWBIAOS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_SCADLOC_HIST_ABSN_BY_TERM",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCAD_SF_CONTACT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SCBCRSE",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SCBCRSE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRATTR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRCORQ",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCREQIV",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SCRFEES",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFBETRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRSTCA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRSTCR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SFRTHST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SF_ACCOUNT",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_CONTACT",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_EDUCATIONRECORD",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_OPPORTUNITY",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_TERM",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SF_USER",
+            "cmDataSource": "PROD",
+            "schema": "SCADSF"
+        },
+        {
+            "table": "SGBSTDN",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SGBSTDN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SGBSTDN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRADVR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SGRADVR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRSACT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRSATT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SGRSATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SGRSPRT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRDGMR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRGRDE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRLGPA",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SHRLGPA",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SHRLGPA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTCKG",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SHRTCKG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTCKN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTGPA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTRAM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTRCE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTRIT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRTTRM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SHRTTRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIRASGN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIRDPCL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SLRRASG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SOBPTRM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SOBPTRM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SOBSBGI",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORAINF",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORDEGR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORFOLK",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORHSCH",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORLCUR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORLFOS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORPCOL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORTEST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPBPERS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SPBPERS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPORT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRHOLD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRTELE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SRBRECR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSBSECT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SSRMEET",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STUDENT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "STUDENT_ATTRIBUTE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "STUDENT_COURSE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "STUDENT_COURSE_REG_AUDIT",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "STVADMT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAPDC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVAPST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVASTD",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATTS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "STVATTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVATYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCAMP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCOLL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCSTA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDEGC",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVDEGS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVGRST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVLEVL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVMAJR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNATN",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "STVNATN",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "STVNATN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRSTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSTAT",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "STVSTST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVSTYP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "ODS",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "TBBACCT",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "TBBACCT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBBDETC",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRACCD",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRACCT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRAPPL",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRDEPO",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TBRMEMO",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TELEPHONE",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "TEST",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "TTVDTYP",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TTVPAYT",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "TVRAUTH",
+            "cmDataSource": "PROD",
+            "schema": "TAISMGR"
+        },
+        {
+            "table": "USER_DEFINED_FIELDS",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "VALIDATION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "VISA",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        },
+        {
+            "table": "WFVCRHR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGBARDM",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGRARDV",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WGVFGRD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSTDA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WGVSTDN",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WRVGACH",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WRVLSDA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WRVVABA",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WRVWWPD",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSRATTD",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "WSVAEEL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVHSMP",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVOSBL",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVRSCQ",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WSVSAPR",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WTVCMNT",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "WWBIAOS",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "YEAR_PARAMS",
+            "cmDataSource": "PROD",
+            "schema": "FAISMGR"
+        },
+        {
+            "table": "YEAR_TYPE_DEFINITION",
+            "cmDataSource": "ODS",
+            "schema": "ODSMGR"
+        }
     ]
 }

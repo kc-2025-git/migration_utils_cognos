@@ -47,7 +47,7 @@ class Config:
             if isinstance(val, dict) and k in val:
                 val = val[k]
             else:
-                return os.environ.get(key_path.replace(".", "_").upper(), default)
+                return default
 
         # If the retrieved value is a directory path object, return the path
         if isinstance(val, dict) and "path" in val:

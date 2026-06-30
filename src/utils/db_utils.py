@@ -1,28 +1,41 @@
 import oracledb
 import sys
+import getpass
 from utils.config_loader import config
 
+_passwords = {}
 
-def get_connection():
+
+def get_connection(config_node="oracle_ods"):
     try:
-        user = config.get("oracle.user")
-        password = config.get("oracle.password")
-        dsn = config.get("oracle.dsn")
+        user = config.get(f"{config_node}.user")
+        dsn = config.get(f"{config_node}.dsn")
 
-        if not all([user, password, dsn]) or "YOUR_" in f"{user}{password}{dsn}":
+        if not user or not dsn:
             print(
-                "ERROR: Oracle credentials not set in config.yaml or environment variables."
+                f"ERROR: Oracle user or DSN not set in config.yaml for {config_node}."
+            )
+            return None
+
+        if config_node not in _passwords:
+            _passwords[config_node] = getpass.getpass(prompt=f"Enter password for {user}@{config_node}: ")
+
+        password = _passwords[config_node]
+
+        if not password or "YOUR_" in f"{user}{password}{dsn}":
+            print(
+                f"ERROR: Oracle credentials not set correctly for {config_node}."
             )
             return None
 
         return oracledb.connect(user=user, password=password, dsn=dsn)
     except Exception as e:
-        print(f"ERROR: Failed to connect to Oracle: {e}")
+        print(f"ERROR: Failed to connect to Oracle ({config_node}): {e}")
         return None
 
 
-def fetch_view_source(view_name):
-    conn = get_connection()
+def fetch_view_source(view_name, config_node="oracle_ods"):
+    conn = get_connection(config_node)
     if not conn:
         return None
 
@@ -55,9 +68,9 @@ def fetch_view_source(view_name):
         conn.close()
 
 
-def resolve_schema(object_name):
+def resolve_schema(object_name, config_node="oracle_ods"):
     """Finds the owner of an object in ALL_OBJECTS."""
-    conn = get_connection()
+    conn = get_connection(config_node)
     if not conn:
         return None
 
@@ -92,3 +105,4 @@ def resolve_schema(object_name):
         return None
     finally:
         conn.close()
+
