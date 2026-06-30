@@ -2,6 +2,7 @@ import os
 import argparse
 import glob
 
+
 def generate_sql_for_tables(input_txt, output_file):
     with open(input_txt, "r", encoding="utf-8") as f:
         tables = [line.strip() for line in f if line.strip()]
@@ -33,10 +34,16 @@ def generate_sql_for_tables(input_txt, output_file):
         f.write("object_columns AS (\n")
         f.write("    SELECT owner, table_name,\n")
         f.write(
-            "           MAX(CASE WHEN column_name = table_name || '_ACTIVITY_DATE' THEN 1 ELSE 0 END) AS has_activity_date,\n"
+            "           COALESCE(MAX(CASE WHEN column_name = table_name || '_ACTIVITY_DATE' THEN column_name ELSE NULL END),\n"
         )
         f.write(
-            "           MAX(CASE WHEN column_name = table_name || '_SURROGATE_ID' THEN 1 ELSE 0 END) AS has_surrogate_id\n"
+            "                    MAX(CASE WHEN column_name LIKE '%_ACTIVITY_DATE' THEN column_name ELSE NULL END)) AS activity_date_column,\n"
+        )
+        f.write(
+            "           COALESCE(MAX(CASE WHEN column_name = table_name || '_SURROGATE_ID' THEN column_name ELSE NULL END),\n"
+        )
+        f.write(
+            "                    MAX(CASE WHEN column_name LIKE '%_SURROGATE_ID' THEN column_name ELSE NULL END)) AS surrogate_id_column\n"
         )
         f.write("    FROM all_tab_columns\n")
         f.write("    GROUP BY owner, table_name\n")
@@ -73,7 +80,8 @@ def generate_sql_for_tables(input_txt, output_file):
             "           LISTAGG(column_name, ',') WITHIN GROUP (ORDER BY column_name) AS potential_partition_cols\n"
         )
         f.write("    FROM all_tab_columns\n")
-        f.write("    WHERE column_name LIKE '%TERM%'\n")
+        f.write("    WHERE column_name LIKE '%_TERM%'\n")
+        f.write("       OR column_name LIKE '%ACAD%PER'\n")
         f.write("    GROUP BY owner, table_name\n")
         f.write("),\n")
         f.write("object_summary AS (\n")
@@ -83,12 +91,8 @@ def generate_sql_for_tables(input_txt, output_file):
         f.write(
             "        CASE WHEN a.object_name IS NOT NULL THEN 'EXISTS' ELSE 'MISSING' END AS table_status,\n"
         )
-        f.write(
-            "        CASE WHEN c.has_activity_date = 1 THEN e.expected_object || '_ACTIVITY_DATE' ELSE NULL END AS activity_date_column,\n"
-        )
-        f.write(
-            "        CASE WHEN c.has_surrogate_id = 1 THEN e.expected_object || '_SURROGATE_ID' ELSE NULL END AS surrogate_id_column,\n"
-        )
+        f.write("        c.activity_date_column,\n")
+        f.write("        c.surrogate_id_column,\n")
         f.write("        pk.pk_columns,\n")
         f.write("        adc.alt_activity_date_cols,\n")
         f.write("        pc.potential_partition_cols,\n")
@@ -132,7 +136,7 @@ def generate_sql_for_tables(input_txt, output_file):
         )
         f.write("        THEN 'date_incremental'\n")
         f.write(
-            "        WHEN potential_partition_cols IS NOT NULL AND estimated_row_count > 10000 \n"
+            "        WHEN potential_partition_cols IS NOT NULL AND (estimated_row_count > 100000 OR estimated_row_count IS NULL) \n"
         )
         f.write("        THEN 'column_incremental'\n")
         f.write("        ELSE 'full_load'\n")
@@ -145,7 +149,9 @@ def generate_sql_for_tables(input_txt, output_file):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate validation and ingestion config SQL.")
+    parser = argparse.ArgumentParser(
+        description="Generate validation and ingestion config SQL."
+    )
     parser.add_argument(
         "input_file",
         nargs="?",
@@ -155,7 +161,7 @@ def main():
     args = parser.parse_args()
 
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    
+
     if args.input_file:
         file_path = args.input_file
     else:
@@ -166,7 +172,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
 
     input_files = glob.glob(os.path.join(output_dir, "resolved_tables_*.txt"))
-    
+
     if not input_files:
         old_txt = os.path.join(output_dir, "resolved_tables.txt")
         if os.path.exists(old_txt):
@@ -178,13 +184,18 @@ def main():
     for input_txt in input_files:
         basename = os.path.basename(input_txt)
         if basename.startswith("resolved_tables_") and basename.endswith(".txt"):
-            suffix = basename[len("resolved_tables_"):-4]
-            output_file = os.path.join(output_dir, f"table_validation_ingestion_config_{suffix}.sql")
+            suffix = basename[len("resolved_tables_") : -4]
+            output_file = os.path.join(
+                output_dir, f"table_validation_ingestion_config_{suffix}.sql"
+            )
         else:
-            output_file = os.path.join(output_dir, "table_validation_ingestion_config.sql")
-            
+            output_file = os.path.join(
+                output_dir, "table_validation_ingestion_config.sql"
+            )
+
         print(f"\nProcessing {basename}...")
         generate_sql_for_tables(input_txt, output_file)
+
 
 if __name__ == "__main__":
     main()

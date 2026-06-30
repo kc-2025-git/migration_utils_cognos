@@ -316,8 +316,10 @@ WITH expected_objects AS (
 ),
 object_columns AS (
     SELECT owner, table_name,
-           MAX(CASE WHEN column_name = table_name || '_ACTIVITY_DATE' THEN 1 ELSE 0 END) AS has_activity_date,
-           MAX(CASE WHEN column_name = table_name || '_SURROGATE_ID' THEN 1 ELSE 0 END) AS has_surrogate_id
+           COALESCE(MAX(CASE WHEN column_name = table_name || '_ACTIVITY_DATE' THEN column_name ELSE NULL END),
+                    MAX(CASE WHEN column_name LIKE '%_ACTIVITY_DATE' THEN column_name ELSE NULL END)) AS activity_date_column,
+           COALESCE(MAX(CASE WHEN column_name = table_name || '_SURROGATE_ID' THEN column_name ELSE NULL END),
+                    MAX(CASE WHEN column_name LIKE '%_SURROGATE_ID' THEN column_name ELSE NULL END)) AS surrogate_id_column
     FROM all_tab_columns
     GROUP BY owner, table_name
 ),
@@ -345,7 +347,8 @@ partition_cols AS (
     SELECT owner, table_name,
            LISTAGG(column_name, ',') WITHIN GROUP (ORDER BY column_name) AS potential_partition_cols
     FROM all_tab_columns
-    WHERE column_name LIKE '%TERM%'
+    WHERE column_name LIKE '%_TERM%'
+       OR column_name LIKE '%ACAD%PER'
     GROUP BY owner, table_name
 ),
 object_summary AS (
@@ -353,8 +356,8 @@ object_summary AS (
         e.expected_owner, 
         e.expected_object, 
         CASE WHEN a.object_name IS NOT NULL THEN 'EXISTS' ELSE 'MISSING' END AS table_status,
-        CASE WHEN c.has_activity_date = 1 THEN e.expected_object || '_ACTIVITY_DATE' ELSE NULL END AS activity_date_column,
-        CASE WHEN c.has_surrogate_id = 1 THEN e.expected_object || '_SURROGATE_ID' ELSE NULL END AS surrogate_id_column,
+        c.activity_date_column,
+        c.surrogate_id_column,
         pk.pk_columns,
         adc.alt_activity_date_cols,
         pc.potential_partition_cols,
@@ -391,7 +394,7 @@ SELECT
         WHEN COALESCE(surrogate_id_column, pk_columns) IS NOT NULL 
          AND COALESCE(activity_date_column, alt_activity_date_cols) IS NOT NULL 
         THEN 'date_incremental'
-        WHEN potential_partition_cols IS NOT NULL AND estimated_row_count > 10000 
+        WHEN potential_partition_cols IS NOT NULL AND (estimated_row_count > 100000 OR estimated_row_count IS NULL) 
         THEN 'column_incremental'
         ELSE 'full_load'
     END AS ingestion_type
