@@ -1,119 +1,614 @@
 {
     "tables": [
-        "BANINST1.AP_DEDUCTIONS_BENEFITS",
-        "BANINST1.AP_EMPLOYEE_PROFILE",
-        "BANINST1.AP_EMPLOYMENT_VERIFICATION",
-        "BANINST1.AP_EMPLOY_RECRUITMENT_ACTIVITY",
-        "BANINST1.AP_JOB_SUMMARY",
-        "BANINST1.AP_SALARY_BUDGET",
-        "BANINST1.WGVEDUC",
-        "FIMSMGR.FTVACTV",
-        "FIMSMGR.FTVORGN",
-        "GENERAL.GOBEACC",
-        "GENERAL.GOBINTL",
-        "GENERAL.GOBTPAC",
-        "GENERAL.GOREMAL",
-        "GENERAL.GORPRAC",
-        "GENERAL.GORRACE",
-        "GENERAL.GORVISA",
-        "GENERAL.GTVRRAC",
-        "GENERAL.GXRDIRD",
-        "PAYROLL.PDRBCOV",
-        "PAYROLL.PDRBDED",
-        "PAYROLL.PDRBENE",
-        "PAYROLL.PDRDEDN",
-        "PAYROLL.PDRXPID",
-        "PAYROLL.PEBEMPL",
-        "PAYROLL.PERDAYH",
-        "PAYROLL.PERDAYS",
-        "PAYROLL.PERDHIS",
-        "PAYROLL.PERDIRD",
-        "PAYROLL.PERDTOT",
-        "PAYROLL.PEREARH",
-        "PAYROLL.PEREARN",
-        "PAYROLL.PEREHIS",
-        "PAYROLL.PERELBD",
-        "PAYROLL.PERELBH",
-        "PAYROLL.PERETOT",
-        "PAYROLL.PERHOUH",
-        "PAYROLL.PERHOUR",
-        "PAYROLL.PERJHIS",
-        "PAYROLL.PERJOBH",
-        "PAYROLL.PERJOBS",
-        "PAYROLL.PERJTOT",
-        "PAYROLL.PERLEAV",
-        "PAYROLL.PERLHIS",
-        "PAYROLL.PERLVTK",
-        "PAYROLL.PERROUH",
-        "PAYROLL.PERROUT",
-        "PAYROLL.PERTETH",
-        "PAYROLL.PERTITH",
-        "PAYROLL.PERTITO",
-        "PAYROLL.PHRACCR",
-        "PAYROLL.PHRBKTP",
-        "PAYROLL.PHRDEDN",
-        "PAYROLL.PHRDOCM",
-        "PAYROLL.PHREARN",
-        "PAYROLL.PHRELBD",
-        "PAYROLL.PHRFLSA",
-        "PAYROLL.PHRHIST",
-        "PAYROLL.PHRHOUR",
-        "PAYROLL.PHRJOBS",
-        "PAYROLL.PPRCCMT",
-        "PAYROLL.PPRCMNT",
-        "PAYROLL.PTRBDCA",
-        "PAYROLL.PTRBDPL",
-        "PAYROLL.PTRCALN",
-        "PAYROLL.PTREARN",
-        "PAYROLL.PTRECLS",
-        "PAYROLL.PTREMPR",
-        "PAYROLL.PTRERST",
-        "PAYROLL.PTRJCRE",
-        "PAYROLL.PTRLEAV",
-        "PAYROLL.PTRLVAC",
-        "PAYROLL.PTRTREA",
-        "PAYROLL.PTRUSER",
-        "PAYROLL.PTVCMTY",
-        "PAYROLL.PTVLCAT",
-        "POSNCTL.NBBFISC",
-        "POSNCTL.NBBPOSN",
-        "POSNCTL.NBRBJOB",
-        "POSNCTL.NBREARN",
-        "POSNCTL.NBRJFTE",
-        "POSNCTL.NBRJLBD",
-        "POSNCTL.NBRJOBS",
-        "POSNCTL.NBRPLBD",
-        "POSNCTL.NBRPTOT",
-        "POSNCTL.NOBTRAN",
-        "POSNCTL.NORROUT",
-        "POSNCTL.NORTRAN",
-        "POSNCTL.NTRACAT",
-        "POSNCTL.NTRALVL",
-        "POSNCTL.NTRAUBK",
-        "POSNCTL.NTRAUFM",
-        "POSNCTL.NTRPCLS",
-        "POSNCTL.NTRPRXY",
-        "POSNCTL.NTRSALB",
-        "POSNCTL.NTVACAT",
-        "POSNCTL.NTVAPTY",
-        "SATURN.SFRSTCR",
-        "SATURN.SHRDGMR",
-        "SATURN.SIBINST",
-        "SATURN.SORDEGR",
-        "SATURN.SPBPERS",
-        "SATURN.SPRADDR",
-        "SATURN.SPREMRG",
-        "SATURN.SPRIDEN",
-        "SATURN.SPRINTL",
-        "SATURN.SPRTELE",
-        "SATURN.STVACYR",
-        "SATURN.STVCOLL",
-        "SATURN.STVETHN",
-        "SATURN.STVNATN",
-        "SATURN.STVRSTS",
-        "SATURN.STVTERM",
-        "SCADLOCAL.OEEMPLUS1",
-        "SCADLOCAL.ORG_VP_SCH",
-        "WGBMSCAD"
+        {
+            "table": "AP_DEDUCTIONS_BENEFITS",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AP_EMPLOYEE_PROFILE",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AP_EMPLOYMENT_VERIFICATION",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AP_EMPLOY_RECRUITMENT_ACTIVITY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AP_JOB_SUMMARY",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "AP_SALARY_BUDGET",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        },
+        {
+            "table": "FTVACTV",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVORGN",
+            "cmDataSource": "PROD",
+            "schema": "FIMSMGR"
+        },
+        {
+            "table": "FTVORGN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "GOBEACC",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOBINTL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOBTPAC",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOBTPAC",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GOREMAL",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "GORPRAC",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORRACE",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GORVISA",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GTVRRAC",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "GXRDIRD",
+            "cmDataSource": "PROD",
+            "schema": "GENERAL"
+        },
+        {
+            "table": "NBBFISC",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBBPOSN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "NBBPOSN",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRBJOB",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "NBRBJOB",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBREARN",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRJFTE",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRJLBD",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRJOBS",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRPLBD",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NBRPTOT",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NOBTRAN",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NORROUT",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NORTRAN",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTRACAT",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTRALVL",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTRAUBK",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTRAUFM",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTRPCLS",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTRPRXY",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTRSALB",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTVACAT",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "NTVAPTY",
+            "cmDataSource": "PROD",
+            "schema": "POSNCTL"
+        },
+        {
+            "table": "OEEMPLUS1",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "ORG_VP_SCH",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
+            "table": "PDRBCOV",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PDRBDED",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PDRBENE",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PDRDEDN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PDRXPID",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PEBEMPL",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERDAYH",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERDAYS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERDHIS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERDIRD",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERDTOT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PEREARH",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PEREARN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PEREHIS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERELBD",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERELBH",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERETOT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERHOUH",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERHOUR",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERJHIS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERJOBH",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERJOBS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERJTOT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERLEAV",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERLHIS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERLVTK",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERROUH",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERROUT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERTETH",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERTITH",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PERTITO",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRACCR",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRBKTP",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRDEDN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRDOCM",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHREARN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRELBD",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRFLSA",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRHIST",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRHOUR",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PHRJOBS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PPRCCMT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PPRCMNT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRBDCA",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRBDPL",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRCALN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTREARN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRECLS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTREMPR",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRERST",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRJCRE",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRLEAV",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRLVAC",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRTREA",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTRUSER",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTVCMTY",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "PTVLCAT",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "SFRSTCR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SHRDGMR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SIBINST",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SORDEGR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPBPERS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "SPBPERS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRADDR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPREMRG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "SPRIDEN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRINTL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "SPRTELE",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVACYR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVCOLL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVETHN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVNATN",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVRSTS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "STVTERM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
+            "table": "WGBMSCAD",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
+        },
+        {
+            "table": "WGVEDUC",
+            "cmDataSource": "PROD",
+            "schema": "BANINST1"
+        }
     ]
 }

@@ -111,12 +111,30 @@ def extract_from_xml_root(root, namespaces):
             if ref_name in ds_map:
                 ds_info = ds_map[ref_name]
                 cm_ds = ds_info.get("cmDataSource", "")
-                schema = ds_info.get("schema", "")
+                if prefix_no_brackets:
+                    schema = prefix_no_brackets
+                else:
+                    schema = ds_info.get("schema", "")
             else:
                 schema = prefix_no_brackets if prefix_no_brackets else ref_name
         elif len(qs_data_sources) > 1:
-            cm_ds = "MultipleOptions"
-            schema = prefix_no_brackets if prefix_no_brackets else "MultipleOptions"
+            cm_ds_set = set()
+            for ref in qs_data_sources:
+                if ref.startswith("[].[dataSources].[") and ref.endswith("]"):
+                    ref_name = ref[len("[].[dataSources].["):-1].upper()
+                else:
+                    ref_name = ref.upper()
+                if ref_name in ds_map:
+                    cm_ds_set.add(ds_map[ref_name].get("cmDataSource", ""))
+            
+            if len(cm_ds_set) == 1:
+                cm_ds = cm_ds_set.pop()
+                if not cm_ds:
+                    cm_ds = "MultipleOptions"
+            else:
+                cm_ds = "MultipleOptions"
+                
+            schema = prefix_no_brackets if prefix_no_brackets else ""
         else:
             schema = prefix_no_brackets if prefix_no_brackets else ""
             
@@ -162,9 +180,15 @@ def extract_from_xml_root(root, namespaces):
                         resolved_t = process_table(dbObj.text.strip(), "unknown", qs_data_sources)
                         unique_tables.add(resolved_t)
 
-    unqualified_tables = {t for t in unique_tables if not t[1] and not t[2]}
-    qualified_table_names = {t[0] for t in unique_tables if t[1] or t[2]}
+    unqualified_tables = {t for t in unique_tables if not t[2] and (not t[1] or t[1] == "MultipleOptions")}
+    qualified_table_names = {t[0] for t in unique_tables if t[2] or (t[1] and t[1] != "MultipleOptions")}
     tables_to_remove = {t for t in unqualified_tables if t[0] in qualified_table_names}
+
+    for t in unique_tables:
+        if not t[2]:
+            if any(other[0] == t[0] and other[1] == t[1] and other[2] for other in unique_tables):
+                tables_to_remove.add(t)
+
     unique_tables = unique_tables - tables_to_remove
 
     return ds_map, definition_types, unique_tables

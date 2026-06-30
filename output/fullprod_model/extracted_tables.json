@@ -13,11 +13,6 @@
         {
             "table": "ACADEMIC_STUDY",
             "cmDataSource": "ODS",
-            "schema": ""
-        },
-        {
-            "table": "ACADEMIC_STUDY",
-            "cmDataSource": "ODS",
             "schema": "ODSMGR"
         },
         {
@@ -36,11 +31,6 @@
             "schema": "ALUMNI"
         },
         {
-            "table": "ADBDESG",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
             "table": "ADDRESS",
             "cmDataSource": "PROD",
             "schema": "GRAILSAT"
@@ -48,7 +38,7 @@
         {
             "table": "ADM_INTERACTION",
             "cmDataSource": "PROD",
-            "schema": "FIMSMGR"
+            "schema": "GRAILSAT"
         },
         {
             "table": "AF_ACCTG_DISTRIBUTION_ANALYSIS",
@@ -116,11 +106,6 @@
             "schema": "ALUMNI"
         },
         {
-            "table": "AGBGIFT",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
             "table": "AGBPLDG",
             "cmDataSource": "CLON",
             "schema": "ALUMNI"
@@ -131,29 +116,14 @@
             "schema": "ALUMNI"
         },
         {
-            "table": "AGBPLDG",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
             "table": "AGRGDES",
-            "cmDataSource": "PROD",
-            "schema": "ALUMNI"
-        },
-        {
-            "table": "AGRGDES",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "AGRGSOL",
             "cmDataSource": "PROD",
             "schema": "ALUMNI"
         },
         {
             "table": "AGRGSOL",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "ALUMNI"
         },
         {
             "table": "AGRPDES",
@@ -166,28 +136,18 @@
             "schema": "ALUMNI"
         },
         {
-            "table": "AGRPDES",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
             "table": "AGRPSOL",
             "cmDataSource": "PROD",
             "schema": "ALUMNI"
-        },
-        {
-            "table": "AGRPSOL",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "APBCONS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "ALUMNI"
         },
         {
             "table": "APPOINTMENT",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "GRAILSAT"
         },
         {
@@ -197,27 +157,27 @@
         },
         {
             "table": "APPT_RATING",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "GRAILSAT"
         },
         {
             "table": "APPT_STATUS",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "GRAILSAT"
         },
         {
             "table": "APPT_STATUS_GROUP",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "GRAILSAT"
         },
         {
             "table": "APPT_TYPE",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "GRAILSAT"
         },
         {
             "table": "APPT_TYPE_GROUP",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "GRAILSAT"
         },
         {
@@ -228,7 +188,7 @@
         {
             "table": "APRSALU",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "ALUMNI"
         },
         {
             "table": "AR_AWARD_DETAIL_BY_TERM",
@@ -363,12 +323,7 @@
         {
             "table": "ATRIUM_ICLASS_DATA",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "ATTENDANCE",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "ATTENDANCE",
@@ -378,12 +333,7 @@
         {
             "table": "ATTENDANCE_ARCH",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "ATTENDANCE_DETAIL",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "GRAILSCT"
         },
         {
             "table": "ATTENDANCE_DETAIL",
@@ -393,17 +343,12 @@
         {
             "table": "ATTENDANCE_DETAIL_ARCH",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "GRAILSCT"
         },
         {
             "table": "ATTENDANCE_DETAIL_HISTORY",
             "cmDataSource": "PROD",
             "schema": "GRAILSCT"
-        },
-        {
-            "table": "ATTENDANCE_DETAIL_ONLINE",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "ATTENDANCE_DETAIL_ONLINE",
@@ -414,11 +359,6 @@
             "table": "ATTENDANCE_NOTATION",
             "cmDataSource": "PROD",
             "schema": "GRAILSCT"
-        },
-        {
-            "table": "ATTENDANCE_ONLINE",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "ATTENDANCE_ONLINE",
@@ -498,7 +438,7 @@
         {
             "table": "BB_TRAINING_DATA",
             "cmDataSource": "PROD",
-            "schema": "SATURN"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "CANDIDATES",
@@ -517,38 +457,33 @@
         },
         {
             "table": "CONTACT_TRACING_TIX",
-            "cmDataSource": "MultipleOptions",
-            "schema": "SCADSF"
-        },
-        {
-            "table": "CONTACT_TRACING_TIX",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "CONTRACT_ADOBESIGN",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_FACULTY",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_FACULTY",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW",
@@ -558,27 +493,27 @@
         {
             "table": "CONTRACT_REVIEW",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_EMERITUS",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_EMERITUS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_EXCLUSIONS",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_EXCLUSIONS",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_EXCLUSIONS",
@@ -588,37 +523,37 @@
         {
             "table": "CONTRACT_REVIEW_EXCLUSIONS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_FINAL",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_FINAL",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_FINAL",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_REVIEW_XTRA",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_STATUS",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_STATUS",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_STATUS",
@@ -628,37 +563,32 @@
         {
             "table": "CONTRACT_STATUS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_TYPE",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_TYPE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_YEAR",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_YEAR",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "CONTRACT_YEAR",
             "cmDataSource": "MultipleOptions",
             "schema": "SCADLOCAL"
-        },
-        {
-            "table": "CONTRACT_YEAR",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "CONTRACT_YEAR",
@@ -667,13 +597,8 @@
         },
         {
             "table": "COVID_COURSE_NOTIFICATION",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "MYSCAD_USER"
-        },
-        {
-            "table": "COVID_COURSE_NOTIFICATION",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "CT_PROPSTAT",
@@ -693,7 +618,7 @@
         {
             "table": "DAILY_HEALTH_CHECK",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "DUAL",
@@ -702,7 +627,7 @@
         },
         {
             "table": "ECOPSPLOGIN",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "RELATEMGR"
         },
         {
@@ -713,12 +638,42 @@
         {
             "table": "EDU",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "FALL2021_SURVEY@PROD"
         },
         {
             "table": "EDU",
             "cmDataSource": "ODS",
-            "schema": "SCADLOCAL"
+            "schema": "FTVORGN@PROD"
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": "NBRBJOB@PROD"
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": "NBRJOBS@PROD"
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": "PEBEMPL@PROD"
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": "PTRECLS@PROD"
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": "PTRTREA@PROD"
+        },
+        {
+            "table": "EDU",
+            "cmDataSource": "ODS",
+            "schema": "SPRIDEN@PROD"
         },
         {
             "table": "EDUCATIONS",
@@ -739,11 +694,6 @@
             "table": "EMPLOYEE",
             "cmDataSource": "ODS",
             "schema": "ODSMGR"
-        },
-        {
-            "table": "EMPLOYEE_POSITION",
-            "cmDataSource": "ODS",
-            "schema": ""
         },
         {
             "table": "EMPLOYEE_POSITION",
@@ -783,27 +733,27 @@
         {
             "table": "FACREGISTRATION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "GRAILSAT"
         },
         {
             "table": "FACULTY_SPECIAL_CONTRACTS",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "FACULTY_SPECIAL_REDUCED_NEW",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "FACWORKSHOP",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "GRAILSAT"
         },
         {
             "table": "FALL2021_SURVEY",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "FARINTX",
@@ -823,7 +773,7 @@
         {
             "table": "FESTIVAL_REGISTRATION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "FGBOPAL",
@@ -878,12 +828,12 @@
         {
             "table": "FSC_CAPTAIN_STEP3",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "FSC_NOTIFICATION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "FTCRACTG",
@@ -1223,17 +1173,12 @@
         {
             "table": "FTVORGN",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "FIMSMGR"
         },
         {
             "table": "FTVORGN",
             "cmDataSource": "MONTH",
             "schema": ""
-        },
-        {
-            "table": "FTVORGN",
-            "cmDataSource": "MultipleOptions",
-            "schema": "MultipleOptions"
         },
         {
             "table": "FTVORGN",
@@ -1483,22 +1428,17 @@
         {
             "table": "GOREMAL",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "GENERAL"
         },
         {
             "table": "GOREMAL",
             "cmDataSource": "MONTH",
-            "schema": ""
-        },
-        {
-            "table": "GOREMAL",
-            "cmDataSource": "MultipleOptions",
             "schema": "GENERAL"
         },
         {
             "table": "GOREMAL",
             "cmDataSource": "MultipleOptions",
-            "schema": "MultipleOptions"
+            "schema": "GENERAL"
         },
         {
             "table": "GOREMAL",
@@ -1523,11 +1463,6 @@
         {
             "table": "GORRACE",
             "cmDataSource": "PROD",
-            "schema": "GENERAL"
-        },
-        {
-            "table": "GORSGEO",
-            "cmDataSource": "MultipleOptions",
             "schema": "GENERAL"
         },
         {
@@ -1562,11 +1497,6 @@
         },
         {
             "table": "GTVDICD",
-            "cmDataSource": "MultipleOptions",
-            "schema": "MultipleOptions"
-        },
-        {
-            "table": "GTVDICD",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
         },
@@ -1578,7 +1508,7 @@
         {
             "table": "GTVINSM",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "GENERAL"
         },
         {
             "table": "GTVMAIL",
@@ -1588,7 +1518,7 @@
         {
             "table": "GTVPPRN",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "GENERAL"
         },
         {
             "table": "GTVRRAC",
@@ -1638,42 +1568,32 @@
         {
             "table": "HITL_COVID_TEST",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "HITL_VACCINE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "HOUSING_EXEMPTION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "HR_FAC_MANUAL_UPDATES_CY",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "HR_FAC_YRS_RED_FORMAT",
             "cmDataSource": "ODS",
-            "schema": ""
-        },
-        {
-            "table": "HR_GRADE_FAC_CY",
-            "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "HR_GRADE_FAC_CY",
             "cmDataSource": "ODS",
             "schema": "SCADLOCAL"
-        },
-        {
-            "table": "HR_GRADE_FAC_DEPT_CY",
-            "cmDataSource": "ODS",
-            "schema": ""
         },
         {
             "table": "HR_GRADE_FAC_DEPT_CY",
@@ -1703,22 +1623,17 @@
         {
             "table": "LIABILITY_WAIVER",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "LIABILITY_WAIVER",
-            "cmDataSource": "PROD",
             "schema": "SCADEFORMS"
         },
         {
             "table": "LOCATION",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "LOCATION",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "LOCATION",
@@ -1728,32 +1643,32 @@
         {
             "table": "LOCATION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "MASTERRECORDFIELDS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "MASTERRECORDFIELDVALUES_LATEST",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "MASTERRECORDNOTES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "MASTERRECORDPROGRESS_LATEST",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "MASTERRECORDS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "MEETING_TIME",
@@ -1783,7 +1698,7 @@
         {
             "table": "NBRBJOB",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "POSNCTL"
         },
         {
             "table": "NBRBJOB",
@@ -1798,7 +1713,7 @@
         {
             "table": "NBRJOBS",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "POSNCTL"
         },
         {
             "table": "NBRJOBS",
@@ -1813,7 +1728,7 @@
         {
             "table": "NICHE_COND_ADMIT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEM"
         },
         {
             "table": "NOTATION_RECORD",
@@ -1823,27 +1738,12 @@
         {
             "table": "OBJECTIVE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "OBJECTIVE",
-            "cmDataSource": "PROD",
             "schema": "GRAILSRF"
         },
         {
             "table": "OBJECTIVE_RANKING",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "OBJECTIVE_RANKING",
-            "cmDataSource": "PROD",
             "schema": "GRAILSRF"
-        },
-        {
-            "table": "ONLINE_ABSENCE",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "ONLINE_ABSENCE",
@@ -1858,26 +1758,16 @@
         {
             "table": "OPP",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "GRAILSCT"
         },
         {
             "table": "OPP_DETAIL",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "ORG",
-            "cmDataSource": "MultipleOptions",
-            "schema": "GRAILSAT"
+            "schema": "GRAILSCT"
         },
         {
             "table": "ORG",
             "cmDataSource": "PROD",
-            "schema": "GRAILSAT"
-        },
-        {
-            "table": "ORG_CUSTOM",
-            "cmDataSource": "MultipleOptions",
             "schema": "GRAILSAT"
         },
         {
@@ -1887,17 +1777,7 @@
         },
         {
             "table": "ORG_CUSTOM_FIELD",
-            "cmDataSource": "MultipleOptions",
-            "schema": "GRAILSAT"
-        },
-        {
-            "table": "ORG_CUSTOM_FIELD",
             "cmDataSource": "PROD",
-            "schema": "GRAILSAT"
-        },
-        {
-            "table": "ORG_CUSTOM_VALUE",
-            "cmDataSource": "MultipleOptions",
             "schema": "GRAILSAT"
         },
         {
@@ -1917,17 +1797,7 @@
         },
         {
             "table": "ORG_TYPE",
-            "cmDataSource": "MultipleOptions",
-            "schema": "GRAILSAT"
-        },
-        {
-            "table": "ORG_TYPE",
             "cmDataSource": "PROD",
-            "schema": "GRAILSAT"
-        },
-        {
-            "table": "ORG_TYPE_GROUP",
-            "cmDataSource": "MultipleOptions",
             "schema": "GRAILSAT"
         },
         {
@@ -1952,11 +1822,6 @@
         },
         {
             "table": "PEBEMPL",
-            "cmDataSource": "MultipleOptions",
-            "schema": "MultipleOptions"
-        },
-        {
-            "table": "PEBEMPL",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
         },
@@ -1964,11 +1829,6 @@
             "table": "PEBEMPL",
             "cmDataSource": "PROD",
             "schema": "PAYROLL"
-        },
-        {
-            "table": "PERSON",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "PERSON",
@@ -1983,12 +1843,7 @@
         {
             "table": "PERSONAL_MAILBOX",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "PERSON_DETAIL",
-            "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "PERSON_DETAIL",
@@ -1998,7 +1853,7 @@
         {
             "table": "PHASES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "PHONE",
@@ -2008,7 +1863,7 @@
         {
             "table": "POSITIONS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADFAC"
         },
         {
             "table": "PPRCCMT",
@@ -2024,6 +1879,11 @@
             "table": "PTRECLS",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
+        },
+        {
+            "table": "PTRECLS",
+            "cmDataSource": "PROD",
+            "schema": "PAYROLL"
         },
         {
             "table": "PTRERST",
@@ -2048,17 +1908,12 @@
         {
             "table": "QMEALSERVICELIST",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "QMEALSERVICEREQUEST",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "RCRAPP1",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "RCRAPP1",
@@ -2073,7 +1928,7 @@
         {
             "table": "RCRAPP3",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "FAISMGR"
         },
         {
             "table": "READER",
@@ -2083,47 +1938,32 @@
         {
             "table": "REGISTRATION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "REGISTRATION",
-            "cmDataSource": "PROD",
             "schema": "SCADEM"
-        },
-        {
-            "table": "REGISTRATION",
-            "cmDataSource": "PROD",
-            "schema": "SSD_AXIOM"
         },
         {
             "table": "REGISTRATION_INTEREST_CONFIRMATION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "REGISTRATION_OFFERING_PERIOD",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "REGISTRATION_PHASE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "REGISTRATION_REGISTRANT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "REGISTRATION_SURVEY_RESPONSES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "REL_COMMUNICATION_OPT_OUT",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "REL_COMMUNICATION_OPT_OUT",
@@ -2148,7 +1988,7 @@
         {
             "table": "REQUEST",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "GRAILSRF"
         },
         {
             "table": "REQUEST_GOAL",
@@ -2163,11 +2003,6 @@
         {
             "table": "REQUEST_OBJECTIVE_RANK",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "REQUEST_OBJECTIVE_RANK",
-            "cmDataSource": "PROD",
             "schema": "GRAILSRF"
         },
         {
@@ -2178,12 +2013,12 @@
         {
             "table": "REVIEWER",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "REVIEWER",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "REVIEWER",
@@ -2193,17 +2028,17 @@
         {
             "table": "REVIEWER",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "REVIEWER_ROLE",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "REVIEWER_ROLE",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "REVIEWER_ROLE",
@@ -2213,7 +2048,7 @@
         {
             "table": "REVIEWER_ROLE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "RFRBASE",
@@ -2228,12 +2063,12 @@
         {
             "table": "ROLE",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "ROLE",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "ROLE",
@@ -2243,7 +2078,7 @@
         {
             "table": "ROLE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "ROOM_ASSIGNMENT",
@@ -2323,7 +2158,7 @@
         {
             "table": "SAND_ARTS_CATEGORY_ASSIGNMENT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "SARAATT",
@@ -2393,12 +2228,12 @@
         {
             "table": "SCAD_HR_EMPLOYEE",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCAD_HR_EMP_POSITION",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCAD_LENEL_CUSTOM",
@@ -2408,7 +2243,7 @@
         {
             "table": "SCAD_MST_SFRSTCA",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCAD_MST_SORRTRM",
@@ -2418,42 +2253,42 @@
         {
             "table": "SCAD_MST_SPRADDR",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCAD_MST_STVNATN",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCAD_PRO_PROJECT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "SCAD_PRO_SUBMISSION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "SCAD_SCADLOC_CONTRACT_FACULTY",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCAD_SCADLOC_CONTRACT_TYPE",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCAD_SCADLOC_CONTRACT_YEAR",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCAD_SF_CONTACT",
             "cmDataSource": "ODS",
-            "schema": ""
+            "schema": "ODSMGR"
         },
         {
             "table": "SCBCRKY",
@@ -2488,7 +2323,7 @@
         {
             "table": "SCHEDULE_ACKNOWLEDGMENT_RESPONSES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "SCHEDULE_OFFERING",
@@ -2498,12 +2333,12 @@
         {
             "table": "SCHOOL",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "SCHOOL",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "SCHOOL",
@@ -2513,12 +2348,12 @@
         {
             "table": "SCHOOL",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "SCHOOL_MERIT_RATING",
             "cmDataSource": "MONTH",
-            "schema": ""
+            "schema": "SCADLOCAL"
         },
         {
             "table": "SCRATTR",
@@ -2529,11 +2364,6 @@
             "table": "SCRATTR",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "SCREQIV",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "SCREQIV",
@@ -2553,17 +2383,7 @@
         {
             "table": "SCRLEVL",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SCRLEVL",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "SCRRARE",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "SCRRARE",
@@ -2576,9 +2396,19 @@
             "schema": "BANINST1"
         },
         {
+            "table": "SCRRATT",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
             "table": "SCRRCAM",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRCAM",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
         },
         {
             "table": "SCRRCHR",
@@ -2586,9 +2416,19 @@
             "schema": "BANINST1"
         },
         {
+            "table": "SCRRCHR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
             "table": "SCRRCLS",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRCLS",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
         },
         {
             "table": "SCRRCOL",
@@ -2596,9 +2436,19 @@
             "schema": "BANINST1"
         },
         {
+            "table": "SCRRCOL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
             "table": "SCRRDEG",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRDEG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
         },
         {
             "table": "SCRRDEP",
@@ -2606,9 +2456,19 @@
             "schema": "BANINST1"
         },
         {
+            "table": "SCRRDEP",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
             "table": "SCRRLVL",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
+        },
+        {
+            "table": "SCRRLVL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
         },
         {
             "table": "SCRRMAJ",
@@ -2626,14 +2486,14 @@
             "schema": "BANINST1"
         },
         {
-            "table": "SCRRTST",
+            "table": "SCRRPRG",
             "cmDataSource": "PROD",
             "schema": "SATURN"
         },
         {
-            "table": "SCRSCHD",
+            "table": "SCRRTST",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SATURN"
         },
         {
             "table": "SCRSCHD",
@@ -2653,12 +2513,12 @@
         {
             "table": "SCRSYST",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "SCRSYWS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "SCRTEXT",
@@ -2702,11 +2562,6 @@
         },
         {
             "table": "SFRSTCR",
-            "cmDataSource": "MultipleOptions",
-            "schema": "MultipleOptions"
-        },
-        {
-            "table": "SFRSTCR",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
         },
@@ -2743,27 +2598,17 @@
         {
             "table": "SF_ACCOUNT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "SF_ACCT_CONTACTROLE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "SF_ATTRIBUTE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SF_CONTACT",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SF_CONTACT",
-            "cmDataSource": "PROD",
-            "schema": "FIMSMGR"
+            "schema": "SCADSF"
         },
         {
             "table": "SF_CONTACT",
@@ -2773,17 +2618,7 @@
         {
             "table": "SF_OPPORTUNITY",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SF_OPPORTUNITY",
-            "cmDataSource": "PROD",
             "schema": "SCADSF"
-        },
-        {
-            "table": "SF_PROJECT",
-            "cmDataSource": "PROD",
-            "schema": "GRAILSAT"
         },
         {
             "table": "SF_PROJECT",
@@ -2798,12 +2633,12 @@
         {
             "table": "SF_RECRUITMENT_EVENT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "SF_RELATIONSHIP",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "SF_SCAD_CAMPAIGN",
@@ -2818,22 +2653,7 @@
         {
             "table": "SF_SCHOLASTIC_ATTR",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SF_SCHOLASTIC_ATTR",
-            "cmDataSource": "PROD",
             "schema": "SCADSF"
-        },
-        {
-            "table": "SF_TERM",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SF_TERM",
-            "cmDataSource": "PROD",
-            "schema": "GRAILSAT"
         },
         {
             "table": "SF_TERM",
@@ -2843,12 +2663,7 @@
         {
             "table": "SF_USER",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SGBSTDN",
-            "cmDataSource": "MultipleOptions",
-            "schema": "SATURN"
+            "schema": "SCADSF"
         },
         {
             "table": "SGBSTDN",
@@ -2884,11 +2699,6 @@
             "table": "SGRAVRL",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "SGRCHRT",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "SGRCHRT",
@@ -2988,21 +2798,11 @@
         {
             "table": "SHRGRDE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SHRGRDE",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
         },
         {
             "table": "SHRICMT",
             "cmDataSource": "PROD",
-            "schema": "SATURN"
-        },
-        {
-            "table": "SHRLGPA",
-            "cmDataSource": "MultipleOptions",
             "schema": "SATURN"
         },
         {
@@ -3034,11 +2834,6 @@
             "table": "SHRTCKG",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "SHRTCKL",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "SHRTCKL",
@@ -3103,17 +2898,7 @@
         {
             "table": "SHRTRCR",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SHRTRCR",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "SHRTRIT",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "SHRTRIT",
@@ -3134,11 +2919,6 @@
             "table": "SHTTRAN",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "SIBINST",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "SIBINST",
@@ -3188,11 +2968,6 @@
         {
             "table": "SLBBLDG",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SLBBLDG",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
         },
         {
@@ -3228,11 +3003,6 @@
         {
             "table": "SMBAGEN",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SMBAGEN",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
         },
         {
@@ -3261,6 +3031,11 @@
             "schema": "BANINST1"
         },
         {
+            "table": "SMRACAA",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
             "table": "SMRDORQ",
             "cmDataSource": "PROD",
             "schema": "SATURN"
@@ -3269,11 +3044,6 @@
             "table": "SMRPONC",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "SMRPRLE",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "SMRPRLE",
@@ -3388,11 +3158,6 @@
         {
             "table": "SORHSCH",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "SORHSCH",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
         },
         {
@@ -3453,12 +3218,12 @@
         {
             "table": "SOURCEFIELDS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "SOURCES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "SPBPERS",
@@ -3518,7 +3283,7 @@
         {
             "table": "SPREMRG",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SATURN"
         },
         {
             "table": "SPRHOLD",
@@ -3543,17 +3308,12 @@
         {
             "table": "SPRIDEN",
             "cmDataSource": "HORIZON",
-            "schema": ""
+            "schema": "SATURN"
         },
         {
             "table": "SPRIDEN",
             "cmDataSource": "MONTH",
-            "schema": ""
-        },
-        {
-            "table": "SPRIDEN",
-            "cmDataSource": "MultipleOptions",
-            "schema": "MultipleOptions"
+            "schema": "SATURN"
         },
         {
             "table": "SPRIDEN",
@@ -3573,22 +3333,12 @@
         {
             "table": "SPRIDEN",
             "cmDataSource": "PROD",
-            "schema": "FIMSMGR"
-        },
-        {
-            "table": "SPRIDEN",
-            "cmDataSource": "PROD",
             "schema": "GRAILSCT"
         },
         {
             "table": "SPRIDEN",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "SPRIDEN",
-            "cmDataSource": "PROD",
-            "schema": "SSD_AXIOM"
         },
         {
             "table": "SPRTELE",
@@ -3628,7 +3378,7 @@
         {
             "table": "SSRATTR",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SATURN"
         },
         {
             "table": "SSRMEET",
@@ -3656,6 +3406,11 @@
             "schema": "BANINST1"
         },
         {
+            "table": "SSRRCHR",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
             "table": "SSRRCLS",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
@@ -3681,6 +3436,11 @@
             "schema": "BANINST1"
         },
         {
+            "table": "SSRRCOL",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
+        },
+        {
             "table": "SSRRDEG",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
@@ -3696,9 +3456,9 @@
             "schema": "BANINST1"
         },
         {
-            "table": "SSRRESV",
+            "table": "SSRRDEP",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SATURN"
         },
         {
             "table": "SSRRESV",
@@ -3729,6 +3489,11 @@
             "table": "SSRRPRG",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
+        },
+        {
+            "table": "SSRRPRG",
+            "cmDataSource": "PROD",
+            "schema": "SATURN"
         },
         {
             "table": "SSRRTST",
@@ -3772,28 +3537,28 @@
         },
         {
             "table": "STAFF",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "GRAILSAT"
         },
         {
             "table": "STARREZ_BOOKINGS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "HOUSINGUSER"
         },
         {
             "table": "STUDENT_CELEBRATION_SUBMISSION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "STUDENT_CELEBRATION_SUBMISSION_TYPES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "STUDENT_CELEBRATION_TYPE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEFORMS"
         },
         {
             "table": "STUDENT_COURSE",
@@ -3803,17 +3568,7 @@
         {
             "table": "STUDENT_SUCCESS_INTERACTION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "STUDENT_SUCCESS_INTERACTION",
-            "cmDataSource": "PROD",
-            "schema": "FIMSMGR"
-        },
-        {
-            "table": "STUDENT_SUCCESS_INTERACTION",
-            "cmDataSource": "PROD",
-            "schema": "SATURN"
+            "schema": "GRAILSAT"
         },
         {
             "table": "STVACAT",
@@ -3878,17 +3633,7 @@
         {
             "table": "STVADMT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "STVADMT",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "STVADVR",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "STVADVR",
@@ -4057,11 +3802,6 @@
         },
         {
             "table": "STVCAMP",
-            "cmDataSource": "MultipleOptions",
-            "schema": "SATURN"
-        },
-        {
-            "table": "STVCAMP",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
         },
@@ -4098,22 +3838,12 @@
         {
             "table": "STVCHRT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "STVCHRT",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
         },
         {
             "table": "STVCIPC",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "STVCITZ",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "STVCITZ",
@@ -4164,11 +3894,6 @@
             "table": "STVCOLL",
             "cmDataSource": "MONTH",
             "schema": ""
-        },
-        {
-            "table": "STVCOLL",
-            "cmDataSource": "MultipleOptions",
-            "schema": "MultipleOptions"
         },
         {
             "table": "STVCOLL",
@@ -4438,12 +4163,7 @@
         {
             "table": "STVETHN",
             "cmDataSource": "HORIZON",
-            "schema": ""
-        },
-        {
-            "table": "STVETHN",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SATURN"
         },
         {
             "table": "STVETHN",
@@ -4484,11 +4204,6 @@
             "table": "STVFCST",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "STVFCTG",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "STVFCTG",
@@ -4543,11 +4258,6 @@
         {
             "table": "STVGEOD",
             "cmDataSource": "PROD",
-            "schema": "SATURN"
-        },
-        {
-            "table": "STVGEOR",
-            "cmDataSource": "MultipleOptions",
             "schema": "SATURN"
         },
         {
@@ -4692,11 +4402,6 @@
         },
         {
             "table": "STVMAJR",
-            "cmDataSource": "MultipleOptions",
-            "schema": "SATURN"
-        },
-        {
-            "table": "STVMAJR",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
         },
@@ -4809,11 +4514,6 @@
             "table": "STVORIG",
             "cmDataSource": "PROD",
             "schema": "SATURN"
-        },
-        {
-            "table": "STVORSN",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "STVORSN",
@@ -5013,11 +4713,6 @@
         {
             "table": "STVSAPR",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "STVSAPR",
-            "cmDataSource": "PROD",
             "schema": "SATURN"
         },
         {
@@ -5043,11 +4738,6 @@
         {
             "table": "STVSATT",
             "cmDataSource": "PROD",
-            "schema": "SATURN"
-        },
-        {
-            "table": "STVSBGI",
-            "cmDataSource": "MultipleOptions",
             "schema": "SATURN"
         },
         {
@@ -5168,12 +4858,7 @@
         {
             "table": "STVSTAT",
             "cmDataSource": "ODS",
-            "schema": ""
-        },
-        {
-            "table": "STVSTAT",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SATURN"
         },
         {
             "table": "STVSTAT",
@@ -5188,11 +4873,6 @@
         {
             "table": "STVSTST",
             "cmDataSource": "PROD",
-            "schema": "SATURN"
-        },
-        {
-            "table": "STVSTYP",
-            "cmDataSource": "MultipleOptions",
             "schema": "SATURN"
         },
         {
@@ -5313,11 +4993,6 @@
         {
             "table": "STVTEPR",
             "cmDataSource": "PROD",
-            "schema": "SATURN"
-        },
-        {
-            "table": "STVTERM",
-            "cmDataSource": "MultipleOptions",
             "schema": "SATURN"
         },
         {
@@ -5528,7 +5203,7 @@
         {
             "table": "SYNC_RECORD",
             "cmDataSource": "PROD",
-            "schema": "SSD_AXIOM"
+            "schema": "SCADEM"
         },
         {
             "table": "TBBACCT",
@@ -5558,22 +5233,17 @@
         {
             "table": "TBLBILLING",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "HOUSINGUSER"
         },
         {
             "table": "TBLCANCELREASONS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "HOUSINGUSER"
         },
         {
             "table": "TBLGHOSTASSIGNMENTS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "TBLHALLS",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "HOUSINGUSER"
         },
         {
             "table": "TBLHALLS",
@@ -5583,17 +5253,7 @@
         {
             "table": "TBLROOMASSIGNMENTS",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "TBLROOMASSIGNMENTS",
-            "cmDataSource": "PROD",
             "schema": "HOUSINGUSER"
-        },
-        {
-            "table": "TBLROOMS",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
         },
         {
             "table": "TBLROOMS",
@@ -5613,12 +5273,7 @@
         {
             "table": "TBLSTUDENTBILLING",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "TBLSTUDENTS",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "HOUSINGUSER"
         },
         {
             "table": "TBLSTUDENTS",
@@ -5628,12 +5283,7 @@
         {
             "table": "TBLSTUDENTTIMEFRAMES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "TBLTIMEFRAME",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "HOUSINGUSER"
         },
         {
             "table": "TBLTIMEFRAME",
@@ -5698,22 +5348,17 @@
         {
             "table": "TMPGIFT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "TMPGIFT",
-            "cmDataSource": "PROD",
             "schema": "SCADLOCAL"
         },
         {
             "table": "TMP_LOGIN_DATES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "TMP_NETID_LOGIN_DATES",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "TTVBILL",
@@ -5803,52 +5448,52 @@
         {
             "table": "VACCINE_EXEMPT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "VACCINE_RESPONSE",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "VACCINE_SURVEY",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "VACCINE_TESTING",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "MYSCAD_USER"
         },
         {
             "table": "VS_APPOINTMENT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "VS_APPOINTMENT_USER",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "VS_USER",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "V_EVENT",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEM"
         },
         {
             "table": "V_EVENT_CATEGORY",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADEM"
         },
         {
             "table": "WEBSERVICEAUDITLOG",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "AXIOMELT"
         },
         {
             "table": "WFRCSAE",
@@ -5872,11 +5517,6 @@
         },
         {
             "table": "WGBARDM",
-            "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "WGBHKPL",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
         },
@@ -5951,6 +5591,11 @@
             "schema": "BANINST1"
         },
         {
+            "table": "WGRAGRE",
+            "cmDataSource": "PROD",
+            "schema": "SCADLOCAL"
+        },
+        {
             "table": "WGRARDV",
             "cmDataSource": "PROD",
             "schema": "BANINST1"
@@ -5962,12 +5607,12 @@
         },
         {
             "table": "WGRFACL",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "SCADLOCAL"
         },
         {
             "table": "WGRPLOG",
-            "cmDataSource": "MultipleOptions",
+            "cmDataSource": "PROD",
             "schema": "SCADLOCAL"
         },
         {
@@ -6138,11 +5783,6 @@
         {
             "table": "WSRATTD",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
-        },
-        {
-            "table": "WSRATTD",
-            "cmDataSource": "PROD",
             "schema": "SCADLOCAL"
         },
         {
@@ -6198,7 +5838,7 @@
         {
             "table": "WTRISSO",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADLOCAL"
         },
         {
             "table": "WTVCMNT",
@@ -6228,12 +5868,12 @@
         {
             "table": "WXWALK",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         },
         {
             "table": "WXWALKNATION",
             "cmDataSource": "PROD",
-            "schema": "BANINST1"
+            "schema": "SCADSF"
         }
     ]
 }

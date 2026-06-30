@@ -500,7 +500,44 @@ TEST_CASES = [
         {("SHOULD_BE_EXTRACTED", "", "SOME_DS")},
     ),
     (
-        "fallback_multiple_options",
+        "multiple_refs_same_cm_ds",
+        """
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <name>PROD.PAYROLL</name>
+                    <cmDataSource>PROD</cmDataSource>
+                    <schema>PAYROLL</schema>
+                </dataSource>
+                <dataSource>
+                    <name>PROD.SATURN</name>
+                    <cmDataSource>PROD</cmDataSource>
+                    <schema>SATURN</schema>
+                </dataSource>
+            </dataSources>
+            <namespace>
+                <querySubject status="valid">
+                    <definition>
+                        <dbQuery>
+                            <sources>
+                                <dataSourceRef>[].[dataSources].[PROD.PAYROLL]</dataSourceRef>
+                                <dataSourceRef>[].[dataSources].[PROD.SATURN]</dataSourceRef>
+                            </sources>
+                            <sql type="native">Select * from <table>PEBEMPL</table></sql>
+                        </dbQuery>
+                    </definition>
+                </querySubject>
+            </namespace>
+        </project>
+        """,
+        {
+            "PROD.PAYROLL": {"cmDataSource": "PROD", "schema": "PAYROLL"},
+            "PROD.SATURN": {"cmDataSource": "PROD", "schema": "SATURN"},
+        },
+        {("PEBEMPL", "PROD", "")},
+    ),
+    (
+        "multiple_refs_diff_cm_ds",
         """
         <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
             <dataSources>
@@ -534,7 +571,82 @@ TEST_CASES = [
             "PROD.HR": {"cmDataSource": "PROD", "schema": "HR"},
             "TEST.HR": {"cmDataSource": "TEST", "schema": "HR"},
         },
-        {("EMPLOYEES", "MultipleOptions", "MultipleOptions")},
+        {("EMPLOYEES", "MultipleOptions", "")},
+    ),
+    (
+        "deduplicate_blank_schema_when_schema_exists",
+        """
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <name>PROD.PAYROLL</name>
+                    <cmDataSource>PROD</cmDataSource>
+                    <schema>PAYROLL</schema>
+                </dataSource>
+                <dataSource>
+                    <name>PROD.GENERAL</name>
+                    <cmDataSource>PROD</cmDataSource>
+                    <schema>GENERAL</schema>
+                </dataSource>
+            </dataSources>
+            <namespace>
+                <querySubject status="valid">
+                    <definition>
+                        <dbQuery>
+                            <sources>
+                                <dataSourceRef>[].[dataSources].[PROD.PAYROLL]</dataSourceRef>
+                            </sources>
+                            <sql type="native">Select * from <table>SPRIDEN</table></sql>
+                        </dbQuery>
+                    </definition>
+                </querySubject>
+                <querySubject status="valid">
+                    <definition>
+                        <dbQuery>
+                            <sources>
+                                <dataSourceRef>[].[dataSources].[PROD.PAYROLL]</dataSourceRef>
+                                <dataSourceRef>[].[dataSources].[PROD.GENERAL]</dataSourceRef>
+                            </sources>
+                            <sql type="native">Select * from <table>SPRIDEN</table></sql>
+                        </dbQuery>
+                    </definition>
+                </querySubject>
+            </namespace>
+        </project>
+        """,
+        {
+            "PROD.PAYROLL": {"cmDataSource": "PROD", "schema": "PAYROLL"},
+            "PROD.GENERAL": {"cmDataSource": "PROD", "schema": "GENERAL"},
+        },
+        {("SPRIDEN", "PROD", "PAYROLL")},
+    ),
+    (
+        "explicit_schema_in_sql_overridden_by_datasource",
+        """
+        <project xmlns="http://www.developer.cognos.com/schemas/bmt/60/12">
+            <dataSources>
+                <dataSource>
+                    <name>PROD</name>
+                    <cmDataSource>PROD</cmDataSource>
+                    <schema>BWRMGR</schema>
+                </dataSource>
+            </dataSources>
+            <namespace>
+                <querySubject status="valid">
+                    <definition>
+                        <dbQuery>
+                            <sources>
+                                <dataSourceRef>[].[dataSources].[PROD]</dataSourceRef>
+                            </sources>
+                            <sql type="native">Select * from SATURN.SPRIDEN</sql>
+                        </dbQuery>
+                    </definition>
+                </querySubject>
+            </namespace>
+        </project>
+        """,
+        {"PROD": {"cmDataSource": "PROD", "schema": "BWRMGR"}},
+        {("SPRIDEN", "PROD", "SATURN")},
     ),
 ]
 

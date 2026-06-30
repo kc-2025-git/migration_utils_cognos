@@ -1,5 +1,7 @@
 you cannot run commands on the command line.  if you need to run a command, ask the user to run it for you and provide the output in the chat.
 
+if you need to create temporary python scripts or other files, create them in the scratch directory.
+
 ## model.xml Schema Expectations
 When working with Cognos `*model.xml` files, keep in mind the following structural rules based on our validation logic:
 - **Namespaces:** XML elements typically include namespaces (e.g., `{http://www.developer.cognos.com/schemas/bmt/60/12}tag`).
