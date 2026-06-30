@@ -2,7 +2,7 @@ import os
 import sys
 import json
 import argparse
-from utils.db_utils import resolve_schema
+from utils.db_utils import resolve_schema, resolve_provided_schema
 from utils.config_loader import config
 
 def resolve_cognos_table(table_name, schema, config_node):
@@ -11,7 +11,14 @@ def resolve_cognos_table(table_name, schema, config_node):
     If it lacks a schema, it resolves the true Oracle schema via db lookup.
     """
     if schema:
-        return f"{schema}.{table_name}", "ALREADY_RESOLVED"
+        print(f"Validating provided schema ({schema}) for {table_name} via Oracle DB ({config_node})...")
+        db_schema = resolve_provided_schema(schema, table_name, config_node)
+        if db_schema:
+            print(f"  -> Resolved to schema: {db_schema}")
+            return f"{db_schema}.{table_name}", "DATABASE"
+        else:
+            print(f"  !! WARNING: Could not validate schema for {schema}.{table_name}")
+            return f"UNRESOLVED.{table_name}", "UNRESOLVED"
     elif "." in table_name:
         return table_name, "ALREADY_RESOLVED"
     else:

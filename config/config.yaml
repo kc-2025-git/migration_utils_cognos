@@ -3,17 +3,13 @@ oracle_ods:
   dsn: "oci-db-prod-phcte-scan.db.vcn193.oraclevcn.com:1521/odsedwp.db.vcn193.oraclevcn.com"
   user: AIUSER
 
-oracle_prod:
-  dsn: "oci-db-prod-phcte-scan.db.vcn193.oraclevcn.com:1521/clon.db.vcn193.oraclevcn.com"
-  user: RPTUSER
-
 oracle_clon:
   dsn: "oci-db-prod-phcte-scan.db.vcn193.oraclevcn.com:1521/clon.db.vcn193.oraclevcn.com"
   user: RPTUSER
 
 datasource_mapping:
   ODS: "oracle_ods"
-  PROD: "oracle_prod"
+  PROD: "oracle_clon"
   CLON: "oracle_clon"
 
 # # Databricks Configuration
