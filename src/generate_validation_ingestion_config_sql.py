@@ -1,35 +1,8 @@
 import os
 import argparse
+import glob
 
-
-def main():
-    parser = argparse.ArgumentParser(description="Generate validation and ingestion config SQL.")
-    parser.add_argument(
-        "input_file",
-        nargs="?",
-        default=None,
-        help="Path to the original XML file. Defaults to input/fm_model.xml in the project root.",
-    )
-    args = parser.parse_args()
-
-    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    
-    if args.input_file:
-        file_path = args.input_file
-    else:
-        file_path = os.path.join(project_root, "input", "fm_model.xml")
-
-    input_filename = os.path.splitext(os.path.basename(file_path))[0]
-    output_dir = os.path.join(project_root, "output", input_filename)
-    os.makedirs(output_dir, exist_ok=True)
-
-    input_txt = os.path.join(output_dir, "resolved_tables.txt")
-    output_file = os.path.join(output_dir, "table_validation_ingestion_config.sql")
-
-    if not os.path.exists(input_txt):
-        print(f"Error: {input_txt} not found.")
-        return
-
+def generate_sql_for_tables(input_txt, output_file):
     with open(input_txt, "r", encoding="utf-8") as f:
         tables = [line.strip() for line in f if line.strip()]
 
@@ -41,6 +14,9 @@ def main():
             unique_objects.add((parts[0].upper(), parts[1].upper()))
 
     sorted_objects = sorted(list(unique_objects))
+    if not sorted_objects:
+        print(f"No valid tables found in {input_txt}")
+        return
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("WITH expected_objects AS (\n")
@@ -164,9 +140,51 @@ def main():
         f.write("FROM object_summary\n")
         f.write("ORDER BY table_status, owner, object_name;\n")
 
-    print(f"Created validation script: {output_file}")
-    print(f"Total unique objects to validate: {len(sorted_objects)}")
+    print(f"  -> Created validation script: {output_file}")
+    print(f"  -> Total unique objects to validate: {len(sorted_objects)}")
 
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate validation and ingestion config SQL.")
+    parser.add_argument(
+        "input_file",
+        nargs="?",
+        default=None,
+        help="Path to the original XML file. Defaults to input/fm_model.xml in the project root.",
+    )
+    args = parser.parse_args()
+
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    
+    if args.input_file:
+        file_path = args.input_file
+    else:
+        file_path = os.path.join(project_root, "input", "fm_model.xml")
+
+    input_filename = os.path.splitext(os.path.basename(file_path))[0]
+    output_dir = os.path.join(project_root, "output", input_filename)
+    os.makedirs(output_dir, exist_ok=True)
+
+    input_files = glob.glob(os.path.join(output_dir, "resolved_tables_*.txt"))
+    
+    if not input_files:
+        old_txt = os.path.join(output_dir, "resolved_tables.txt")
+        if os.path.exists(old_txt):
+            input_files = [old_txt]
+        else:
+            print(f"Error: No resolved_tables*.txt found in {output_dir}.")
+            return
+
+    for input_txt in input_files:
+        basename = os.path.basename(input_txt)
+        if basename.startswith("resolved_tables_") and basename.endswith(".txt"):
+            suffix = basename[len("resolved_tables_"):-4]
+            output_file = os.path.join(output_dir, f"table_validation_ingestion_config_{suffix}.sql")
+        else:
+            output_file = os.path.join(output_dir, "table_validation_ingestion_config.sql")
+            
+        print(f"\nProcessing {basename}...")
+        generate_sql_for_tables(input_txt, output_file)
 
 if __name__ == "__main__":
     main()
